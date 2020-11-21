@@ -1,6 +1,7 @@
-import { MapContainer, TileLayer, GeoJSON } from "react-leaflet";
+import { MapContainer, TileLayer, GeoJSON, Popup, Marker, Icon } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import healthRegion from "../data/health.json";
+import markerIcon from "../data/imgs/marker.png"
 
 export default function CovidMap() {
   return (
@@ -21,7 +22,11 @@ export default function CovidMap() {
           weight: 3,
           fillColor: "transparent",
         })}
-      />
+      >        
+        <Popup>
+          <div>Hello</div>
+        </Popup>
+      </GeoJSON>
     </MapContainer>
   );
 }
