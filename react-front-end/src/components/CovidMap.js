@@ -5,8 +5,8 @@ import healthRegion from "../data/health.json";
 export default function CovidMap() {
   return (
     <MapContainer
-      style={{ height: "100vh" }}
-      zoom={2}
+      style={{ height: "50vh", width: "50vw" }}
+      zoom={5}
       center={[56.130367, -106.346771]}
     >
       <TileLayer
@@ -18,9 +18,8 @@ export default function CovidMap() {
         data={healthRegion}
         style={() => ({
           color: "#4a83ec",
-          weight: 0.3,
-          fillColor: "#1a1d62",
-          fillOpacity: 0.3,
+          weight: 3,
+          fillColor: "transparent",
         })}
       />
     </MapContainer>
