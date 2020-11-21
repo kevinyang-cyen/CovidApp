@@ -15,18 +15,19 @@ export default function CovidMap() {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
 
-      <GeoJSON
-        data={healthRegion}
-        style={() => ({
-          color: "#4a83ec",
-          weight: 3,
-          fillColor: "transparent",
-        })}
-      >        
-        <Popup>
-          <div>Hello</div>
-        </Popup>
-      </GeoJSON>
+      {healthRegion.features.map((feature) => 
+        <GeoJSON 
+          data={feature} 
+            style={() => ({
+            color: "#4a83ec",
+            weight: 3,
+            fillColor: "transparent",
+          })}>
+          <Popup>
+            <div>{feature.properties.HR_UID}</div>
+          </Popup>
+        </GeoJSON>
+      )}
     </MapContainer>
   );
 }
