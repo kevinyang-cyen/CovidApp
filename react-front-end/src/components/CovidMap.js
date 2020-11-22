@@ -1,9 +1,30 @@
 import { MapContainer, TileLayer, GeoJSON, Popup, Marker, Icon } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import healthRegion from "../data/health.json";
-import markerIcon from "../data/imgs/marker.png"
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 export default function CovidMap() {
+
+  // const [testRegionID, setTestRegionID] = useState("canada");
+  // const [testRegionData, setTestRegionData] = useState("test");
+
+  function onEachFeature(HR_UID) {
+    console.log(HR_UID);
+    axios.get(`https://api.opencovid.ca/summary?loc=${HR_UID}&date=11-19-2020`).then((res) => {
+      console.log(res.data)
+    });
+  }
+  
+
+  // useEffect(() => {
+  //   console.log(testRegionID);
+  //   axios.get(`https://api.opencovid.ca/summary?loc=${testRegionID}&date=11-19-2020`).then((res) => {
+  //     console.log(res.data);
+  //     setTestRegionData(res.data);
+  //   });
+  // }, [testRegionID]);
+
   return (
     <MapContainer
       style={{ height: "50vh", width: "50vw" }}
@@ -22,7 +43,8 @@ export default function CovidMap() {
             color: "#4a83ec",
             weight: 3,
             fillColor: "transparent",
-          })}>
+            })}
+            >
           <Popup>
             <div>{feature.properties.HR_UID}</div>
           </Popup>
