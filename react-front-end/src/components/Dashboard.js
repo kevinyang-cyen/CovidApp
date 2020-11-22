@@ -1,9 +1,9 @@
-import BarGraph from "./Graph/BarGraph";
+import AreaGraph from "./Graph/AreaGraph";
 
 export default function Dashboard() {
   return (
     <div>
-      <BarGraph />
+      <AreaGraph />
     </div>
   );
 }
