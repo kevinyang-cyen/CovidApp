@@ -1,4 +1,3 @@
-import "./App.css";
 import { Route, BrowserRouter as Router, Link } from "react-router-dom";
 import Dashboard from "./components/Dashboard";
 import CovidMap from "./components/CovidMap";
@@ -6,6 +5,7 @@ import Assessment from "./components/Assessment";
 import News from "./components/News";
 import Login from "./components/Login";
 import Register from "./components/Register";
+import "./App.scss"
 
 function App() {
   return (
