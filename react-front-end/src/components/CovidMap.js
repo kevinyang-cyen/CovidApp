@@ -7,27 +7,6 @@ import cors from "cors";
 
 export default function CovidMap() {
 
-  let testRegionTemplate = [];
-  healthRegion.features.forEach((feature) => testRegionTemplate.push({[feature.properties.HR_UID]: {}}));
-  console.log(testRegionTemplate);
-
-  const [testRegionID, setTestRegionID] = useState("canada");
-  const [testRegionData, setTestRegionData] = useState("test");
-  // console.log('HEY', testRegionData)
-  // console.log('meow', testRegionData.summary)
-
-
-  const GetRegionData = function(HRUID) {
-    useEffect(() => {
-      // console.log(testRegionID);
-      axios.get(`https://cors-anywhere.herokuapp.com/https://api.opencovid.ca/summary?loc=${HRUID}&date=11-19-2020`).then((res) => {
-        testRegionTemplate[HRUID] = res.data.summary[0].cases;
-        console.log(res.data.summary[0].cases)
-        setTestRegionData(res.data.summary[0].cases);
-      });
-    }, [testRegionID]);
-  }
-
   return (
     <MapContainer
       style={{ height: "50vh", width: "50vw" }}
