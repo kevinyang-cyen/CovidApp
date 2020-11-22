@@ -13,10 +13,22 @@ export default function Login() {
   return (
     <section>
       <h1>Login</h1>
-      <form>
-        <input></input>
-
-
+      <form className="form-inline" action="/login" method="POST">
+      <div className="form-group mb-2">
+        <label for="email">Username</label>
+      </div>
+      <div className="form-group mb-2">
+        <input className="form-control" type="text" placeholder="Enter Email" name="email"></input>
+      </div>
+      <div className="form-group mb-2">
+        <label for="password">Password</label>
+      </div>
+      <div className="form-group mb-2">
+        <input className="form-control" type="password" placeholder="Enter Password" name="password"></input>
+      </div>
+      <div className="form-group mb-2">  
+        <button type="submit" className="btn btn-primary">Login</button>
+      </div>
       </form>
 
     </section>
