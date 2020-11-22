@@ -10,5 +10,16 @@ export default function Login() {
       setTestVar(res.data);
     });
   }, []);
-  return <h1>{testVar}</h1>;
+  return (
+    <section>
+      <h1>Login</h1>
+      <form>
+        <input></input>
+
+
+      </form>
+
+    </section>
+
+  )
 }
