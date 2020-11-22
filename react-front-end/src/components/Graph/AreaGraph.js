@@ -1,32 +1,52 @@
-import React, { PureComponent } from 'react';
 import {
-  AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip,
+  AreaChart,
+  Area,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Label,
+  ResponsiveContainer
 } from 'recharts';
 
-import * as covidData from "../result.json";
+export default function AreaGraph(props) {
 
-
-export default function AreaGraph() {
-  const data = [];
-
-  const covidDataList = covidData.result.forEach(result => {
-    data.push({ name: result.date, cases: result.confirmed })
-  });
-
-    return (
+  return (
+    <ResponsiveContainer width="80%" height={400}>
       <AreaChart
-        width={1500}
-        height={400}
-        data={data}
+        data={props.coviddata}
+        fontSize={12}
         margin={{
-          top: 10, right: 30, left: 0, bottom: 0,
+          top: 30, right: 30, left: 70, bottom: 30,
         }}
+        isAnimationActive={true}
       >
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="name" />
-        <YAxis />
+        <CartesianGrid
+          vertical={false}
+          strokeDasharray="3 3"
+        />
+        <XAxis
+          dataKey="name"
+          width={35}
+          axisLine={false}
+        >
+          <Label value={props.xaxis} offset={10} position="bottom" />
+        </XAxis>
+        <YAxis
+          width={35}
+          axisLine={false}
+        >
+          <Label angle={270} position='left' style={{ textAnchor: 'middle' }} dx={-25} >
+            {props.yaxis}
+          </Label>
+        </YAxis>
         <Tooltip />
-        <Area type="monotone" dataKey="cases" stroke="#8884d8" fill="#8884d8" />
+        <Area type="monotone" dataKey={props.keydata} fillOpacity={0.3} stroke={props.color} fill={props.color} />
       </AreaChart>
-    );
+    </ResponsiveContainer>
+  );
 }
+
+// width={1500}
+// height={400}
+//{props.Yaxis}
