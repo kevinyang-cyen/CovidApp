@@ -15,7 +15,7 @@ export default function CovidMap() {
       console.log(res.data)
     });
   }
-  
+
 
   // useEffect(() => {
   //   console.log(testRegionID);
@@ -36,15 +36,15 @@ export default function CovidMap() {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
 
-      {healthRegion.features.map((feature) => 
-        <GeoJSON 
-          data={feature} 
-            style={() => ({
+      {healthRegion.features.map((feature) =>
+        <GeoJSON
+          data={feature}
+          style={() => ({
             color: "#4a83ec",
             weight: 3,
             fillColor: "transparent",
-            })}
-            >
+          })}
+        >
           <Popup>
             <div>{feature.properties.HR_UID}</div>
           </Popup>
