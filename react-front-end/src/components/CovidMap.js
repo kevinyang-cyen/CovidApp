@@ -7,6 +7,25 @@ import cors from "cors";
 
 export default function CovidMap() {
 
+  // const [testRegionID, setTestRegionID] = useState("canada");
+  // const [testRegionData, setTestRegionData] = useState("test");
+
+  function onEachFeature(HR_UID) {
+    console.log(HR_UID);
+    axios.get(`https://api.opencovid.ca/summary?loc=${HR_UID}&date=11-19-2020`).then((res) => {
+      console.log(res.data)
+    });
+  }
+
+
+  // useEffect(() => {
+  //   console.log(testRegionID);
+  //   axios.get(`https://api.opencovid.ca/summary?loc=${testRegionID}&date=11-19-2020`).then((res) => {
+  //     console.log(res.data);
+  //     setTestRegionData(res.data);
+  //   });
+  // }, [testRegionID]);
+
   return (
     <MapContainer
       style={{ height: "50vh", width: "50vw" }}
