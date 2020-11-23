@@ -13,10 +13,12 @@ App.use(cors());
 
 // Routes Import
 const mapRoute = require('./routes/map.js');
+const loginRoute = require('./routes/login.js');
 
 
 // Mounting Resource Routes
 App.use('/map', mapRoute());
+App.use('/login', loginRoute());
 
 // Sample GET route
 App.get('/api/data', (req, res) => res.json({
