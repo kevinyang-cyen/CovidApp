@@ -1,9 +1,9 @@
-import React, { Link } from "react";
+import React from "react";
 import { Card, ListGroup } from "react-bootstrap";
 
 export default function Assessment() {
   return (
-    <main class='assessment'>
+    <main className='assessment'>
       <Card style={{ width: '18rem' }}>
         <Card.Header>Where do you live?</Card.Header>
         <ListGroup variant="flush">
