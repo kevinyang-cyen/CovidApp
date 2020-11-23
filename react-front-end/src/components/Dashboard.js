@@ -27,20 +27,17 @@ export default function Dashboard() {
     ]
   }
 
-  const baseURLOne = "https://api.opencovid.ca/summary";
-  const baseURLTwo = "https://api.opencovid.ca/individual";
-  const baseURLThree = "https://api.opencovid.ca/individual";
-
   const [provData, setProvData] = useState(provData_state);
   const [isLoading, setIsLoading] = useState(true);
 
-  const [urlOne, setUrlOne] = useState("https://api.opencovid.ca/summary?loc=AB&after=01-01-2020")
-  const [urlTwo, setUrlTwo] = useState("https://api.opencovid.ca/individual?stat=mortality&loc=AB")
-  const [urlThree, setUrlThree] = useState("https://api.opencovid.ca/individual?stat=cases&loc=AB")
+  const [urlOne, setUrlOne] = useState("?loc=canada&after=01-01-2020")
+  const [urlTwo, setUrlTwo] = useState("?stat=mortality")
+  const [urlThree, setUrlThree] = useState("?stat=cases")
 
   useEffect(() => {
     // change inputs to incorporate province
     const runCall = async () => {
+      setIsLoading(true);
       let apiValue = await fetchData();
 
       // returning sorted province data
@@ -58,9 +55,9 @@ export default function Dashboard() {
 
       try {
         const response = await Promise.all([
-          axios.get('/dashboard/summary'),
-          axios.get('/dashboard/mortality'),
-          axios.get('/dashboard/cases')
+          axios.post('/dashboard/summary', urlOne),
+          axios.post('/dashboard/mortality', urlTwo),
+          axios.post('/dashboard/cases', urlThree)
         ])
         console.log("response: ", response);
         return response
@@ -73,9 +70,9 @@ export default function Dashboard() {
   }, [urlOne, urlTwo, urlThree]);
 
   const search = function (url1, url2, url3) {
-    setUrlOne(baseURLOne + url1);
-    setUrlTwo(baseURLTwo + url2);
-    setUrlThree(baseURLThree + url3);
+    setUrlOne(url1);
+    setUrlTwo(url2);
+    setUrlThree(url3);
   }
 
   console.log(provData.ageDemographic_count)
@@ -89,14 +86,19 @@ export default function Dashboard() {
         {isLoading ?
           <Loading /> :
           <div>
+            <AreaGraph coviddata={provData.confirmed_data} keydata="cases" xaxis=" Time Frame" yaxis="[Placeholder Province] Testing" color="blue" />
             <AreaGraph coviddata={provData.confirmed_data} keydata="cases" xaxis=" Time Frame" yaxis="[Placeholder Province] Confirmed Cases" color="purple" />
             <AreaGraph coviddata={provData.deaths_data} keydata="deaths" xaxis=" Time Frame" yaxis="[Placeholder Province] Confirmed Deaths" color="black" />
             <AreaGraph coviddata={provData.recoveries_data} keydata="recoveries" xaxis="Time Frame" yaxis="[Placeholder Province] Recoveries" color="red" />
-            {(provData.ageDemographic_count[6]["Case Count"] < 2) ? "No Data Available" : <PieGraph coviddata={provData.ageDemographic_count} />}
-            {(provData.gender_demographic_infections[0].Infection < 5 || provData.gender_demographic_infections[1].Infection < 5) ? "No Data Available" : <PieAngleGraph coviddata={provData.gender_demographic_infections} datakey="Infection" nameKey="Gender" />}
+            {
+              (provData.ageDemographic_count[6]["Case Count"] < 2 || !provData.ageDemographic_count) ? "No Age Demographic Data Available" : <PieGraph coviddata={provData.ageDemographic_count} />
+
+            }
+            {(provData.gender_demographic_infections[0].Infection < 5 || provData.gender_demographic_infections[1].Infection < 5 || !provData.gender_demographic_infections) ? "No Gender Demographic Data Available" : <PieAngleGraph coviddata={provData.gender_demographic_infections} datakey="Infection" nameKey="Gender" />}
           </div>
         }
       </div>
     </>
   );
 }
+

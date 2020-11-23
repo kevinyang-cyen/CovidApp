@@ -71,11 +71,15 @@ function Select(props) {
         let baseURL2 = "?stat=mortality&loc=SK"
         let baseURL3 = "?stat=cases&loc=SK"
         props.onClick(baseURL1, baseURL2, baseURL3);
-      } else {
-        // (locationCode === "YT")
+      } else if (locationCode === "YT") {
         let baseURL1 = "?loc=YT&after=01-01-2020"
         let baseURL2 = "?stat=mortality&loc=YT"
         let baseURL3 = "?stat=cases&loc=YT"
+        props.onClick(baseURL1, baseURL2, baseURL3);
+      } else {
+        let baseURL1 = "?loc=canada&after=01-01-2020"
+        let baseURL2 = "?stat=mortality"
+        let baseURL3 = ""
         props.onClick(baseURL1, baseURL2, baseURL3);
       }
     }
@@ -85,7 +89,7 @@ function Select(props) {
     <>
       <div className="input-group mb-3">
         <select className="custom-select" value={locationCode} onChange={onChange} name="province" id="inputGroupSelect03">
-          <option value=""></option>
+          <option value="CA">Canada</option>
           <option value="AB" >Alberta</option>
           <option value="BC">British Columbia</option>
           <option value="MB">Manitoba</option>

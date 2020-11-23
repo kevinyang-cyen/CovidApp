@@ -7,6 +7,8 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import "./styles/App.scss";
 
+// Add current-user state, and display on nav bar "logged in as"
+
 function App() {
   
   return (

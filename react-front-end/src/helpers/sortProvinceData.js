@@ -13,35 +13,41 @@ export default function sortProvinceData(provDataArr) {
     aboveTens: [],
     lessTens: []
   }
+
   provDataArr[0].data.summary.forEach((dataSet) => {
     confirmed_data.push({name: dataSet.date, cases: dataSet.cumulative_cases})
     deaths_data.push({name: dataSet.date, deaths: dataSet.cumulative_deaths})
     recoveries_data.push({name: dataSet.date, recoveries: dataSet.cumulative_recovered})
   })
-  provDataArr[2].data.cases.forEach((result) => {
 
-    if (result.age !== "Not Reported") {
-      if (result.age === "80-89") {
-        age_demographic_data.aboveEighty.push(result.age)
-      } else if (result.age === "70-79") {
-        age_demographic_data.aboveSeventy.push(result.age)
-      } else if (result.age === "60-69") {
-        age_demographic_data.aboveSixty.push(result.age)
-      } else if (result.age === "50-59") {
-        age_demographic_data.aboveFifty.push(result.age)
-      } else if (result.age === "40-49") {
-        age_demographic_data.aboveForty.push(result.age)
-      } else if (result.age === "30-39") {
-        age_demographic_data.aboveThirty.push(result.age)
-      } else if (result.age === "20-29") {
-        age_demographic_data.aboveTwenty.push(result.age)
-      } else if (result.age === "10-19") {
-        age_demographic_data.aboveTens.push(result.age)
-      } else {
-        age_demographic_data.lessTens.push(result.age)
+  if (provDataArr[2].data.cases) {
+    console.log(provDataArr[2]);
+    provDataArr[2].data.cases.forEach((result) => {
+
+      if (result.age !== "Not Reported") {
+        if (result.age === "80-89") {
+          age_demographic_data.aboveEighty.push(result.age)
+        } else if (result.age === "70-79") {
+          age_demographic_data.aboveSeventy.push(result.age)
+        } else if (result.age === "60-69") {
+          age_demographic_data.aboveSixty.push(result.age)
+        } else if (result.age === "50-59") {
+          age_demographic_data.aboveFifty.push(result.age)
+        } else if (result.age === "40-49") {
+          age_demographic_data.aboveForty.push(result.age)
+        } else if (result.age === "30-39") {
+          age_demographic_data.aboveThirty.push(result.age)
+        } else if (result.age === "20-29") {
+          age_demographic_data.aboveTwenty.push(result.age)
+        } else if (result.age === "10-19") {
+          age_demographic_data.aboveTens.push(result.age)
+        } else {
+          age_demographic_data.lessTens.push(result.age)
+        }
       }
-    }
-  })
+    })
+  }
+
   const ageDemographic_count = [
     { name: "80-89", "Case Count": age_demographic_data.aboveEighty.length, fill: '#8884d8', },
     { name: "70-79", "Case Count": age_demographic_data.aboveSeventy.length, fill: '#83a6ed' },
@@ -54,13 +60,18 @@ export default function sortProvinceData(provDataArr) {
     { name: "<10", "Case Count": age_demographic_data.lessTens.length, fill: "blue" },
   ]
 
-  const covidDataSortMale = provDataArr[2].data.cases.filter(result => {
-    return result.sex === "Male"
-  })
+  let covidDataSortMale = [];
+  let covidDataSortFemale = [];
+  if (provDataArr[2].cases) {
+    covidDataSortMale = provDataArr[2].data.cases.filter(result => {
+      return result.sex === "Male"
+    })
+  
+    covidDataSortFemale = provDataArr[2].data.cases.filter(result => {
+      return result.sex === "Female"
+    })
+  }
 
-  const covidDataSortFemale = provDataArr[2].data.cases.filter(result => {
-    return result.sex === "Female"
-  })
 
   const gender_demographic_infections = [
     { "Gender": "Male", "Infection": covidDataSortMale.length },

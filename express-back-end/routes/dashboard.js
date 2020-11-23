@@ -10,22 +10,32 @@ const https = require('https');
 
 module.exports = () => {
 
-  router.get("/summary", (req, res) => {
-    https.get("https://api.opencovid.ca/summary?loc=AB&after=01-01-2020", (response) => {
+  router.post("/summary", (req, res) => {
+    https.get(`https://api.opencovid.ca/summary?loc=${req.body['?loc']}&after=${req.body.after}`, (response) => {
       response.pipe(res);
     })
   });
 
-  router.get("/mortality", (req, res) => {
-    https.get("https://api.opencovid.ca/individual?stat=mortality&loc=AB", (response) => {
-      response.pipe(res);
-    })
+  router.post("/mortality", (req, res) => {
+    if (!req.body.loc) {
+      https.get(`https://api.opencovid.ca/individual?stat=mortality`, (response) => {
+        response.pipe(res);
+      });
+    } else {
+      https.get(`https://api.opencovid.ca/individual?stat=mortality&loc=${req.body['loc']}`, (response) => {
+        response.pipe(res);
+      });
+    }
   });
 
-  router.get("/cases", (req, res) => {
-    https.get("https://api.opencovid.ca/individual?stat=cases&loc=AB", (response) => {
-      response.pipe(res);
-    })
+  router.post("/cases", (req, res) => {
+    if (req.body.loc) {
+      https.get(`https://api.opencovid.ca/individual?stat=cases&loc=${req.body['loc']}`, (response) => {
+        response.pipe(res);
+      });
+    } else {
+      res.send(null);
+    }
   });
 
 
