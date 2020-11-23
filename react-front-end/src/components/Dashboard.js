@@ -19,26 +19,22 @@ export default function Dashboard() {
       name: '', recoveries: 0
     }],
     ageDemographic_count: [
-        { name: '', "Case Count": 0, fill: '#8884d8'}
+      { name: '', "Case Count": 0, fill: '#8884d8' }
     ],
     genderDemographic_infections: [
       { "Gender": "Male", "Infection": 0 },
       { "Gender": "Female", "Infection": 0 }
     ]
   }
-  const [provData, setProvData] = useState(provData_state);
-  const [isLoading,setIsLoading] = useState(true);
-
-  
 
   useEffect(() => {
-     // change inputs to incorporate province
+    // change inputs to incorporate province
     const runCall = async () => {
       let apiValue = await fetchData();
-      
+
       // returning sorted province data
       let return_data = sortProvinceData(apiValue)
-    
+
       setProvData(return_data);
       setIsLoading(false);
     }
@@ -69,16 +65,19 @@ export default function Dashboard() {
   return (
     <>
       <div>
-      {isLoading? 
-        <Loading/>: 
-        <div> 
-          <AreaGraph coviddata={provData.confirmed_data} keydata="cases" xaxis=" Time Frame" yaxis="[Placeholder Province] Confirmed Cases" color="purple" /> 
-          <AreaGraph coviddata={provData.deaths_data} keydata="deaths" xaxis=" Time Frame" yaxis="[Placeholder Province] Confirmed Deaths" color="black" />
-          <AreaGraph coviddata={provData.recoveries_data} keydata="recoveries" xaxis="Time Frame" yaxis="[Placeholder Province] Recoveries" color="red" />
-          <PieGraph coviddata={provData.ageDemographic_count} />
-          <PieAngleGraph coviddata={provData.gender_demographic_infections} datakey="Infection" nameKey="Gender" />
-        </div>
-      }
+        <Select />
+      </div>
+      <div>
+        {isLoading ?
+          <Loading /> :
+          <div>
+            <AreaGraph coviddata={provData.confirmed_data} keydata="cases" xaxis=" Time Frame" yaxis="[Placeholder Province] Confirmed Cases" color="purple" />
+            <AreaGraph coviddata={provData.deaths_data} keydata="deaths" xaxis=" Time Frame" yaxis="[Placeholder Province] Confirmed Deaths" color="black" />
+            <AreaGraph coviddata={provData.recoveries_data} keydata="recoveries" xaxis="Time Frame" yaxis="[Placeholder Province] Recoveries" color="red" />
+            <PieGraph coviddata={provData.ageDemographic_count} />
+            <PieAngleGraph coviddata={provData.gender_demographic_infections} datakey="Infection" nameKey="Gender" />
+          </div>
+        }
       </div>
     </>
   );
