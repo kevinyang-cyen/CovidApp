@@ -94,14 +94,11 @@ export default function Dashboard() {
             <AreaGraph coviddata={provData.confirmed_data} keydata="cases" xaxis=" Time Frame" yaxis="[Placeholder Province] Confirmed Cases" color="purple" />
             <AreaGraph coviddata={provData.deaths_data} keydata="deaths" xaxis=" Time Frame" yaxis="[Placeholder Province] Confirmed Deaths" color="black" />
             <AreaGraph coviddata={provData.recoveries_data} keydata="recoveries" xaxis="Time Frame" yaxis="[Placeholder Province] Recoveries" color="red" />
-            <PieGraph coviddata={provData.ageDemographic_count} />
-            <PieAngleGraph coviddata={provData.gender_demographic_infections} datakey="Infection" nameKey="Gender" />
+            {(provData.ageDemographic_count[6]["Case Count"] < 2) ? "No Data Available" : <PieGraph coviddata={provData.ageDemographic_count} />}
+            {(provData.gender_demographic_infections[0].Infection < 5 || provData.gender_demographic_infections[1].Infection < 5) ? "No Data Available" : <PieAngleGraph coviddata={provData.gender_demographic_infections} datakey="Infection" nameKey="Gender" />}
           </div>
         }
       </div>
     </>
   );
 }
-
-// {(provData.ageDemographic_count.length < 20) ? "No Data Available" : <PieGraph coviddata={provData.ageDemographic_count} />}
-// {(provData.gender_demographic_infections.length < 20) ? "No Data Available" : <PieAngleGraph coviddata={provData.gender_demographic_infections} datakey="Infection" nameKey="Gender" />}
