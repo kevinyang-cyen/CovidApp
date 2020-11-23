@@ -55,14 +55,12 @@ export default function Dashboard() {
       console.log(urlOne)
       console.log(urlTwo)
       console.log(urlThree)
-      const apiURLToDate = `https://cors-anywhere.herokuapp.com/${urlOne}`;
-      const apiURLMortality = `https://cors-anywhere.herokuapp.com/${urlTwo}`
-      const apiURLDist = `https://cors-anywhere.herokuapp.com/${urlThree}`
+
       try {
         const response = await Promise.all([
-          axios.get(apiURLToDate),
-          axios.get(apiURLMortality),
-          axios.get(apiURLDist)
+          axios.get('/dashboard/summary'),
+          axios.get('/dashboard/mortality'),
+          axios.get('/dashboard/cases')
         ])
         console.log("response: ", response);
         return response

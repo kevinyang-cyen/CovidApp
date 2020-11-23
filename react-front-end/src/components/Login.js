@@ -2,14 +2,23 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { useForm } from "react-hook-form";
 import axios from "axios";
+import { Route, BrowserRouter as Router, Link, Redirect, useHistory } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 export default function Login() {
   const { register, handleSubmit } = useForm();
+  const history = useHistory();
 
   const onSubmit = data => {
     axios.post("http://localhost:8080/login", data)
-      .then((res) => console.log(res));
+      .then((res) => {
+        console.log(res.status);
+        if (res.status === 200) {
+        history.push('/');
+      }
+    })
   }
+  
 
   return (
     <>

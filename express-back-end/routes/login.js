@@ -6,11 +6,6 @@ const bcrypt = require('bcrypt');
 
 module.exports = (db) => {
 
-  // router.post("/", (req, res) => {
-  //   console.log(req.body);
-  //   res.send('sent!');
-  // });
-
    // login function - authenticates user
    const login = function(email, password) {
     const queryString = `
@@ -30,7 +25,6 @@ module.exports = (db) => {
   // Checks if email/password is in database
   router.post('/', (req,res) => {
       const { email, password } = req.body;
-      console.log(req.params);
       login(email, password)
         .then(user => {
           if (!user) {
@@ -38,7 +32,6 @@ module.exports = (db) => {
             return;
           }
           req.session.user_info = user;
-          res.redirect('/');
         })
         .catch(e => {
           res.send(e)

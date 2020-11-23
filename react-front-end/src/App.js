@@ -5,7 +5,7 @@ import Assessment from "./components/Assessment";
 import News from "./components/News";
 import Login from "./components/Login";
 import Register from "./components/Register";
-import "./styles/App.scss"
+import "./styles/App.scss";
 
 function App() {
   
