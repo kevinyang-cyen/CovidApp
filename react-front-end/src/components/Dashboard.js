@@ -12,19 +12,41 @@ import Loading from "./Loading.js";
 import sortProvinceData from "../helpers/sortProvinceData.js";
 
 export default function Dashboard() {
-  const [bCData, setBCData] = useState({name: '', cases: 0});
+  let provData_state = {
+    confirmed_data: [{
+      name: '', cases: 0
+    }],
+    deaths_data: [{
+      name: '', deaths: 0
+    }],
+    recovered_data: [{
+      name: '', recoveries: 0
+    }],
+    ageDemographic_count: [
+        { name: '', "Case Count": 0, fill: '#8884d8'}
+    ],
+    genderDemographic_infections: [
+      { "Gender": "Male", "Infection": 0 },
+      { "Gender": "Female", "Infection": 0 }
+    ]
+  }
+  const [provData, setProvData] = useState(provData_state);
   const [isLoading,setIsLoading] = useState(true);
-  let BC_Confirmed_Data = [];
 
   
 
   useEffect(() => {
+     // change inputs to incorporate province
     const runCall = async () => {
       let apiValue = await fetchData();
-      BC_Confirmed_Data = sortProvinceData(apiValue).confirmed_data;
-      setBCData(BC_Confirmed_Data);
+      
+      // returning sorted province data
+      let return_data = sortProvinceData(apiValue)
+    
+      setProvData(return_data);
       setIsLoading(false);
     }
+    // change inputs to incorporate province
     const fetchData = async () => {
       const apiURLToDate = `https://cors-anywhere.herokuapp.com/https://api.opencovid.ca/summary?loc=BC&after=01-01-2020`;
       const apiURLMortality = 'https://cors-anywhere.herokuapp.com/https://api.opencovid.ca/individual?stat=mortality&loc=BC'
@@ -119,7 +141,6 @@ export default function Dashboard() {
     { "Gender": "Female", "Infection": covidDataSortFemale.length }
   ];
 
-  console.log(confirmed_data);
 
 
   return (
@@ -143,7 +164,16 @@ export default function Dashboard() {
         <PieAngleGraph coviddata={genderDemographic} datakey="Infection" nameKey="Gender" />
       </div>
       <div>
-      {isLoading? <Loading/>: <AreaGraph coviddata={bCData} keydata="cases" xaxis=" Time Frame" yaxis="BC Confirmed Cases" color="purple" />}
+      {isLoading? 
+        <Loading/>: 
+        <div> 
+          <AreaGraph coviddata={provData.confirmed_data} keydata="cases" xaxis=" Time Frame" yaxis="[Placeholder Province] Confirmed Cases" color="purple" /> 
+          <AreaGraph coviddata={provData.deaths_data} keydata="deaths" xaxis=" Time Frame" yaxis="[Placeholder Province] Confirmed Deaths" color="black" />
+          <AreaGraph coviddata={provData.recoveries_data} keydata="recoveries" xaxis="Time Frame" yaxis="[Placeholder Province] Recoveries" color="red" />
+          <PieGraph coviddata={provData.ageDemographic_count} />
+          <PieAngleGraph coviddata={provData.gender_demographic_infections} datakey="Infection" nameKey="Gender" />
+        </div>
+      }
       </div>
     </>
   );
