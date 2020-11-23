@@ -6,8 +6,45 @@ import PieAngleGraph from "./Graph/PieAngleGraph";
 import * as covidDataCanada from "./canada-covid-data.json";
 import * as covidDataProvincial from "./province-covid-data.json";
 import * as covidDataDemographics from "./BC-province-sample-casesdata.json";
+import axios from "axios";
+import { useState, useEffect } from "react";
+import Loading from "./Loading.js";
+import sortProvinceData from "../helpers/sortProvinceData.js";
 
 export default function Dashboard() {
+  const [bCData, setBCData] = useState({name: '', cases: 0});
+  const [isLoading,setIsLoading] = useState(true);
+  let BC_Confirmed_Data = [];
+
+  
+
+  useEffect(() => {
+    const runCall = async () => {
+      let apiValue = await fetchData();
+      BC_Confirmed_Data = sortProvinceData(apiValue).confirmed_data;
+      setBCData(BC_Confirmed_Data);
+      setIsLoading(false);
+    }
+    const fetchData = async () => {
+      const apiURLToDate = `https://cors-anywhere.herokuapp.com/https://api.opencovid.ca/summary?loc=BC&after=01-01-2020`;
+      const apiURLMortality = 'https://cors-anywhere.herokuapp.com/https://api.opencovid.ca/individual?stat=mortality&loc=BC'
+      const apiURLDist = 'https://cors-anywhere.herokuapp.com/https://api.opencovid.ca/individual?stat=cases&loc=BC'
+      try {
+        const response = await Promise.all([
+          axios.get(apiURLToDate),
+          axios.get(apiURLMortality),
+          axios.get(apiURLDist)
+        ])
+        console.log("response: ", response);
+        return response
+      } catch (err) {
+        console.log(err)
+        return null;
+      }
+    }
+    runCall();
+  }, []);
+
 
   const confirmed_data = [];
   const deaths_data = [];
@@ -82,7 +119,8 @@ export default function Dashboard() {
     { "Gender": "Female", "Infection": covidDataSortFemale.length }
   ];
 
-  console.log(genderDemographic)
+  console.log(confirmed_data);
+
 
   return (
     <>
@@ -103,6 +141,9 @@ export default function Dashboard() {
       </div>
       <div>
         <PieAngleGraph coviddata={genderDemographic} datakey="Infection" nameKey="Gender" />
+      </div>
+      <div>
+      {isLoading? <Loading/>: <AreaGraph coviddata={bCData} keydata="cases" xaxis=" Time Frame" yaxis="BC Confirmed Cases" color="purple" />}
       </div>
     </>
   );
