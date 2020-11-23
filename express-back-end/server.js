@@ -14,11 +14,20 @@ App.use(cors());
 // Routes Import
 const mapRoute = require('./routes/map.js');
 const loginRoute = require('./routes/login.js');
+const registerRoute = require('./routes/register.js');
+
+// PG database client/connection setup
+const { Pool } = require('pg');
+const dbParams = require('./lib/db.js');
+const db = new Pool(dbParams);
+
+db.connect();
 
 
 // Mounting Resource Routes
 App.use('/map', mapRoute());
-App.use('/login', loginRoute());
+App.use('/login', loginRoute(db));
+App.use('/register', registerRoute(db));
 
 // Sample GET route
 App.get('/api/data', (req, res) => res.json({

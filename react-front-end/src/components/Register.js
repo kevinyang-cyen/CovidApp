@@ -1,12 +1,14 @@
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { useForm } from "react-hook-form";
+import axios from "axios";
 
 export default function Register() {
   const { register, handleSubmit } = useForm();
 
   const onSubmit = data => {
-    console.log(data)
+    axios.post("http://localhost:8080/register", data)
+      .then((res) => console.log(res));
   }
 
   return (
