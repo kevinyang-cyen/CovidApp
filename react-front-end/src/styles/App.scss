@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+.news {
+  display: flex;
+  padding: 2rem;
+  font-size: 0.75em;
+  font-weight: 300;
+  max-width: 70%;
+}
+
+.card-title {
+font-size: 1.5em
+}
+
+.assessment {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  text-align: center;
+}
+
+.card-header {
+  font-weight: 600;
+}
