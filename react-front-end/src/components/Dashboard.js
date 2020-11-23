@@ -6,6 +6,7 @@ import PieAngleGraph from "./Graph/PieAngleGraph";
 import * as covidDataCanada from "./canada-covid-data.json";
 import * as covidDataProvincial from "./province-covid-data.json";
 import * as covidDataDemographics from "./BC-province-sample-casesdata.json";
+import { LineChart } from "recharts";
 
 export default function Dashboard() {
 
