@@ -1,10 +1,10 @@
 import AreaGraph from "./Graph/AreaGraph";
-import BarGraph from "./Graph/BarGraph";
 import PieGraph from "./Graph/PieGraph";
 import PieAngleGraph from "./Graph/PieAngleGraph";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import Loading from "./Loading.js";
+import Select from "./Select";
 import sortProvinceData from "../helpers/sortProvinceData.js";
 
 export default function Dashboard() {
@@ -27,6 +27,17 @@ export default function Dashboard() {
     ]
   }
 
+  const baseURLOne = "https://api.opencovid.ca/summary";
+  const baseURLTwo = "https://api.opencovid.ca/individual";
+  const baseURLThree = "https://api.opencovid.ca/individual";
+
+  const [provData, setProvData] = useState(provData_state);
+  const [isLoading, setIsLoading] = useState(true);
+
+  const [urlOne, setUrlOne] = useState("https://api.opencovid.ca/summary?loc=AB&after=01-01-2020")
+  const [urlTwo, setUrlTwo] = useState("https://api.opencovid.ca/individual?stat=mortality&loc=AB")
+  const [urlThree, setUrlThree] = useState("https://api.opencovid.ca/individual?stat=cases&loc=AB")
+
   useEffect(() => {
     // change inputs to incorporate province
     const runCall = async () => {
@@ -41,9 +52,12 @@ export default function Dashboard() {
     // change inputs to incorporate province
     const fetchData = async () => {
       // links 1 you can specify loc=canada, links 2 and 3 you have to take the location query out entirely
-      const apiURLToDate = `https://cors-anywhere.herokuapp.com/https://api.opencovid.ca/summary?loc=BC&after=01-01-2020`;
-      const apiURLMortality = 'https://cors-anywhere.herokuapp.com/https://api.opencovid.ca/individual?stat=mortality&loc=BC'
-      const apiURLDist = 'https://cors-anywhere.herokuapp.com/https://api.opencovid.ca/individual?stat=cases&loc=BC'
+      console.log(urlOne)
+      console.log(urlTwo)
+      console.log(urlThree)
+      const apiURLToDate = `https://cors-anywhere.herokuapp.com/${urlOne}`;
+      const apiURLMortality = `https://cors-anywhere.herokuapp.com/${urlTwo}`
+      const apiURLDist = `https://cors-anywhere.herokuapp.com/${urlThree}`
       try {
         const response = await Promise.all([
           axios.get(apiURLToDate),
@@ -58,14 +72,20 @@ export default function Dashboard() {
       }
     }
     runCall();
-  }, []);
+  }, [urlOne, urlTwo, urlThree]);
 
+  const search = function (url1, url2, url3) {
+    setUrlOne(baseURLOne + url1);
+    setUrlTwo(baseURLTwo + url2);
+    setUrlThree(baseURLThree + url3);
+  }
 
-
+  console.log(provData.ageDemographic_count)
+  console.log(provData.gender_demographic_infections)
   return (
     <>
       <div>
-        <Select />
+        <Select onClick={search} />
       </div>
       <div>
         {isLoading ?
@@ -82,3 +102,6 @@ export default function Dashboard() {
     </>
   );
 }
+
+// {(provData.ageDemographic_count.length < 20) ? "No Data Available" : <PieGraph coviddata={provData.ageDemographic_count} />}
+// {(provData.gender_demographic_infections.length < 20) ? "No Data Available" : <PieAngleGraph coviddata={provData.gender_demographic_infections} datakey="Infection" nameKey="Gender" />}
