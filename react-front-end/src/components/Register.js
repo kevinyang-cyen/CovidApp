@@ -1,36 +1,39 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import { useForm } from "react-hook-form";
 
 export default function Register() {
-  const [testVar, setTestVar] = useState("Kevin");
+  const { register, handleSubmit } = useForm();
 
-  useEffect(() => {
-    axios.get("http://localhost:8080/map").then((res) => {
-      console.log(res.data);
-      setTestVar(res.data);
-    });
-  }, []);
+  const onSubmit = data => {
+    console.log(data)
+  }
+
   return (
-    <section>
-    <h1>Register</h1>
-    <form className="form-inline" action="/login" method="POST">
-    <div className="form-group mb-2">
-      <label for="email">Username</label>
-    </div>
-    <div className="form-group mb-2">
-      <input className="form-control" type="text" placeholder="Enter Email" name="email"></input>
-    </div>
-    <div className="form-group mb-2">
-      <label for="password">Password</label>
-    </div>
-    <div className="form-group mb-2">
-      <input className="form-control" type="password" placeholder="Enter Password" name="password"></input>
-    </div>
-    <div className="form-group mb-2">  
-      <button type="submit" className="btn btn-primary">Login</button>
-    </div>
-    </form>
+    <>
+      <h1 className='loginTitle'>Register</h1>
+      <section className="login-register">
+        <Form className="login-form" onSubmit={handleSubmit(onSubmit)}>
+        <Form.Group controlId="formBasicUsername">
+            <Form.Label>Username</Form.Label>
+            <Form.Control name="username" type="username" placeholder="Enter a username" ref={register}/>
+          </Form.Group>
 
-  </section>
+          <Form.Group controlId="formBasicEmail">
+            <Form.Label>Email address</Form.Label>
+            <Form.Control name="email" type="email" placeholder="Enter email" ref={register}/>
+          </Form.Group>
+
+          <Form.Group controlId="formBasicPassword">
+            <Form.Label>Password</Form.Label>
+            <Form.Control name="password" type="password" placeholder="Password" ref={register}/>
+          </Form.Group>
+          <Button variant="dark" type="submit">
+            Register
+          </Button>
+        </Form>
+
+      </section >
+    </>
   )
 }

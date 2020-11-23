@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Card from 'react-bootstrap/Card';
+import CardColumns from 'react-bootstrap/CardColumns';
+import Row from 'react-bootstrap/Row';
 
 export default function News() {
   const [data, setData] = useState([{ source: { id: "", name: "" }, author: "", title: "", description: "", url: "", urlToImage: "" }]);
@@ -25,18 +28,44 @@ export default function News() {
     runCall();
   }, []);
 
+  const authorExists = (author) => {
+    if (author) {
+      return `By ${author} at`
+    }
+  }
+
+  const photoExists = (photo) => {
+    if (photo) {
+      return <Card.Img variant="top" src={photo} alt="News Information" />
+    } else {
+      return null;
+    }
+  }
+
   const loadNews = data.map((item, index) =>
     (
-      <div className="card">
-        <img className="card-img-top" src={item.urlToImage} alt="News Information" />
-        <div className="card-body">
-          <h5 className="card-title">{item.title}</h5>
-          <p className="card-text">{item.description}</p>
-          <p className="card-text"><small className="text-muted"><a href={item.url}>{item.source.name}</a></small></p>
-          <p className="card-text"><small className="text-muted">{item.author}</small></p>
-        </div>
-      </div>
+      <>
+        <Card>
+          {photoExists(item.urlToImage)}
+          <Card.Body>
+            <Card.Title>{item.title}</Card.Title>
+            <Card.Text>
+              {item.description}
+            </Card.Text>
+          </Card.Body>
+          <Card.Footer>
+            <small className="text-muted">{authorExists(item.author)} <a href={item.url}>{item.source.name}</a></small>
+          </Card.Footer>
+        </Card>
+      </>
     )
   );
-  return <h1>{loadNews}</h1>;
+
+  return (
+    <main className="news">
+      <CardColumns>
+        {loadNews}
+      </CardColumns>
+    </main>
+  );
 }
