@@ -25,7 +25,7 @@ export default function CovidMap() {
             {
             color: "#4a83ec",
             weight: 3,
-            fillColor: feature.properties.CaseCount/feature.properties.TotalPop2019 > 0.0025? (feature.properties.CaseCount/feature.properties.TotalPop2019 > 0.005? "red" : "yellow") : "green"
+            fillColor: feature.properties.CaseCount/feature.properties.TotalPop2019 > 0.0025? (feature.properties.CaseCount/feature.properties.TotalPop2019 > 0.005? "red" : "orange") : "green"
           })}
         >
           <Popup>
