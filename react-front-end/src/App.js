@@ -7,11 +7,33 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import Quarantine from "./components/Quarantine";
 import "./styles/App.scss";
+import { useCookies } from 'react-cookie';
 
 // Add current-user state, and display on nav bar "logged in as"
 
 function App() {
-  
+  const [cookies] = useCookies();
+
+  const isLoggedIn = (cookie) => {
+    if (cookie) {
+      return (
+        <>
+        <li className="nav-link">
+        Logged in as {cookies['user-cookie'][1]}
+        </li>
+        <li className="nav-item active"><Link className="nav-link" to="/logout">Logout</Link></li>
+        </>
+      )
+    } else {
+      return ( 
+        <>
+        <li className="nav-item active"><Link className="nav-link" to="/login">Login</Link></li>
+        <li className="nav-item active"><Link className="nav-link" to="/register">Register</Link></li> 
+        </>
+        )
+    }
+  }
+
   return (
     <main>
       <Router>
@@ -21,9 +43,10 @@ function App() {
             <li className="nav-item active"><Link className="nav-link" to="/map">Map</Link></li>
             <li className="nav-item active"><Link className="nav-link" to="/assessment">Assessment</Link></li>
             <li className="nav-item active"><Link className="nav-link" to="/news">News</Link></li>
-            <li className="nav-item active"><Link className="nav-link" to="/login">Login</Link></li>
-            <li className="nav-item active"><Link className="nav-link" to="/register">Register</Link></li>
             <li className="nav-item active"><Link className="nav-link" to="/quarantine">Quarantine</Link></li>
+          </ul>
+          <ul id="login-nav" className="navbar-nav">
+            {isLoggedIn(cookies['user-cookie'])}
           </ul>
         </nav>
         <Route path="/" exact component={Dashboard} />
