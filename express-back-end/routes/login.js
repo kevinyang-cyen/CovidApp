@@ -29,7 +29,7 @@ module.exports = (db) => {
       login(email, password)
         .then(user => {
           if (!user) {
-            res.status(401).send({ error: 'Email or Password don\'t match' });
+            res.send('incorrect password');
             return;
           }
 
