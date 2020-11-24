@@ -1,5 +1,6 @@
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import Alert from 'react-bootstrap/Alert';
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import { Route, BrowserRouter as Router, Link, Redirect, useHistory } from "react-router-dom";
@@ -10,14 +11,43 @@ export default function Login() {
   const { register, handleSubmit } = useForm();
   const history = useHistory();
   const [cookies, setCookie, removeCookie] = useCookies([0]);
-  console.log(cookies);
+  const [emailError, setEmailError] = useState(false);
+  const [passwordError, setPasswordError] = useState(false);
+
+// checks for which error to show 
+  const incorrectEmailOrPassword = (emailError, passwordError) => {
+    if (emailError) {
+      return 'Email not found. Please double check!'
+    } else if (passwordError) {
+      return 'Incorrect password'
+    }
+  }
+
+// checks for either error - shows alert on login
+  const error = (emailError, passwordError) => {
+    if (emailError || passwordError) {
+      return (
+        <Alert variant="danger">
+          <Alert.Heading>Error</Alert.Heading>
+          <p>
+            {incorrectEmailOrPassword(emailError, passwordError)}
+          </p>
+        </Alert>
+      )
+    }
+  }
 
 
   const onSubmit = data => {
+    setEmailError(false)
+    setPasswordError(false)
     axios.post("http://localhost:8080/login", data)
       .then((res) => {
-        console.log(res);
-        if (res.status === 200) {
+        if (res.data === "") {
+          setPasswordError(true)
+        } else if (res.data.length !== 3) {
+          setEmailError(true)
+        } else if (res.status === 200) {
           setCookie(['user-cookie'],[res.data[0], res.data[1]]);
           history.push('/');
         }
@@ -27,6 +57,7 @@ export default function Login() {
 
   return (
     <>
+      {error(emailError, passwordError)}
       <h1 className='loginTitle'>Login</h1>
       <section className="login-register">
         <Form className="login-form" onSubmit={handleSubmit(onSubmit)}>

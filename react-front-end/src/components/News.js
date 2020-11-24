@@ -28,12 +28,14 @@ export default function News() {
     runCall();
   }, []);
 
+// checks whether to show author or not 
   const authorExists = (author) => {
     if (author) {
       return `By ${author} at`
     }
   }
 
+// checks whether to show photo or not 
   const photoExists = (photo) => {
     if (photo) {
       return <Card.Img variant="top" src={photo} alt="News Information" />
@@ -42,6 +44,7 @@ export default function News() {
     }
   }
 
+// returns each news card individually - allows for row organization on news page
   const loadNews = data.map((item, index) =>
     (
       <>
