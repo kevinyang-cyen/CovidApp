@@ -39,6 +39,8 @@ export default function Login() {
 
 
   const onSubmit = data => {
+    setEmailError(false)
+    setPasswordError(false)
     axios.post("http://localhost:8080/login", data)
       .then((res) => {
         if (res.data === "") {
