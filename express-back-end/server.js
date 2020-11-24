@@ -13,6 +13,7 @@ App.use(cors());
 
 // Routes Import
 const mapRoute = require('./routes/map.js');
+const heatmapRoute = require('./routes/heatmap.js');
 const loginRoute = require('./routes/login.js');
 const registerRoute = require('./routes/register.js');
 const dashboardRoute = require('./routes/dashboard.js');
@@ -28,6 +29,7 @@ db.connect();
 
 // Mounting Resource Routes
 App.use('/map', mapRoute());
+App.use('/heatmap', heatmapRoute());
 App.use('/login', loginRoute(db));
 App.use('/register', registerRoute(db));
 App.use('/dashboard', dashboardRoute());
