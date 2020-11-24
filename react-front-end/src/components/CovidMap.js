@@ -3,6 +3,7 @@ import "leaflet/dist/leaflet.css";
 import healthRegion from "../data/health.json";
 
 export default function CovidMap() {
+  console.log(healthRegion);
 
   return (
     <MapContainer
@@ -22,7 +23,7 @@ export default function CovidMap() {
           style={() => ({
             color: "#4a83ec",
             weight: 3,
-            fillColor: "transparent",
+            fillColor: feature.properties.CaseCount/feature.properties.TotalPop2019 > 0.005 ? "red" : "transparent"
           })}
         >
           <Popup>
