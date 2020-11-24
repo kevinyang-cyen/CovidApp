@@ -6,6 +6,7 @@ const bcrypt = require('bcrypt');
 
 module.exports = (db) => {
 
+
    // login function - authenticates user
    const login = function(email, password) {
     const queryString = `
@@ -31,7 +32,8 @@ module.exports = (db) => {
             res.status(401).send({ error: 'Email or Password don\'t match' });
             return;
           }
-          req.session.user_info = user;
+
+          res.send([user.username, user.email, user.quarantine_start_date]);
         })
         .catch(e => {
           res.send(e)

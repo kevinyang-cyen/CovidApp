@@ -4,19 +4,24 @@ import { useForm } from "react-hook-form";
 import axios from "axios";
 import { Route, BrowserRouter as Router, Link, Redirect, useHistory } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { useCookies } from 'react-cookie';
 
 export default function Login() {
   const { register, handleSubmit } = useForm();
   const history = useHistory();
+  const [cookies, setCookie, removeCookie] = useCookies([0]);
+  console.log(cookies);
+
 
   const onSubmit = data => {
     axios.post("http://localhost:8080/login", data)
       .then((res) => {
-        console.log(res.status);
+        console.log(res);
         if (res.status === 200) {
-        history.push('/');
-      }
-    })
+          setCookie(['user-cookie'],[res.data[0], res.data[1]]);
+          history.push('/');
+        }
+      })
   }
   
 

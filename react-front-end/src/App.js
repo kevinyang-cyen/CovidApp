@@ -5,6 +5,7 @@ import Assessment from "./components/Assessment";
 import News from "./components/News";
 import Login from "./components/Login";
 import Register from "./components/Register";
+import Quarantine from "./components/Quarantine";
 import "./styles/App.scss";
 
 // Add current-user state, and display on nav bar "logged in as"
@@ -22,6 +23,7 @@ function App() {
             <li className="nav-item active"><Link className="nav-link" to="/news">News</Link></li>
             <li className="nav-item active"><Link className="nav-link" to="/login">Login</Link></li>
             <li className="nav-item active"><Link className="nav-link" to="/register">Register</Link></li>
+            <li className="nav-item active"><Link className="nav-link" to="/quarantine">Quarantine</Link></li>
           </ul>
         </nav>
         <Route path="/" exact component={Dashboard} />
@@ -29,7 +31,8 @@ function App() {
         <Route path="/assessment" exact component={Assessment} />
         <Route path="/news" exact component={News} />
         <Route path="/login" exact component={Login} />
-        <Route path="/Register" exact component={Register} />
+        <Route path="/register" exact component={Register} />
+        <Route path="/quarantine" exact component={Quarantine} />
       </Router>
     </main>
   );
