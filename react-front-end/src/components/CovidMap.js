@@ -17,13 +17,15 @@ export default function CovidMap() {
       />
 
       {healthRegion.features.map((feature, index) =>
+
         <GeoJSON
           key= {index}
           data={feature}
-          style={() => ({
+          style={() => (
+            {
             color: "#4a83ec",
             weight: 3,
-            fillColor: feature.properties.CaseCount/feature.properties.TotalPop2019 > 0.005 ? "red" : "transparent"
+            fillColor: feature.properties.CaseCount/feature.properties.TotalPop2019 > 0.0025? (feature.properties.CaseCount/feature.properties.TotalPop2019 > 0.005? "red" : "yellow") : "green"
           })}
         >
           <Popup>
