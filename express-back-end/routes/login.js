@@ -31,6 +31,8 @@ module.exports = (db) => {
           if (!user) {
             res.send('incorrect password');
             return;
+          } else {
+          res.send([user.username, user.email, user.quarantine_start_date]);
           }
         })
         .catch(e => {

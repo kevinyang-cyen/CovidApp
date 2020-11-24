@@ -17,9 +17,9 @@ export default function Login() {
 // checks for which error to show 
   const incorrectEmailOrPassword = (emailError, passwordError) => {
     if (emailError) {
-      return 'Email not found. Please double check!'
+      return 'Email not found. Please double check.'
     } else if (passwordError) {
-      return 'Incorrect password'
+      return 'Incorrect password. Please try again.'
     }
   }
 
@@ -37,13 +37,13 @@ export default function Login() {
     }
   }
 
-
   const onSubmit = data => {
     setEmailError(false)
     setPasswordError(false)
     axios.post("http://localhost:8080/login", data)
       .then((res) => {
-        if (res.data === "") {
+        console.log(res.data)
+        if (res.data === 'incorrect password') {
           setPasswordError(true)
         } else if (res.data.length !== 3) {
           setEmailError(true)
