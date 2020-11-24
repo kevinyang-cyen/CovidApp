@@ -28,12 +28,12 @@ module.exports = (db) => {
       const { email, password } = req.body;
       login(email, password)
         .then(user => {
+          console.log("user here :", )
           if (!user) {
             res.status(401).send({ error: 'Email or Password don\'t match' });
-            return;
+          } else {
+            res.send([user.username, user.email, user.quarantine_start_date]);
           }
-
-          res.send([user.username, user.email, user.quarantine_start_date]);
         })
         .catch(e => {
           res.send(e)
