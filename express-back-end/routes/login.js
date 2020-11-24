@@ -28,7 +28,6 @@ module.exports = (db) => {
       const { email, password } = req.body;
       login(email, password)
         .then(user => {
-          console.log("user here :", )
           if (!user) {
             res.status(401).send({ error: 'Email or Password don\'t match' });
           } else {
