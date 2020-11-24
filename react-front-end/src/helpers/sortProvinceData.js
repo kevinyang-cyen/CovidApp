@@ -1,7 +1,9 @@
 export default function sortProvinceData(provDataArr) {
-  const confirmed_data = []; 
+  const confirmed_data = [];
   const deaths_data = [];
   const recoveries_data = [];
+  const testing_data = [];
+  const timeSpecific_data = [];
   const age_demographic_data = {
     aboveEighty: [],
     aboveSeventy: [],
@@ -15,13 +17,14 @@ export default function sortProvinceData(provDataArr) {
   }
 
   provDataArr[0].data.summary.forEach((dataSet) => {
-    confirmed_data.push({name: dataSet.date, cases: dataSet.cumulative_cases})
-    deaths_data.push({name: dataSet.date, deaths: dataSet.cumulative_deaths})
-    recoveries_data.push({name: dataSet.date, recoveries: dataSet.cumulative_recovered})
+    confirmed_data.push({ name: dataSet.date, cases: dataSet.cumulative_cases })
+    deaths_data.push({ name: dataSet.date, deaths: dataSet.cumulative_deaths })
+    recoveries_data.push({ name: dataSet.date, recoveries: dataSet.cumulative_recovered })
+    testing_data.push({ name: dataSet.date, testing: dataSet.cumulative_testing })
+    timeSpecific_data.push({ name: dataSet.date, totalCases: dataSet.cumulative_cases, todayCase: dataSet.cases, caseChange: dataSet.active_cases_change, testToday: dataSet.testing, activeCase: dataSet.active_cases, todayDeaths: dataSet.deaths })
   })
 
   if (provDataArr[2].data.cases) {
-    console.log(provDataArr[2]);
     provDataArr[2].data.cases.forEach((result) => {
 
       if (result.age !== "Not Reported") {
@@ -49,33 +52,34 @@ export default function sortProvinceData(provDataArr) {
   }
 
   const ageDemographic_count = [
-    { name: "80-89", "Case Count": age_demographic_data.aboveEighty.length, fill: '#8884d8', },
-    { name: "70-79", "Case Count": age_demographic_data.aboveSeventy.length, fill: '#83a6ed' },
-    { name: "60-69", "Case Count": age_demographic_data.aboveSixty.length, fill: '#8dd1e1' },
-    { name: "50-59", "Case Count": age_demographic_data.aboveFifty.length, fill: '#82ca9d' },
-    { name: "40-49", "Case Count": age_demographic_data.aboveForty.length, fill: '#a4de6c' },
-    { name: "30-39", "Case Count": age_demographic_data.aboveThirty.length, fill: '#d0ed57' },
-    { name: "20-29", "Case Count": age_demographic_data.aboveTwenty.length, fill: '#ffc658' },
-    { name: "10-19", "Case Count": age_demographic_data.aboveTens.length, fill: "red" },
-    { name: "<10", "Case Count": age_demographic_data.lessTens.length, fill: "blue" },
+    { name: "80-89", "Case Count": age_demographic_data.aboveEighty.length },
+    { name: "70-79", "Case Count": age_demographic_data.aboveSeventy.length },
+    { name: "60-69", "Case Count": age_demographic_data.aboveSixty.length },
+    { name: "50-59", "Case Count": age_demographic_data.aboveFifty.length },
+    { name: "40-49", "Case Count": age_demographic_data.aboveForty.length },
+    { name: "30-39", "Case Count": age_demographic_data.aboveThirty.length },
+    { name: "20-29", "Case Count": age_demographic_data.aboveTwenty.length },
+    { name: "10-19", "Case Count": age_demographic_data.aboveTens.length },
+    { name: "<10", "Case Count": age_demographic_data.lessTens.length },
   ]
 
   let covidDataSortMale = [];
   let covidDataSortFemale = [];
+
   if (provDataArr[2].cases) {
     covidDataSortMale = provDataArr[2].data.cases.filter(result => {
       return result.sex === "Male"
     })
-  
+
     covidDataSortFemale = provDataArr[2].data.cases.filter(result => {
       return result.sex === "Female"
     })
   }
 
-
   const gender_demographic_infections = [
     { "Gender": "Male", "Infection": covidDataSortMale.length },
     { "Gender": "Female", "Infection": covidDataSortFemale.length }
   ];
-  return {confirmed_data, deaths_data, recoveries_data, ageDemographic_count, gender_demographic_infections};
+
+  return { confirmed_data, deaths_data, timeSpecific_data, recoveries_data, testing_data, ageDemographic_count, gender_demographic_infections };
 }
