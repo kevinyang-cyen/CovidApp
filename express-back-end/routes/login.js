@@ -29,14 +29,8 @@ module.exports = (db) => {
       login(email, password)
         .then(user => {
           if (!user) {
-<<<<<<< HEAD
-            res.status(401).send({ error: 'Email or Password don\'t match' });
-          } else {
-            res.send([user.username, user.email, user.quarantine_start_date]);
-=======
             res.send('incorrect password');
             return;
->>>>>>> master
           }
         })
         .catch(e => {
