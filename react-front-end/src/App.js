@@ -11,6 +11,7 @@ import Quarantine from "./components/Quarantine";
 import "./styles/App.scss";
 import { useCookies } from 'react-cookie';
 import { useState, useEffect } from "react";
+import Footer from './components/Footer'
 
 // Add current-user state, and display on nav bar "logged in as"
 
@@ -21,19 +22,19 @@ function App() {
     if (cookie) {
       return (
         <>
-        <li className="nav-link">
-        Logged in as {cookies['user-cookie'][0]}
-        </li>
-        <li className="nav-item active" onClick={() => removeCookie(['user-cookie'])}><Link className="nav-link" to="/logout">Logout</Link></li>
+          <li className="nav-link">
+            Logged in as {cookies['user-cookie'][0]}
+          </li>
+          <li className="nav-item active" onClick={() => removeCookie(['user-cookie'])}><Link className="nav-link" to="/logout">Logout</Link></li>
         </>
       )
     } else {
-      return ( 
+      return (
         <>
-        <li className="nav-item active"><Link className="nav-link" to="/login">Login</Link></li>
-        <li className="nav-item active"><Link className="nav-link" to="/register">Register</Link></li> 
+          <li className="nav-item active"><Link className="nav-link" to="/login">Login</Link></li>
+          <li className="nav-item active"><Link className="nav-link" to="/register">Register</Link></li>
         </>
-        )
+      )
     }
   }
 
