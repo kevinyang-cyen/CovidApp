@@ -12,12 +12,12 @@ import {
 export default function AreaGraph(props) {
 
   return (
-    <ResponsiveContainer width="80%" height={400}>
+    <ResponsiveContainer width="80%" height={300}>
       <AreaChart
         data={props.coviddata}
         fontSize={12}
         margin={{
-          top: 30, right: 30, left: 70, bottom: 30,
+          top: 30, right: 0, left: 60, bottom: 30,
         }}
         isAnimationActive={true}
       >
@@ -36,7 +36,7 @@ export default function AreaGraph(props) {
           width={35}
           axisLine={false}
         >
-          <Label angle={270} position='left' style={{ textAnchor: 'middle' }} dx={-25} >
+          <Label angle={270} position='left' style={{ textAnchor: 'middle' }} dx={-30} >
             {props.yaxis}
           </Label>
         </YAxis>

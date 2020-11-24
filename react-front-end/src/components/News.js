@@ -15,7 +15,7 @@ export default function News() {
     }
 
     const fetchData = async () => {
-      const apiUrl = "http://newsapi.org/v2/top-headlines?country=ca&category=health&apiKey=af7f35ff3e5649688948cfaffbf5f607";
+      const apiUrl = "http://newsapi.org/v2/top-headlines?country=ca&category=health&apiKey=af7f35ff3e5649688948cfaffbf5f607&pageSize=100&sortBy=relevancy";
 
       try {
         const response = await axios.get(apiUrl);
