@@ -4,6 +4,7 @@ const BodyParser = require('body-parser');
 const PORT = 8080;
 require('dotenv').config('/.env');
 const cors = require('cors');
+const request = require('request-promise-native');
 
 // Express Configuration
 App.use(BodyParser.urlencoded({ extended: false }));
@@ -18,6 +19,7 @@ const loginRoute = require('./routes/login.js');
 const registerRoute = require('./routes/register.js');
 const dashboardRoute = require('./routes/dashboard.js');
 const quarantineRoute = require('./routes/quarantine.js');
+const selfreportRoute = require('./routes/selfreport.js');
 
 // PG database client/connection setup
 const { Pool } = require('pg');
@@ -34,6 +36,8 @@ App.use('/login', loginRoute(db));
 App.use('/register', registerRoute(db));
 App.use('/dashboard', dashboardRoute());
 App.use('/quarantine', quarantineRoute(db));
+App.use('/selfreport', selfreportRoute(db));
+
 
 // Sample GET route
 App.get('/api/data', (req, res) => res.json({

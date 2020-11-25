@@ -1,9 +1,49 @@
-import { MapContainer, TileLayer, GeoJSON, Popup } from "react-leaflet";
+import { MapContainer, TileLayer, GeoJSON, Popup, Marker, useMapEvents } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import healthRegion from "../data/health.json";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 export default function CovidMap() {
+    const [position, setPosition] = useState(null);
+    const [markerCases, setMarkerCases] = useState({});
+    function MyComponent() {
+      const map = useMapEvents({
+        click: () => {
+          map.locate()
+        },
+        locationfound: (location) => {
+          setPosition(location.latlng)
+          map.flyTo(location.latlng, map.getZoom())
+        },
+      })
+      return position === null ? null : (
+        <Marker position={position}>
+          <Popup>Your are here</Popup>
+        </Marker>
+      )
+    }
   console.log(healthRegion);
+
+  useEffect(() => {
+    const runCall = async () => {
+      const markerCasesValue = await fetchReportCases();
+      console.log("markerCasesValue: ", markerCasesValue)
+    };
+
+    const fetchReportCases = async () => {
+      try {
+        const res = await axios.get('/map');
+        console.log(res);
+        return res;
+      } catch (err) {
+        console.log(err)
+        return null;
+      }
+    };
+
+    runCall();
+  }, []);
 
   return (
     <MapContainer
@@ -15,6 +55,7 @@ export default function CovidMap() {
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
+      <MyComponent></MyComponent>
 
       {healthRegion.features.map((feature, index) =>
 

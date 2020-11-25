@@ -8,6 +8,7 @@ import Login from "./components/Login";
 import Logout from "./components/Logout";
 import Register from "./components/Register";
 import Quarantine from "./components/Quarantine";
+import SelfReport from "./components/SelfReport";
 import "./styles/App.scss";
 import { useCookies } from 'react-cookie';
 
@@ -46,6 +47,7 @@ function App() {
             <li className="nav-item active"><Link className="nav-link" to="/heatmap">Heat Map</Link></li>
             <li className="nav-item active"><Link className="nav-link" to="/assessment">Assessment</Link></li>
             <li className="nav-item active"><Link className="nav-link" to="/news">News</Link></li>
+            <li className="nav-item active"><Link className="nav-link" to="/selfreport">Self-Report</Link></li>
             <li className="nav-item active"><Link className="nav-link" to="/quarantine">Quarantine</Link></li>
           </ul>
           <ul id="login-nav" className="navbar-nav">
@@ -61,6 +63,7 @@ function App() {
         <Route path="/logout" exact component={Logout} />
         <Route path="/register" exact component={Register} />
         <Route path="/quarantine" exact component={Quarantine} />
+        <Route path="/selfreport" exact component={SelfReport} />
       </Router>
     </main>
   );

@@ -12,6 +12,7 @@ CREATE TABLE users (
 CREATE TABLE self_report_cases (
   id SERIAL PRIMARY KEY NOT NULL,
   user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
-  location POINT NOT NULL,
+  latitude FLOAT NOT NULL,
+  longitude FLOAT NOT NULL,
   created_date BIGINT NOT NULL
 );
