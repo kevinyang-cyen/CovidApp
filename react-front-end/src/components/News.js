@@ -51,13 +51,13 @@ export default function News() {
         <Card>
           {photoExists(item.urlToImage)}
           <Card.Body>
-            <Card.Title>{item.title}</Card.Title>
+            <Card.Title><a href={item.url}>{item.title}</a></Card.Title>
             <Card.Text>
               {item.description}
             </Card.Text>
           </Card.Body>
           <Card.Footer>
-            <small className="text-muted">{authorExists(item.author)} <a href={item.url}>{item.source.name}</a></small>
+            <small className="text-muted">{authorExists(item.author)}{item.source.name}</small>
           </Card.Footer>
         </Card>
       </>

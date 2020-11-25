@@ -91,15 +91,28 @@ export default function Dashboard() {
   const dateToday = timeConverter(yesterdayDate);
 
   return (
-    <>
-      <div>
-        <Select onClick={search} />
-      </div>
+    <section className="dashboard">
       <div>
         {isLoading ?
           <Loading /> :
           <>
-            <div>
+            <div className="dashboard-topbar">
+              <div className="filter-bar">
+                <Select onClick={search} />
+              </div>
+              <div className="totals-count">
+                {(provData.timeSpecific_data.map(date => {
+                  if (date.name === dateToday) return
+                  <p className="count-title"><h6>Current Total Cases</h6>{date.totalCases}</p>
+                }))}
+                {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <p className="count-title"><h6>Number of Cases Today</h6> {date.todayCase}</p> }))}
+                {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <p className="count-title"><h6>Current Active Case Changes</h6> {date.caseChange}</p> }))}
+                {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <p className="count-title"><h6>Number of Tests Today</h6> {date.testToday}</p> }))}
+                {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <p className="count-title"><h6>Number of Active Cases</h6> {date.activeCase}</p> }))}
+                {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <p className="count-title"><h6>Number of Deaths Today</h6> {date.todayDeaths}</p> }))}
+              </div>
+            </div>
+            <div className="graphs">
               <AreaGraph coviddata={provData.testing_data} keydata="testing" xaxis=" Time Frame" yaxis="[Placeholder Province] Testing" color="blue" />
               <AreaGraph coviddata={provData.confirmed_data} keydata="cases" xaxis=" Time Frame" yaxis="[Placeholder Province] Confirmed Cases" color="purple" />
               <AreaGraph coviddata={provData.deaths_data} keydata="deaths" xaxis=" Time Frame" yaxis="[Placeholder Province] Confirmed Deaths" color="black" />
@@ -111,18 +124,10 @@ export default function Dashboard() {
                 <PieAngleGraph coviddata={provData.gender_demographic_infections} datakey="Infection" nameKey="Gender" />
               }
             </div>
-            <div>
-              {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <h2>Current Total Cases: {date.totalCases}</h2> }))}
-              {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <h2>Number of Cases Today: {date.todayCase}</h2> }))}
-              {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <h2>Current Active Case Changes: {date.caseChange}</h2> }))}
-              {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <h2>Number of Tests Today: {date.testToday}</h2> }))}
-              {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <h2>Number of Active Cases: {date.activeCase}</h2> }))}
-              {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <h2>Number of Deaths Today: {date.todayDeaths}</h2> }))}
-            </div>
           </>
         }
       </div>
-    </>
+    </section>
   );
 }
 
