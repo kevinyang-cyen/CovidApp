@@ -27,10 +27,11 @@ module.exports = (db) => {
     addUser(user)
       .then(user => {
         if (!user) {
-          res.status(401).send({ error: "Email already in system!" });
+          res.send("Email already in system");
           return;
+        } else {
+          res.send([user.username, user.email, user.quarantine_start_date])
         }
-        req.session.user_info = user;
       })
       .catch(e => {
         res.send(e)
