@@ -4,7 +4,7 @@ import Alert from 'react-bootstrap/Alert';
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import { Route, BrowserRouter as Router, Link, Redirect, useHistory } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useCookies } from 'react-cookie';
 
 export default function Login() {
