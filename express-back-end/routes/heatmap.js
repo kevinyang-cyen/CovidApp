@@ -6,7 +6,10 @@ const https = require('https');
 module.exports = () => {
 
   router.get("/", (req, res) => {
-    https.get(`https://api.covid19api.com/country/canada/status/confirmed/live?from=2020-11-10T00:00:00Z&to=2020-11-24T00:00:00Z`, (response) => {
+
+    let dateNow = new Date();
+    let twoWeeksAgo = new Date(Date.now() - 12096e5);
+    https.get(`https://api.covid19api.com/country/canada/status/confirmed/live?from=${twoWeeksAgo}&to=${dateNow}`, (response) => {
       response.pipe(res);
     })
   });
