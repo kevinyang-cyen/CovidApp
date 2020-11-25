@@ -20,3 +20,7 @@ code {
   width: 90%;
   height: 90vh;
 }
+
+a:link {
+  color: #636363;
+}

@@ -37,6 +37,7 @@
   }
 }
 
+// NEWS
 .news {
   display: flex;
   padding: 2rem;
@@ -45,10 +46,15 @@
   max-width: 70%;
 }
 
+a:link {
+  color: #636363;
+}
+
 .card-title {
 font-size: 1.5em
 }
 
+// ASSESSMENT
 .assessment {
   display: flex;
   justify-content: center;
@@ -60,6 +66,7 @@ font-size: 1.5em
   font-weight: 600;
 }
 
+// LOGIN/REGISTER
 .login-register {
   display: flex;
   justify-content: center;
@@ -73,4 +80,54 @@ font-size: 1.5em
 
 #login-nav {
   margin-left: auto;
+}
+
+// DASHBOARD
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.dashboard-topbar {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px;
+}
+
+.totals-count {
+  font-size: 1.2em;
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 78%;
+  margin-right: 10px;
+  padding-right: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+h5 {
+  padding-right: 20px;
+}
+
+.filter-bar {
+  max-width: 23%;
+  display: inline-flex;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.filter-button {
+  height: 38px;
+  background-color: white;
+  border-radius: 5px;
+  border-color: #9ceeff;
+}
+
+.graphs {
+  max-width: 50%;
 }
