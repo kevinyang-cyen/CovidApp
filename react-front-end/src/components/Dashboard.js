@@ -45,6 +45,7 @@ export default function Dashboard() {
   const [provData, setProvData] = useState(provData_state);
   const [isLoading, setIsLoading] = useState(true);
   const [ageCountIsZero, setAgeCountIsZero] = useState(true);
+  const [locationCode, setLocationCode] = useState("Canada");
 
   const [urlOne, setUrlOne] = useState("?loc=canada&after=01-01-2020")
   const [urlTwo, setUrlTwo] = useState("?stat=mortality")
@@ -73,6 +74,7 @@ export default function Dashboard() {
           axios.post('/dashboard/mortality', urlTwo),
           axios.post('/dashboard/cases', urlThree)
         ])
+        console.log(response);
         return response
       } catch (err) {
         console.log(err)
@@ -82,10 +84,11 @@ export default function Dashboard() {
     runCall();
   }, [urlOne, urlTwo, urlThree]);
 
-  const search = function (url1, url2, url3) {
+  const search = function (url1, url2, url3, locationCode) {
     setUrlOne(url1);
     setUrlTwo(url2);
     setUrlThree(url3);
+    setLocationCode(locationCode)
   }
 
   // Most current time reported data 
@@ -115,15 +118,15 @@ export default function Dashboard() {
               </div>
             </div>
             <div className="graphs">
-              <AreaGraph coviddata={provData.testing_data} keydata="testing" xaxis=" Time Frame" yaxis="[Placeholder Province] Testing" color="blue" />
-              <AreaGraph coviddata={provData.confirmed_data} keydata="cases" xaxis=" Time Frame" yaxis="[Placeholder Province] Confirmed Cases" color="purple" />
-              <AreaGraph coviddata={provData.deaths_data} keydata="deaths" xaxis=" Time Frame" yaxis="[Placeholder Province] Confirmed Deaths" color="black" />
-              <AreaGraph coviddata={provData.recoveries_data} keydata="recoveries" xaxis="Time Frame" yaxis="[Placeholder Province] Recoveries" color="red" />
+              <AreaGraph coviddata={provData.testing_data} keydata="testing" xaxis=" Time Frame" yaxis={locationCode + " Testing"} color="blue" />
+              <AreaGraph coviddata={provData.confirmed_data} keydata="cases" xaxis=" Time Frame" yaxis={locationCode + " Confirmed Cases"} color="purple" />
+              <AreaGraph coviddata={provData.deaths_data} keydata="deaths" xaxis=" Time Frame" yaxis={locationCode + " Confirmed Deaths"} color="black" />
+              <AreaGraph coviddata={provData.recoveries_data} keydata="recoveries" xaxis="Time Frame" yaxis={locationCode + " Recoveries"} color="red" />
               {
-                (ageCountIsZero) ? "No Age Demographic Data Available" : <BarGraph coviddata={provData.ageDemographic_count} yaxis="Reported Cumulative Cases" />
+                (ageCountIsZero) ? "No Age Demographic Data Available" : <BarGraph coviddata={provData.ageDemographic_count} yaxis={locationCode + "Reported Cases Age Distribution"} />
               }
               {
-                (ageCountIsZero) ? "No Gender Demographic Data Available" : <PieAngleGraph coviddata={provData.gender_demographic_infections} datakey="Infection" nameKey="Gender" />
+                (ageCountIsZero) ? "No Gender Demographic Data Available" : <PieAngleGraph coviddata={provData.gender_demographic_infections} datakey="Infection" nameKey="Gender" yaxis={locationCode + "Reported Cases Gender Distribution"} />
               }
             </div>
           </>
