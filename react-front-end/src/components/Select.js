@@ -105,7 +105,7 @@ function Select(props) {
           <option value="YT">Yukon</option>
         </select>
         <div className="input-group-prepend">
-          <button className="btn btn-outline-info" type="button" onClick={search}>Submit</button>
+          <button className="filter-button" type="button" onClick={search}>Submit</button>
         </div>
       </div>
     </>
