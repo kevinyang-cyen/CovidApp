@@ -9,6 +9,7 @@ import ProgressBar from 'react-bootstrap/ProgressBar'
 import Popover from 'react-bootstrap/Popover'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import Button from 'react-bootstrap/Button'
+import { Spinner } from "react-bootstrap";
 
 export default function News() {
 
@@ -28,6 +29,8 @@ export default function News() {
 
   const [data, setData] = useState(latestReports);
   const [vaccData, setvaccData] = useState(vaccineNews);
+  const [isLoadingNews, setIsLoadingNews] = useState(true);
+  const [isLoadingVaccine, setIsLoadingVaccine] = useState(true);
 
   useEffect(() => {
     const runCall = async () => {
@@ -37,6 +40,8 @@ export default function News() {
 
       setData(returnData);
       setvaccData(returnData_two);
+      setIsLoadingNews(false);
+      setIsLoadingVaccine(false);
     }
 
     const fetchData = async () => {
@@ -230,77 +235,106 @@ export default function News() {
   );
 
   return (
-    <>
-      <main className="news">
-        <CardColumns>
-          {loadNews}
-        </CardColumns>
-      </main>
-      <div>
-        <h2>Pre-clinical research</h2>
-        <ProgressBar animated now={10} />
-        <ul>
-          {preResearch}
-        </ul>
-      </div>
-      <div>
-        <h2>Pre-clinical trials</h2>
-        <ProgressBar animated now={20} />
-        <ul>
-          {preTrial}
-        </ul>
-      </div>
-      <div>
-        <h2>Phase 1 trial</h2>
-        <ProgressBar animated now={30} />
-        <ul>
-          {phaseOne}
-        </ul>
-      </div>
-      <div>
-        <h2>Phase 2 trial</h2>
-        <ProgressBar animated now={50} />
-        <ul>
-          {phaseTwo}
-        </ul>
-      </div>
-      <div>
-        <h2>Phase 3 trial</h2>
-        <ProgressBar animated now={70} />
-        <ul>
-          {phaseThree}
-        </ul>
-      </div>
-      <div>
-        <h2>FDA Approved</h2>
-        <ProgressBar animated now={90} />
-        {(vaccData.vaccineFDA[0]) ?
-          <ul>
-            <li>{vaccData.vaccineFDA[0].company}</li>
-          </ul> : "No Viable Candidates"}
-      </div>
-      <div>
-        <h2>Generally Available</h2>
-        <ProgressBar animated now={100} />
-        {(vaccData.vaccineAvailable[0]) ?
-          <ul>
-            <li>{vaccData.vaccineAvailable[0].company}</li>
-          </ul> : "No Viable Candidates"}
-      </div>
-    </>
+    <section>
+      {isLoadingNews ?
+        <Spinner animation="grow" variant="dark" /> :
+        <main className="news">
+          <CardColumns>
+            {loadNews}
+          </CardColumns>
+        </main>
+      }
+      {isLoadingVaccine ?
+        <Spinner animation="grow" variant="dark" /> :
+        <>
+          <div>
+            <h2>Pre-clinical research</h2>
+            <ProgressBar animated now={10} />
+            <ul>
+              {preResearch}
+            </ul>
+          </div>
+        </>
+      }
+      {isLoadingVaccine ?
+        <Spinner animation="grow" variant="dark" /> :
+        <>
+          <div>
+            <h2>Pre-clinical trials</h2>
+            <ProgressBar animated now={20} />
+            <ul>
+              {preTrial}
+            </ul>
+          </div>
+        </>
+      }
+      {isLoadingVaccine ?
+        <Spinner animation="grow" variant="dark" /> :
+        <>
+          <div>
+            <h2>Phase 1 trial</h2>
+            <ProgressBar animated now={30} />
+            <ul>
+              {phaseOne}
+            </ul>
+          </div>
+        </>
+      }
+      {isLoadingVaccine ?
+        <Spinner animation="grow" variant="dark" /> :
+        <>
+          <div>
+            <h2>Phase 2 trial</h2>
+            <ProgressBar animated now={50} />
+            <ul>
+              {phaseTwo}
+            </ul>
+          </div>
+        </>
+      }
+      {isLoadingVaccine ?
+        <Spinner animation="grow" variant="dark" /> :
+        <>
+          <div>
+            <h2>Phase 3 trial</h2>
+            <ProgressBar animated now={70} />
+            <ul>
+              {phaseThree}
+            </ul>
+          </div>
+        </>
+      }
+      {isLoadingVaccine ?
+        <Spinner animation="grow" variant="dark" /> :
+        <>
+          <div>
+            <h2>FDA Approved</h2>
+            <ProgressBar animated now={90} />
+            {(vaccData.vaccineFDA[0]) ?
+              <ul>
+                <li>{vaccData.vaccineFDA[0].company}</li>
+              </ul> : "No Viable Candidates"}
+          </div>
+        </>
+      }
+      {isLoadingVaccine ?
+        <Spinner animation="grow" variant="dark" /> :
+        <>
+          <div>
+            <h2>Generally Available</h2>
+            <ProgressBar animated now={100} />
+            {(vaccData.vaccineAvailable[0]) ?
+              <ul>
+                <li>{vaccData.vaccineAvailable[0].company}</li>
+              </ul> : "No Viable Candidates"}
+          </div>
+        </>
+      }
+    </section>
   );
 }
 
 
-/*
-  if(vaccData.vaccinePreClinRes) {
-    <div>
-      <h2>Pre-Clinical Res</h2>
-       <ul>
-          <li> vaccData.vaccinePreClinRes.companyName[0]</li>
-          <li> vaccData.vaccinePreClinRes.companyName[1]</li>
-       </ul>
-    </div>
-  }
 
-*/
+
+
