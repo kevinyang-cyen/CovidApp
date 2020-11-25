@@ -94,7 +94,6 @@ export default function Dashboard() {
 
   return (
     <section className="dashboard">
-      <div>
         {isLoading ?
           <Loading /> :
           <>
@@ -104,21 +103,32 @@ export default function Dashboard() {
               </div>
               <div className="totals-count">
                 {(provData.timeSpecific_data.map(date => {
-                  if (date.name === dateToday) return
-                  <p className="count-title"><h6>Current Total Cases</h6>{date.totalCases}</p>
+                  if (date.name === dateToday) return <p className="count-cases"><h6>Total Cases</h6>{date.totalCases}
+                    {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <p className="count-change"><span>&#8593;</span>{date.todayCase}</p> }))}
+                  </p>
                 }))}
-                {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <p className="count-title"><h6>Number of Cases Today</h6> {date.todayCase}</p> }))}
-                {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <p className="count-title"><h6>Current Active Case Changes</h6> {date.caseChange}</p> }))}
-                {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <p className="count-title"><h6>Number of Tests Today</h6> {date.testToday}</p> }))}
-                {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <p className="count-title"><h6>Number of Active Cases</h6> {date.activeCase}</p> }))}
-                {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <p className="count-title"><h6>Number of Deaths Today</h6> {date.todayDeaths}</p> }))}
+
+                {(provData.timeSpecific_data.map(date => {
+                  if (date.name === dateToday) return <p className="count-cases"><h6>Number of Active Cases</h6> {date.activeCase}
+                    {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <p className="count-change"><span>&#8593;</span>{date.caseChange}</p> }))}
+                  </p>
+                }))}
+
+                {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <p className="count-test"><h6>Number of Tests Today</h6> {date.testToday}</p> }))}
+                {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <p className="count-number"><h6>Number of Deaths Today</h6> {date.todayDeaths}</p> }))}
               </div>
             </div>
             <div className="graphs">
-              <AreaGraph coviddata={provData.testing_data} keydata="testing" xaxis=" Time Frame" yaxis="[Placeholder Province] Testing" color="blue" />
-              <AreaGraph coviddata={provData.confirmed_data} keydata="cases" xaxis=" Time Frame" yaxis="[Placeholder Province] Confirmed Cases" color="purple" />
-              <AreaGraph coviddata={provData.deaths_data} keydata="deaths" xaxis=" Time Frame" yaxis="[Placeholder Province] Confirmed Deaths" color="black" />
-              <AreaGraph coviddata={provData.recoveries_data} keydata="recoveries" xaxis="Time Frame" yaxis="[Placeholder Province] Recoveries" color="red" />
+              <div className="cases">
+                <AreaGraph coviddata={provData.confirmed_data} keydata="cases" xaxis=" Time Frame" yaxis="[Placeholder Province] Confirmed Cases" color="red" />
+              </div>
+              <div className="deaths">
+                <AreaGraph coviddata={provData.deaths_data} keydata="deaths" xaxis=" Time Frame" yaxis="[Placeholder Province] Confirmed Deaths" color="black" />
+              </div>
+              <div className="recovery-testing">
+                <AreaGraph coviddata={provData.testing_data} keydata="testing" xaxis=" Time Frame" yaxis="[Placeholder Province] Testing" color="blue" />
+                <AreaGraph coviddata={provData.recoveries_data} keydata="recoveries" xaxis="Time Frame" yaxis="[Placeholder Province] Recoveries" color="green" />
+              </div>
               {
                 (ageCountIsZero) ? "No Age Demographic Data Available" : <BarGraph coviddata={provData.ageDemographic_count} yaxis="Reported Cumulative Cases" />
               }
@@ -128,7 +138,6 @@ export default function Dashboard() {
             </div>
           </>
         }
-      </div>
     </section>
   );
 }
