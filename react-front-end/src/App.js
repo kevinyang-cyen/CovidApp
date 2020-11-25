@@ -10,8 +10,6 @@ import Register from "./components/Register";
 import Quarantine from "./components/Quarantine";
 import "./styles/App.scss";
 import { useCookies } from 'react-cookie';
-import { useState, useEffect } from "react";
-import Footer from './components/Footer'
 
 // Add current-user state, and display on nav bar "logged in as"
 

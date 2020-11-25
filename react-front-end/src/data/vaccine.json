@@ -1,0 +1,5690 @@
+{
+  "version": "1.0",
+  "encoding": "UTF-8",
+  "gsx$companyname": {
+    "$t": "University of Melbourne and Murdoch Children’s Research Institute,Radboud University Medical Center,Faustman Lab at Massachusetts General Hospital"
+  },
+  "gsx$vaccinename": {
+    "$t": "BCG"
+  },
+  "gsx$vaccinetype": {
+    "$t": "Live-attenuated"
+  },
+  "gsx$phase": {
+    "$t": "5"
+  },
+  "gsx$details": {
+    "$t": "The BCG vaccine has been implicated in helping to combat other infections outside TB by boosting the immune system to fight similar infections. In 2017, the World Health Organization (WHO) reported the BCG vaccine may be effective against leprosy and other nontuberculous mycobacteria such as buruli ulcer disease. Other papers have posited the vaccine is effective in preventing acute respiratory tract infections in elderly patients, other respiratory infection and sepsis. A recent non-peer reviewed paper in the preprint server medRxiv has suggested countries with BCG vaccination programs at childhood are faring better in the fight against COVID-19 compared with countries that do not require BCG vaccination."
+  },
+  "gsx$status": {
+    "$t": "The randomized, controlled, Phase 3 BRACE trial in Australia is currently recruiting and aims to recruit 4,170 healthcare workers in hospitals in Australia. Researchers in The Netherlands launched the randomized, parallel-assignment, phase 3 BCG-CORONA trial on March 31 and plan to enroll 1,500 healthcare workers to receive the BCG vaccine or placebo. The Faustman Lab is currently evaluating the BCG vaccine’s effectiveness in type 1 diabetes and is seeking funding to launch trial to assess whether the vaccine helps prevent COVID-19 in healthcare workers, according to independent reporting from the New York Times."
+  },
+  "gsx$articles": {
+    "$t": "https://www.mcri.edu.au/BRACE"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": "4170"
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": "Mar 30, 2020"
+  },
+  "gsx$p3end": {
+    "$t": "Oct 30, 2020"
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": "N/A"
+  },
+  "gsx$phase1otherid": {
+    "$t": "N/A"
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": "N/A"
+  },
+  "gsx$phase2link": {
+    "$t": "N/A"
+  },
+  "gsx$phase3id": {
+    "$t": "NCT04327206,NCT04328441"
+  },
+  "gsx$phase3otherid": {
+    "$t": "62586"
+  },
+  "gsx$phase3link": {
+    "$t": "https://clinicaltrials.gov/ct2/show/NCT04327206"
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/cpzh4"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "CanSino Biologics"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: Ad5-nCoV, vaccinetype: Viral vector-based, phase: 4, details: China’s CanSino Biologics has developed a recombinant novel coronavirus vaccine that incorporates the adenovirus type 5 vector (Ad5). Study Design: A Phase 1 clinical trial of 108 participants between 18 and 60 years old who will receive low, medium, and high doses of Ad5-nCoV. The Phase 2 trial has identical inclusion criteria., status: Preliminary safety data from the Phase 1 trial allowed the company to initiate a Phase 2 trial, according to a company announcement., articles: https://www1.hkexnews.hk/listedco/listconews/sehk/2020/0409/2020040900342.pdf, currentlyenrolled: 108, p1start: Mar 16, 2020, p1end: Dec 20, 2022, p2start: Apr 12, 2020, p2end: Jan 31, 2021, phase1id: NCT04313127, phase1otherid: JSVCT088, phase1link: https://clinicaltrials.gov/ct2/show/record/NCT04313127, phase2id: NCT04341389, phase2other2: JSVCT089, phase2link: https://clinicaltrials.gov/ct2/show/record/NCT04341389"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/cpzh4"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "CanSino Biologics"
+  },
+  "gsx$vaccinename": {
+    "$t": "Ad5-nCoV"
+  },
+  "gsx$vaccinetype": {
+    "$t": "Viral vector-based"
+  },
+  "gsx$phase": {
+    "$t": "4"
+  },
+  "gsx$details": {
+    "$t": "China’s CanSino Biologics has developed a recombinant novel coronavirus vaccine that incorporates the adenovirus type 5 vector (Ad5). Study Design: A Phase 1 clinical trial of 108 participants between 18 and 60 years old who will receive low, medium, and high doses of Ad5-nCoV. The Phase 2 trial has identical inclusion criteria."
+  },
+  "gsx$status": {
+    "$t": "Preliminary safety data from the Phase 1 trial allowed the company to initiate a Phase 2 trial, according to a company announcement."
+  },
+  "gsx$articles": {
+    "$t": "https://www1.hkexnews.hk/listedco/listconews/sehk/2020/0409/2020040900342.pdf"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": "108"
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": "Mar 16, 2020"
+  },
+  "gsx$p1end": {
+    "$t": "Dec 20, 2022"
+  },
+  "gsx$p2start": {
+    "$t": "Apr 12, 2020"
+  },
+  "gsx$p2end": {
+    "$t": "Jan 31, 2021"
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": "NCT04313127"
+  },
+  "gsx$phase1otherid": {
+    "$t": "JSVCT088"
+  },
+  "gsx$phase1link": {
+    "$t": "https://clinicaltrials.gov/ct2/show/record/NCT04313127"
+  },
+  "gsx$phase2id": {
+    "$t": "NCT04341389"
+  },
+  "gsx$phase2other2": {
+    "$t": "JSVCT089"
+  },
+  "gsx$phase2link": {
+    "$t": "https://clinicaltrials.gov/ct2/show/record/NCT04341389"
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/cre1l"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "Symvivo Corporation"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: bacTRL-Spike, phase: 3, details: Bifidobacteria monovalent SARS-CoV-2 DNA oral vaccine for prevention of COVID-19, status: Symvivo disclosed April 6 on ClinicalTrials.gov that it was recruiting up to 84 participants for an observer-blinded Phase I trial (NCT04334980) evaluating the safety, tolerability, and immunogenicity of bacTRL-Spike in healthy adults.\n\nThe vaccine is produced using Symvivo’s platform, in which orally administered, genetically modified probiotic bacteria colonize the gut, bind directly to intestinal epithelial cells and constitutively replicate, secrete and deliver plasmid DNA molecules encoding antigenic transgenes and neutralizing nanobodies., articles: https://www.symvivo.com/covid-19, currentlyenrolled: 84, p1start: Apr 30, 2020, p1end: Dec 31, 2021, phase1id: NCT04334980, phase1otherid: bacTRL-Spike-1, phase1link: https://clinicaltrials.gov/ct2/show/record/NCT04334980"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/cre1l"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "Symvivo Corporation"
+  },
+  "gsx$vaccinename": {
+    "$t": "bacTRL-Spike"
+  },
+  "gsx$vaccinetype": {
+    "$t": ""
+  },
+  "gsx$phase": {
+    "$t": "3"
+  },
+  "gsx$details": {
+    "$t": "Bifidobacteria monovalent SARS-CoV-2 DNA oral vaccine for prevention of COVID-19"
+  },
+  "gsx$status": {
+    "$t": "Symvivo disclosed April 6 on ClinicalTrials.gov that it was recruiting up to 84 participants for an observer-blinded Phase I trial (NCT04334980) evaluating the safety, tolerability, and immunogenicity of bacTRL-Spike in healthy adults.\n\nThe vaccine is produced using Symvivo’s platform, in which orally administered, genetically modified probiotic bacteria colonize the gut, bind directly to intestinal epithelial cells and constitutively replicate, secrete and deliver plasmid DNA molecules encoding antigenic transgenes and neutralizing nanobodies."
+  },
+  "gsx$articles": {
+    "$t": "https://www.symvivo.com/covid-19"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": "84"
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": "Apr 30, 2020"
+  },
+  "gsx$p1end": {
+    "$t": "Dec 31, 2021"
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": "NCT04334980"
+  },
+  "gsx$phase1otherid": {
+    "$t": "bacTRL-Spike-1"
+  },
+  "gsx$phase1link": {
+    "$t": "https://clinicaltrials.gov/ct2/show/record/NCT04334980"
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/chk2m"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "Sinovac"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: PiCoVacc, vaccinetype: Inactivated, phase: 3, details: A preclinical animal study in China has produced a study result that an early stage vaccine called PiCoVacc can block SARS-CoV-2., status: Sinoivac reports on their recently initiated Phase I clinical trial in Jiangsu province. Involving 144 volunteers, they seek to assess safety and immune response; they hope to initiate Phase II studies toward mid-May—with up to 1,000 participants., articles: https://www.trialsitenews.com/sinovacs-picovacc-experimental-vaccine-shows-promise-in-monkeys-infected-with-sars-cov-2/, currentlyenrolled: 744, p1start: Apr 13, 2020, p1end: Dec 13, 2020, p2start: May 15, 2020, p2end: Dec 13, 2020, phase1id: NCT04352608, phase1otherid: PRO-nCOV-1001, phase1link: https://clinicaltrials.gov/ct2/show/record/NCT04352608, phase2id: NCT04352608, phase2other2: PRO-nCOV-1001, phase2link: https://clinicaltrials.gov/ct2/show/record/NCT04352608"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/chk2m"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "Sinovac"
+  },
+  "gsx$vaccinename": {
+    "$t": "PiCoVacc"
+  },
+  "gsx$vaccinetype": {
+    "$t": "Inactivated"
+  },
+  "gsx$phase": {
+    "$t": "3"
+  },
+  "gsx$details": {
+    "$t": "A preclinical animal study in China has produced a study result that an early stage vaccine called PiCoVacc can block SARS-CoV-2."
+  },
+  "gsx$status": {
+    "$t": "Sinoivac reports on their recently initiated Phase I clinical trial in Jiangsu province. Involving 144 volunteers, they seek to assess safety and immune response; they hope to initiate Phase II studies toward mid-May—with up to 1,000 participants."
+  },
+  "gsx$articles": {
+    "$t": "https://www.trialsitenews.com/sinovacs-picovacc-experimental-vaccine-shows-promise-in-monkeys-infected-with-sars-cov-2/"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": "744"
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": "Apr 13, 2020"
+  },
+  "gsx$p1end": {
+    "$t": "Dec 13, 2020"
+  },
+  "gsx$p2start": {
+    "$t": "May 15, 2020"
+  },
+  "gsx$p2end": {
+    "$t": "Dec 13, 2020"
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": "NCT04352608"
+  },
+  "gsx$phase1otherid": {
+    "$t": "PRO-nCOV-1001"
+  },
+  "gsx$phase1link": {
+    "$t": "https://clinicaltrials.gov/ct2/show/record/NCT04352608"
+  },
+  "gsx$phase2id": {
+    "$t": "NCT04352608"
+  },
+  "gsx$phase2other2": {
+    "$t": "PRO-nCOV-1001"
+  },
+  "gsx$phase2link": {
+    "$t": "https://clinicaltrials.gov/ct2/show/record/NCT04352608"
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/ciyn3"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "The University of Oxford"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: ChAdOx1, vaccinetype: Viral vector-based, phase: 4, details: The Oxford Vaccine Group at the University of Oxford have identified a new vaccine candidate for COVID-19, a chimpanzee adenovirus vaccine vector called ChAdOx1. The team has previously developed a MERS vaccine., status: The Oxford COVID Vaccine Group announced on 21 April that they have received funding from the UK Secretary of State for Health. According to The New York Times, rhesus macaques given ChAdOx1 and then “exposed to heavy quantities of the virus” were considered healthy 28 days later. On 24 April, investigators said they had begun human testing in around 1,100 people., articles: https://covid19vaccinetrial.co.uk/statement-following-government-press-briefing-21apr20, currentlyenrolled: 1112, p1start: Apr 20, 2020, p1end: May 1, 2021, p2start: Apr 20, 2020, p2end: May 1, 2021, phase1id: NCT04324606, phase1otherid: COV001, phase1link: https://clinicaltrials.gov/ct2/show/record/NCT04324606, phase2id: NCT04324606, phase2other2: COV001, phase2link: https://clinicaltrials.gov/ct2/show/record/NCT04324606"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/ciyn3"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "The University of Oxford"
+  },
+  "gsx$vaccinename": {
+    "$t": "ChAdOx1"
+  },
+  "gsx$vaccinetype": {
+    "$t": "Viral vector-based"
+  },
+  "gsx$phase": {
+    "$t": "4"
+  },
+  "gsx$details": {
+    "$t": "The Oxford Vaccine Group at the University of Oxford have identified a new vaccine candidate for COVID-19, a chimpanzee adenovirus vaccine vector called ChAdOx1. The team has previously developed a MERS vaccine."
+  },
+  "gsx$status": {
+    "$t": "The Oxford COVID Vaccine Group announced on 21 April that they have received funding from the UK Secretary of State for Health. According to The New York Times, rhesus macaques given ChAdOx1 and then “exposed to heavy quantities of the virus” were considered healthy 28 days later. On 24 April, investigators said they had begun human testing in around 1,100 people."
+  },
+  "gsx$articles": {
+    "$t": "https://covid19vaccinetrial.co.uk/statement-following-government-press-briefing-21apr20"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": "1112"
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": "Apr 20, 2020"
+  },
+  "gsx$p1end": {
+    "$t": "May 1, 2021"
+  },
+  "gsx$p2start": {
+    "$t": "Apr 20, 2020"
+  },
+  "gsx$p2end": {
+    "$t": "May 1, 2021"
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": "NCT04324606"
+  },
+  "gsx$phase1otherid": {
+    "$t": "COV001"
+  },
+  "gsx$phase1link": {
+    "$t": "https://clinicaltrials.gov/ct2/show/record/NCT04324606"
+  },
+  "gsx$phase2id": {
+    "$t": "NCT04324606"
+  },
+  "gsx$phase2other2": {
+    "$t": "COV001"
+  },
+  "gsx$phase2link": {
+    "$t": "https://clinicaltrials.gov/ct2/show/record/NCT04324606"
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/ckd7g"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "Moderna"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: mRNA-1273, vaccinetype: RNA, phase: 5, details: Moderna is the Massachusetts-based biotech company behind mRNA-1273, a vaccine candidate developed using prior studies of related coronaviruses, such as severe acute respiratory syndrome (SARS) and Middle East respiratory syndrome (MERS)., status: Recruiting was completed on 19 March 2020. On 16 April, Moderna announced it had received $483 million to accelerate development of the vaccine from the Biomedical Advanced Research and Development Authority (BARDA). Moderna submitted an Investigational New Drug (IND) application to the FDA on 27 April for advancing MRNA-1273 to Phase 2 and late-stage studies., articles: https://investors.modernatx.com/news-releases/news-release-details/moderna-announces-award-us-government-agency-barda-483-million, currentlyenrolled: 105, p1start: Mar 3, 2020, p1end: Jun 1, 2021, phase1id: NCT04283461, phase1otherid: 20-0003, phase1link: https://clinicaltrials.gov/ct2/show/record/NCT04283461"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/ckd7g"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "Moderna"
+  },
+  "gsx$vaccinename": {
+    "$t": "mRNA-1273"
+  },
+  "gsx$vaccinetype": {
+    "$t": "RNA"
+  },
+  "gsx$phase": {
+    "$t": "5"
+  },
+  "gsx$details": {
+    "$t": "Moderna is the Massachusetts-based biotech company behind mRNA-1273, a vaccine candidate developed using prior studies of related coronaviruses, such as severe acute respiratory syndrome (SARS) and Middle East respiratory syndrome (MERS)."
+  },
+  "gsx$status": {
+    "$t": "Recruiting was completed on 19 March 2020. On 16 April, Moderna announced it had received $483 million to accelerate development of the vaccine from the Biomedical Advanced Research and Development Authority (BARDA). Moderna submitted an Investigational New Drug (IND) application to the FDA on 27 April for advancing MRNA-1273 to Phase 2 and late-stage studies."
+  },
+  "gsx$articles": {
+    "$t": "https://investors.modernatx.com/news-releases/news-release-details/moderna-announces-award-us-government-agency-barda-483-million"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": "105"
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": "Mar 3, 2020"
+  },
+  "gsx$p1end": {
+    "$t": "Jun 1, 2021"
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": "NCT04283461"
+  },
+  "gsx$phase1otherid": {
+    "$t": "20-0003"
+  },
+  "gsx$phase1link": {
+    "$t": "https://clinicaltrials.gov/ct2/show/record/NCT04283461"
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/clrrx"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "Inovio"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: INO-4800, vaccinetype: DNA, phase: 3, details: Inovio is developing a DNA vaccine for SARS-CoV-2 that is in line with other DNA vaccines the company is developing, such as for the MERS coronavirus. The vaccine is injected intradermally through a device which Inovio plans to scale production of while they wait for results of INO-4800., status: On 16 April, Inovio and The International Vaccine Institute (IVI) announced they are working with the Korea National Institute of Health (KNIH) to conduct a Phase 1/2 clinical trial in South Korea. Enrollment in the 40-person phase 1 trial is complete as of 28 April, and Inovio expects interim results in late June, according to a press release., articles: https://www.prnewswire.com/news-releases/inovio-completes-enrollment-in-the-phase-1-us-trial-of-ino-4800-for-covid-19-dna-vaccine-interim-results-expected-in-june-301048204.html, currentlyenrolled: 40, p1start: Apr 3, 2020, p1end: Nov 20, 2020, phase1id: NCT04336410, phase1otherid: COVID19-001, phase1link: https://clinicaltrials.gov/ct2/show/record/NCT04336410"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/clrrx"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "Inovio"
+  },
+  "gsx$vaccinename": {
+    "$t": "INO-4800"
+  },
+  "gsx$vaccinetype": {
+    "$t": "DNA"
+  },
+  "gsx$phase": {
+    "$t": "3"
+  },
+  "gsx$details": {
+    "$t": "Inovio is developing a DNA vaccine for SARS-CoV-2 that is in line with other DNA vaccines the company is developing, such as for the MERS coronavirus. The vaccine is injected intradermally through a device which Inovio plans to scale production of while they wait for results of INO-4800."
+  },
+  "gsx$status": {
+    "$t": "On 16 April, Inovio and The International Vaccine Institute (IVI) announced they are working with the Korea National Institute of Health (KNIH) to conduct a Phase 1/2 clinical trial in South Korea. Enrollment in the 40-person phase 1 trial is complete as of 28 April, and Inovio expects interim results in late June, according to a press release."
+  },
+  "gsx$articles": {
+    "$t": "https://www.prnewswire.com/news-releases/inovio-completes-enrollment-in-the-phase-1-us-trial-of-ino-4800-for-covid-19-dna-vaccine-interim-results-expected-in-june-301048204.html"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": "40"
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": "Apr 3, 2020"
+  },
+  "gsx$p1end": {
+    "$t": "Nov 20, 2020"
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": "NCT04336410"
+  },
+  "gsx$phase1otherid": {
+    "$t": "COVID19-001"
+  },
+  "gsx$phase1link": {
+    "$t": "https://clinicaltrials.gov/ct2/show/record/NCT04336410"
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/cyevm"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "Pfizer,BioNTech"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: BNT162, vaccinetype: RNA, phase: 3, details: Pfizer and BioNtech have announced an agreement to collaborate on developing four COVID-19 vaccine candidates originally developed by BioNTech. Two candidates are nucleoside modified mRNA-based (modRNA), one is uridine containing mRNA-based (uRNA), and the fourth candidate is self-amplifying mRNA-based (saRNA). The companies had previously agreed to develop an mRNA-based influenza vaccine in 2018., status: On 22 April, the Paul-Ehrlich-Institut in Germany approved BNT162 for a Phase 1/2 trial. Approval in the U.S. is pending, but Pfizer and BioNTech said they expect a decision soon, according to a joint press release. Pfizer’s CEO told the Wall Street Journal on 29 April that human trials would begin the following week and speculated that a vaccine could become available “in the fall” for emergency use., articles: https://www.globenewswire.com/news-release/2020/04/22/2019785/0/en/BioNTech-and-Pfizer-announce-regulatory-approval-from-German-authority-Paul-Ehrlich-Institut-to-commence-first-clinical-trial-of-COVID-19-vaccine-candidates.html, p1start: Apr 20, 2020, p2start: Apr 20, 2020, phase1id: 2020-001038-36, phase1otherid: BNT162-01, phase1link: https://www.clinicaltrialsregister.eu/ctr-search/trial/2020-001038-36/DE, phase2id: 2020-001038-36, phase2other2: BNT162-01, phase2link: https://www.clinicaltrialsregister.eu/ctr-search/trial/2020-001038-36/DE"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/cyevm"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "Pfizer,BioNTech"
+  },
+  "gsx$vaccinename": {
+    "$t": "BNT162"
+  },
+  "gsx$vaccinetype": {
+    "$t": "RNA"
+  },
+  "gsx$phase": {
+    "$t": "3"
+  },
+  "gsx$details": {
+    "$t": "Pfizer and BioNtech have announced an agreement to collaborate on developing four COVID-19 vaccine candidates originally developed by BioNTech. Two candidates are nucleoside modified mRNA-based (modRNA), one is uridine containing mRNA-based (uRNA), and the fourth candidate is self-amplifying mRNA-based (saRNA). The companies had previously agreed to develop an mRNA-based influenza vaccine in 2018."
+  },
+  "gsx$status": {
+    "$t": "On 22 April, the Paul-Ehrlich-Institut in Germany approved BNT162 for a Phase 1/2 trial. Approval in the U.S. is pending, but Pfizer and BioNTech said they expect a decision soon, according to a joint press release. Pfizer’s CEO told the Wall Street Journal on 29 April that human trials would begin the following week and speculated that a vaccine could become available “in the fall” for emergency use."
+  },
+  "gsx$articles": {
+    "$t": "https://www.globenewswire.com/news-release/2020/04/22/2019785/0/en/BioNTech-and-Pfizer-announce-regulatory-approval-from-German-authority-Paul-Ehrlich-Institut-to-commence-first-clinical-trial-of-COVID-19-vaccine-candidates.html"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": "Apr 20, 2020"
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": "Apr 20, 2020"
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": "2020-001038-36"
+  },
+  "gsx$phase1otherid": {
+    "$t": "BNT162-01"
+  },
+  "gsx$phase1link": {
+    "$t": "https://www.clinicaltrialsregister.eu/ctr-search/trial/2020-001038-36/DE"
+  },
+  "gsx$phase2id": {
+    "$t": "2020-001038-36"
+  },
+  "gsx$phase2other2": {
+    "$t": "BNT162-01"
+  },
+  "gsx$phase2link": {
+    "$t": "https://www.clinicaltrialsregister.eu/ctr-search/trial/2020-001038-36/DE"
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/cztg3"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "University of Pittsburgh’s Center for Vaccine Research"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: PittCoVacc, vaccinetype: Subunit, phase: 3, details: Researchers at the University of Pittsburgh have received a $4.9 million grant from CEPI to develop a COVID-19 vaccine candidate., status: On April 2, University of Pittsburgh School of Medicine scientists announced they had developed a candidate COVID-19 vaccine that is effective in mice, delivered through a fingertip patch. According to a paper published in EBioMedicine, the vaccine creates antibodies in mice that the researchers believe is sufficient to neutralize the virus., articles: https://www.thelancet.com/pdfs/journals/ebiom/PIIS2352-3964(20)30118-3.pdf, currentlyenrolled: 54, p1start: Jan 1, 2016, p1end: Dec 1, 2022, phase1id: NCT02192021, phase1link: https://clinicaltrials.gov/ct2/show/NCT02192021"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/cztg3"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "University of Pittsburgh’s Center for Vaccine Research"
+  },
+  "gsx$vaccinename": {
+    "$t": "PittCoVacc"
+  },
+  "gsx$vaccinetype": {
+    "$t": "Subunit"
+  },
+  "gsx$phase": {
+    "$t": "3"
+  },
+  "gsx$details": {
+    "$t": "Researchers at the University of Pittsburgh have received a $4.9 million grant from CEPI to develop a COVID-19 vaccine candidate."
+  },
+  "gsx$status": {
+    "$t": "On April 2, University of Pittsburgh School of Medicine scientists announced they had developed a candidate COVID-19 vaccine that is effective in mice, delivered through a fingertip patch. According to a paper published in EBioMedicine, the vaccine creates antibodies in mice that the researchers believe is sufficient to neutralize the virus."
+  },
+  "gsx$articles": {
+    "$t": "https://www.thelancet.com/pdfs/journals/ebiom/PIIS2352-3964(20)30118-3.pdf"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": "54"
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": "Jan 1, 2016"
+  },
+  "gsx$p1end": {
+    "$t": "Dec 1, 2022"
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": "NCT02192021"
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": "https://clinicaltrials.gov/ct2/show/NCT02192021"
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/d180g"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "Novavax"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: NVX-CoV2373, vaccinetype: Subunit, phase: 3, details: Biotech company Novavax announced in March that it has produced several recombinant nanoparticle vaccine candidates for COVID-19 and is vetting them in animal testing., status: On 8 April, Novavax said they plan to start a Phase 1 trial in mid-May, according to a company announcement.  , articles: http://ir.novavax.com/news-releases/news-release-details/novavax-identifies-coronavirus-vaccine-candidate-accelerates, p1start: May 15, 2020"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/d180g"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "Novavax"
+  },
+  "gsx$vaccinename": {
+    "$t": "NVX-CoV2373"
+  },
+  "gsx$vaccinetype": {
+    "$t": "Subunit"
+  },
+  "gsx$phase": {
+    "$t": "3"
+  },
+  "gsx$details": {
+    "$t": "Biotech company Novavax announced in March that it has produced several recombinant nanoparticle vaccine candidates for COVID-19 and is vetting them in animal testing."
+  },
+  "gsx$status": {
+    "$t": "On 8 April, Novavax said they plan to start a Phase 1 trial in mid-May, according to a company announcement.  "
+  },
+  "gsx$articles": {
+    "$t": "http://ir.novavax.com/news-releases/news-release-details/novavax-identifies-coronavirus-vaccine-candidate-accelerates"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": "May 15, 2020"
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/d2mkx"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "CureVac"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: CureVac, vaccinetype: RNA, phase: 2, details: CureVac announced they are developing an mRNA-based COVID-19 vaccine “within a few months,” according to a press release., status: The company plans to start clinical trials in the summer and have identified two study centers., articles: https://www.curevac.com/news/curevac-ceo-daniel-menichella-ber%C3%A4t-mit-us-pr%C3%A4sident-donald-trump-und-mitgliedern-der-corona-task-force-entwicklungsm%C3%B6glichkeiten-eines-coronavirus-impfstoffes"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/d2mkx"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "CureVac"
+  },
+  "gsx$vaccinename": {
+    "$t": "CureVac"
+  },
+  "gsx$vaccinetype": {
+    "$t": "RNA"
+  },
+  "gsx$phase": {
+    "$t": "2"
+  },
+  "gsx$details": {
+    "$t": "CureVac announced they are developing an mRNA-based COVID-19 vaccine “within a few months,” according to a press release."
+  },
+  "gsx$status": {
+    "$t": "The company plans to start clinical trials in the summer and have identified two study centers."
+  },
+  "gsx$articles": {
+    "$t": "https://www.curevac.com/news/curevac-ceo-daniel-menichella-ber%C3%A4t-mit-us-pr%C3%A4sident-donald-trump-und-mitgliedern-der-corona-task-force-entwicklungsm%C3%B6glichkeiten-eines-coronavirus-impfstoffes"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/cssly"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "Generex Biotechnology"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: Ii-Key peptide COVID-19 vaccine, vaccinetype: Subunit, phase: 2, details: Biotech company Generex subsidiary NuGenerex Immuno-Oncology is spearheading a vaccine project to create an Ii-Key peptide vaccine against COVID-19., status: In a company press release dated 27 February, Generex said they wanted to produce a vaccine candidate that could be tested in humans “within 90 days.”, articles: https://www.globenewswire.com/news-release/2020/02/27/1992098/0/en/Generex-Provides-Coronavirus-Update-Generex-Receives-Contract-from-Chinese-Partners-to-Develop-a-COVID-19-Vaccine-Using-Ii-Key-Peptide-Vaccines.html"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/cssly"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "Generex Biotechnology"
+  },
+  "gsx$vaccinename": {
+    "$t": "Ii-Key peptide COVID-19 vaccine"
+  },
+  "gsx$vaccinetype": {
+    "$t": "Subunit"
+  },
+  "gsx$phase": {
+    "$t": "2"
+  },
+  "gsx$details": {
+    "$t": "Biotech company Generex subsidiary NuGenerex Immuno-Oncology is spearheading a vaccine project to create an Ii-Key peptide vaccine against COVID-19."
+  },
+  "gsx$status": {
+    "$t": "In a company press release dated 27 February, Generex said they wanted to produce a vaccine candidate that could be tested in humans “within 90 days.”"
+  },
+  "gsx$articles": {
+    "$t": "https://www.globenewswire.com/news-release/2020/02/27/1992098/0/en/Generex-Provides-Coronavirus-Update-Generex-Receives-Contract-from-Chinese-Partners-to-Develop-a-COVID-19-Vaccine-Using-Ii-Key-Peptide-Vaccines.html"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/cu76f"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "Vaxart"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: Oral recombinant COVID-19 vaccine, vaccinetype: Viral vector-based, phase: 2, details: Vaxart announced their agreement with Emergent Biosolutions to develop and manufacture their oral recombinant vaccine candidate for COVID-19., status: The company plans to initiate a Phase 1 clinical study “early in the second half of 2020,” according to a press release. On 21 April, the company said they had received “positive pre-clinical results” for its oral vaccine candidate., articles: http://www.globenewswire.com/news-release/2020/03/18/2002458/0/en/EMERGENT-BIOSOLUTIONS-SIGNS-DEVELOPMENT-AND-MANUFACTURING-AGREEMENT-WITH-VAXART-FOR-THEIR-EXPERIMENTAL-ORAL-VACCINE-CANDIDATE-FOR-CORONAVIRUS-DISEASE.html"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/cu76f"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "Vaxart"
+  },
+  "gsx$vaccinename": {
+    "$t": "Oral recombinant COVID-19 vaccine"
+  },
+  "gsx$vaccinetype": {
+    "$t": "Viral vector-based"
+  },
+  "gsx$phase": {
+    "$t": "2"
+  },
+  "gsx$details": {
+    "$t": "Vaxart announced their agreement with Emergent Biosolutions to develop and manufacture their oral recombinant vaccine candidate for COVID-19."
+  },
+  "gsx$status": {
+    "$t": "The company plans to initiate a Phase 1 clinical study “early in the second half of 2020,” according to a press release. On 21 April, the company said they had received “positive pre-clinical results” for its oral vaccine candidate."
+  },
+  "gsx$articles": {
+    "$t": "http://www.globenewswire.com/news-release/2020/03/18/2002458/0/en/EMERGENT-BIOSOLUTIONS-SIGNS-DEVELOPMENT-AND-MANUFACTURING-AGREEMENT-WITH-VAXART-FOR-THEIR-EXPERIMENTAL-ORAL-VACCINE-CANDIDATE-FOR-CORONAVIRUS-DISEASE.html"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/cvlqs"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "Imperial College London"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: Self-amplifying RNA vaccine, vaccinetype: RNA, phase: 2, details: Imperial College London researchers are developing a self-amplifying RNA vaccine for COVID-19. They developed a vaccine candidate within 14 days of receiving the sequence from China., status: Animal testing is underway. On 22 April, Imperial College London said they had secured funding from the Secretary of State for Health and planned to begin clinical trials in June 2020., articles: https://www.imperial.ac.uk/news/197017/imperial-covid-19-vaccine-team-secures-225/, preclinicalstart: February, 2020"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/cvlqs"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "Imperial College London"
+  },
+  "gsx$vaccinename": {
+    "$t": "Self-amplifying RNA vaccine"
+  },
+  "gsx$vaccinetype": {
+    "$t": "RNA"
+  },
+  "gsx$phase": {
+    "$t": "2"
+  },
+  "gsx$details": {
+    "$t": "Imperial College London researchers are developing a self-amplifying RNA vaccine for COVID-19. They developed a vaccine candidate within 14 days of receiving the sequence from China."
+  },
+  "gsx$status": {
+    "$t": "Animal testing is underway. On 22 April, Imperial College London said they had secured funding from the Secretary of State for Health and planned to begin clinical trials in June 2020."
+  },
+  "gsx$articles": {
+    "$t": "https://www.imperial.ac.uk/news/197017/imperial-covid-19-vaccine-team-secures-225/"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": "February, 2020"
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/cx0b9"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "Medicago"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: Plant-based COVID-19 vaccine, vaccinetype: VLP, phase: 2, details: Medicago, which recently developed a seasonal recombinant quadrivalent virus-like particle (VLP) influenza vaccine, reported they created a coronavirus VLP 20 days after working with the SARS-CoV-2s gene., status: The company says their vaccine is in the pre-clinical testing stage, and they expect to begin human testing in July or August of 2020., articles: https://www.biospace.com/article/releases/medicago-announces-production-of-a-viable-vaccine-candidate-for-covid-19/"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/cx0b9"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "Medicago"
+  },
+  "gsx$vaccinename": {
+    "$t": "Plant-based COVID-19 vaccine"
+  },
+  "gsx$vaccinetype": {
+    "$t": "VLP"
+  },
+  "gsx$phase": {
+    "$t": "2"
+  },
+  "gsx$details": {
+    "$t": "Medicago, which recently developed a seasonal recombinant quadrivalent virus-like particle (VLP) influenza vaccine, reported they created a coronavirus VLP 20 days after working with the SARS-CoV-2s gene."
+  },
+  "gsx$status": {
+    "$t": "The company says their vaccine is in the pre-clinical testing stage, and they expect to begin human testing in July or August of 2020."
+  },
+  "gsx$articles": {
+    "$t": "https://www.biospace.com/article/releases/medicago-announces-production-of-a-viable-vaccine-candidate-for-covid-19/"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/d9ney"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "Takis"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: DNA-based vaccine for COVID-19, vaccinetype: DNA, phase: 2, details: The partnership between Takis Biotech and Applied DNA Sciences has resulted in four DNA vaccine candidates for COVID-19., status: Takis expects preclinical testing results in April 2020; their final vaccine candidate could begin human testing by fall, according to a company press release. On 10 April, Takis said their candidate exhibited a “strong antibody response” against COVID-19., articles: http://www.takisbiotech.it/images/doc/Covid-19_vaccine_on_pre-clinical_models_eng.pdf"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/d9ney"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "Takis"
+  },
+  "gsx$vaccinename": {
+    "$t": "DNA-based vaccine for COVID-19"
+  },
+  "gsx$vaccinetype": {
+    "$t": "DNA"
+  },
+  "gsx$phase": {
+    "$t": "2"
+  },
+  "gsx$details": {
+    "$t": "The partnership between Takis Biotech and Applied DNA Sciences has resulted in four DNA vaccine candidates for COVID-19."
+  },
+  "gsx$status": {
+    "$t": "Takis expects preclinical testing results in April 2020; their final vaccine candidate could begin human testing by fall, according to a company press release. On 10 April, Takis said their candidate exhibited a “strong antibody response” against COVID-19."
+  },
+  "gsx$articles": {
+    "$t": "http://www.takisbiotech.it/images/doc/Covid-19_vaccine_on_pre-clinical_models_eng.pdf"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/db1zf"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "Johnson \u0026 Johnson,BARDA"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: J\u0026J, BARDA, phase: 2, details: Johnson \u0026 Johnson has announced their intention to develop a COVID-19 vaccine, using their AdVac and PER.C6 systems, which were also used to develop the company’s Ebola vaccine., status: J\u0026J says they plan to have a vaccine candidate by the end of March, with human trials starting in November 2020., articles: https://www.cnbc.com/2020/03/17/jj-hopes-to-start-human-trials-for-coronavirus-vaccine-in-november.html, preclinicalstart: February, 2020, preclinicalend: Mar 30, 2020"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/db1zf"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "Johnson \u0026 Johnson,BARDA"
+  },
+  "gsx$vaccinename": {
+    "$t": "J\u0026J, BARDA"
+  },
+  "gsx$vaccinetype": {
+    "$t": ""
+  },
+  "gsx$phase": {
+    "$t": "2"
+  },
+  "gsx$details": {
+    "$t": "Johnson \u0026 Johnson has announced their intention to develop a COVID-19 vaccine, using their AdVac and PER.C6 systems, which were also used to develop the company’s Ebola vaccine."
+  },
+  "gsx$status": {
+    "$t": "J\u0026J says they plan to have a vaccine candidate by the end of March, with human trials starting in November 2020."
+  },
+  "gsx$articles": {
+    "$t": "https://www.cnbc.com/2020/03/17/jj-hopes-to-start-human-trials-for-coronavirus-vaccine-in-november.html"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": "February, 2020"
+  },
+  "gsx$preclinicalend": {
+    "$t": "Mar 30, 2020"
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/dcgjs"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "Altimmune"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: Intranasal COVID-19 vaccine, vaccinetype: Viral vector-based, phase: 2, details: Altimmune has developed a COVID-19 vaccine candidate using the same technology they used build their influenza vaccine, NasoVAX. The COVID-19 vaccine would be delivered intranasally in a single dose., status: According to a company press release, animal testing is beginning, and clinical testing is slated for August 2020 or later., articles: https://www.globenewswire.com/news-release/2020/02/28/1992600/0/en/Altimmune-Completes-First-Development-Milestone-Toward-a-Single-Dose-Intranasal-COVID-19-Vaccine.html"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/dcgjs"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "Altimmune"
+  },
+  "gsx$vaccinename": {
+    "$t": "Intranasal COVID-19 vaccine"
+  },
+  "gsx$vaccinetype": {
+    "$t": "Viral vector-based"
+  },
+  "gsx$phase": {
+    "$t": "2"
+  },
+  "gsx$details": {
+    "$t": "Altimmune has developed a COVID-19 vaccine candidate using the same technology they used build their influenza vaccine, NasoVAX. The COVID-19 vaccine would be delivered intranasally in a single dose."
+  },
+  "gsx$status": {
+    "$t": "According to a company press release, animal testing is beginning, and clinical testing is slated for August 2020 or later."
+  },
+  "gsx$articles": {
+    "$t": "https://www.globenewswire.com/news-release/2020/02/28/1992600/0/en/Altimmune-Completes-First-Development-Milestone-Toward-a-Single-Dose-Intranasal-COVID-19-Vaccine.html"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/ddv49"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "GlaxoSmithKline, Sanofi, Clover Biopharmaceuticals and Xiamen Innovax"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: COVID-19 S-Trimer along iwth various vaccine adjuvant candidates, vaccinetype: Subunit, phase: 1, details: GSK has entered into a collaboration agreement with Chinese company Clover Pharmaceuticals to use its adjuvant technology for Clover’s COVID-19 candidate S-Trimer. GSK also has partnered with Chinese company Xiamen Innovax Biotech and Sanofi, offering its vaccine adjuvant technology to the both companies. , status: In a press release, GSK says its S-Trimer candidate is being “rapidly developed,” and pre-clinical studies are being planned. On 14 April, Sanofi and GSK announced their plan to collaborate on an adjuvanted vaccine and bring it to clinical trials by the second half of 2020., articles: https://www.sanofi.com/-/media/Project/One-Sanofi-Web/Websites/Global/Sanofi-COM/Home/media-room/press-releases/2020/Sanofi-and-GSK-to-join-forces-in-unprecedented-collaboration-to-fight-COVID-19-ENG.pdf"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/ddv49"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "GlaxoSmithKline, Sanofi, Clover Biopharmaceuticals and Xiamen Innovax"
+  },
+  "gsx$vaccinename": {
+    "$t": "COVID-19 S-Trimer along iwth various vaccine adjuvant candidates"
+  },
+  "gsx$vaccinetype": {
+    "$t": "Subunit"
+  },
+  "gsx$phase": {
+    "$t": "1"
+  },
+  "gsx$details": {
+    "$t": "GSK has entered into a collaboration agreement with Chinese company Clover Pharmaceuticals to use its adjuvant technology for Clover’s COVID-19 candidate S-Trimer. GSK also has partnered with Chinese company Xiamen Innovax Biotech and Sanofi, offering its vaccine adjuvant technology to the both companies. "
+  },
+  "gsx$status": {
+    "$t": "In a press release, GSK says its S-Trimer candidate is being “rapidly developed,” and pre-clinical studies are being planned. On 14 April, Sanofi and GSK announced their plan to collaborate on an adjuvanted vaccine and bring it to clinical trials by the second half of 2020."
+  },
+  "gsx$articles": {
+    "$t": "https://www.sanofi.com/-/media/Project/One-Sanofi-Web/Websites/Global/Sanofi-COM/Home/media-room/press-releases/2020/Sanofi-and-GSK-to-join-forces-in-unprecedented-collaboration-to-fight-COVID-19-ENG.pdf"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/d415a"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "BIOCAD"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: mRNA vaccine candidate, vaccinetype: Viral vector-based, phase: 1, details: Russian biotech company BIOCAD announced it is developing an mRNA vaccine candidate for COVID-19., articles: https://biocadglobal.com/index.php?posts\u0026post\u003d45"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/d415a"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "BIOCAD"
+  },
+  "gsx$vaccinename": {
+    "$t": "mRNA vaccine candidate"
+  },
+  "gsx$vaccinetype": {
+    "$t": "Viral vector-based"
+  },
+  "gsx$phase": {
+    "$t": "1"
+  },
+  "gsx$details": {
+    "$t": "Russian biotech company BIOCAD announced it is developing an mRNA vaccine candidate for COVID-19."
+  },
+  "gsx$status": {
+    "$t": ""
+  },
+  "gsx$articles": {
+    "$t": "https://biocadglobal.com/index.php?posts\u0026post\u003d45"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/d5fpr"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "Heat Biologics"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: gp96-based vaccine, vaccinetype: Subunit, phase: 1, details: The biotech company Heat Biologics announced it is pairing with the University of Miami to use the gp96 heat shock protein backbone to develop at least one COVID-19 vaccine., status: Added to WHO’s draft landscape of COVID-19 vaccines, articles: https://www.who.int/blueprint/priority-diseases/key-action/novel-coronavirus-landscape-ncov.pdf?ua\u003d1"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/d5fpr"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "Heat Biologics"
+  },
+  "gsx$vaccinename": {
+    "$t": "gp96-based vaccine"
+  },
+  "gsx$vaccinetype": {
+    "$t": "Subunit"
+  },
+  "gsx$phase": {
+    "$t": "1"
+  },
+  "gsx$details": {
+    "$t": "The biotech company Heat Biologics announced it is pairing with the University of Miami to use the gp96 heat shock protein backbone to develop at least one COVID-19 vaccine."
+  },
+  "gsx$status": {
+    "$t": "Added to WHO’s draft landscape of COVID-19 vaccines"
+  },
+  "gsx$articles": {
+    "$t": "https://www.who.int/blueprint/priority-diseases/key-action/novel-coronavirus-landscape-ncov.pdf?ua\u003d1"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/d6ua4"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "CSL, The University of Queensland"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: Molecular clamp vaccine for COVID-19, vaccinetype: Subunit, phase: 1, details: Researchers at the University of Queensland have achieved a proof-of-concept vaccine candidate for COVID-19., status: In a press release, the university said they will begin further development prior to pre-clinical testing., articles: https://www.uq.edu.au/news/article/2020/02/significant-step%E2%80%99-covid-19-vaccine-quest"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/d6ua4"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "CSL, The University of Queensland"
+  },
+  "gsx$vaccinename": {
+    "$t": "Molecular clamp vaccine for COVID-19"
+  },
+  "gsx$vaccinetype": {
+    "$t": "Subunit"
+  },
+  "gsx$phase": {
+    "$t": "1"
+  },
+  "gsx$details": {
+    "$t": "Researchers at the University of Queensland have achieved a proof-of-concept vaccine candidate for COVID-19."
+  },
+  "gsx$status": {
+    "$t": "In a press release, the university said they will begin further development prior to pre-clinical testing."
+  },
+  "gsx$articles": {
+    "$t": "https://www.uq.edu.au/news/article/2020/02/significant-step%E2%80%99-covid-19-vaccine-quest"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/d88ul"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "Sanofi, Translate Bio"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: Repurposed SARS vaccine and mRNA vaccine candidate, vaccinetype: Subunit, phase: 1, details: Sanofi announced in February that is was developing a COVID-19 vaccine candidate under its egg-free, recombinant DNA platform using work from a previous SARS vaccine and in partnership with the Biomedical Advanced Research and Development Authority (BARDA). Sanofi also announced in late March that they were partnering with Translate Bio to create an mRNA vaccine candidate for COVID-19., status: The company hopes to have a vaccine candidate for lab testing within 6 months, according to original reporting from STAT. , articles: https://www.statnews.com/2020/02/18/sanofi-announces-it-will-work-with-hhs-to-develop-coronavirus-vaccine/"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/d88ul"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "Sanofi, Translate Bio"
+  },
+  "gsx$vaccinename": {
+    "$t": "Repurposed SARS vaccine and mRNA vaccine candidate"
+  },
+  "gsx$vaccinetype": {
+    "$t": "Subunit"
+  },
+  "gsx$phase": {
+    "$t": "1"
+  },
+  "gsx$details": {
+    "$t": "Sanofi announced in February that is was developing a COVID-19 vaccine candidate under its egg-free, recombinant DNA platform using work from a previous SARS vaccine and in partnership with the Biomedical Advanced Research and Development Authority (BARDA). Sanofi also announced in late March that they were partnering with Translate Bio to create an mRNA vaccine candidate for COVID-19."
+  },
+  "gsx$status": {
+    "$t": "The company hopes to have a vaccine candidate for lab testing within 6 months, according to original reporting from STAT. "
+  },
+  "gsx$articles": {
+    "$t": "https://www.statnews.com/2020/02/18/sanofi-announces-it-will-work-with-hhs-to-develop-coronavirus-vaccine/"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/dkvya"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "ExpreS2ion Biotechnologies"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: ExpreS2ion, vaccinetype: Subunit, phase: 1, details: Denmark-based ExpreS2ion won a European Union (EU) Horizon 2020 grant to fund a COVID-19 vaccine candidate., status: The company said they plan to perform a Phase 1/2a clinical trial and aim to begin clinical testing within 12 months., articles: https://news.cision.com/expres2ion-biotechnologies/r/expres2ion-announces-eu-grant-award-for-the-covid-19-vaccine-development-programme,c3054055"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/dkvya"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "ExpreS2ion Biotechnologies"
+  },
+  "gsx$vaccinename": {
+    "$t": "ExpreS2ion"
+  },
+  "gsx$vaccinetype": {
+    "$t": "Subunit"
+  },
+  "gsx$phase": {
+    "$t": "1"
+  },
+  "gsx$details": {
+    "$t": "Denmark-based ExpreS2ion won a European Union (EU) Horizon 2020 grant to fund a COVID-19 vaccine candidate."
+  },
+  "gsx$status": {
+    "$t": "The company said they plan to perform a Phase 1/2a clinical trial and aim to begin clinical testing within 12 months."
+  },
+  "gsx$articles": {
+    "$t": "https://news.cision.com/expres2ion-biotechnologies/r/expres2ion-announces-eu-grant-award-for-the-covid-19-vaccine-development-programme,c3054055"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/dmair"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "EpiVax"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: Ii-Key peptide vaccine, vaccinetype: Subunit, phase: 1, details: EpiVax is developing two Ii-Key peptide vaccine candidates against COVID-19., status: EpiVax’s CEO said a vaccine could be ready within 5-6 months if the company receives the right level of funding., articles: https://epivax.com/news/providence-based-epivax-developing-2-coronavirus-vaccines-needs-more-funding-wpri-news-channel-12-interview"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/dmair"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "EpiVax"
+  },
+  "gsx$vaccinename": {
+    "$t": "Ii-Key peptide vaccine"
+  },
+  "gsx$vaccinetype": {
+    "$t": "Subunit"
+  },
+  "gsx$phase": {
+    "$t": "1"
+  },
+  "gsx$details": {
+    "$t": "EpiVax is developing two Ii-Key peptide vaccine candidates against COVID-19."
+  },
+  "gsx$status": {
+    "$t": "EpiVax’s CEO said a vaccine could be ready within 5-6 months if the company receives the right level of funding."
+  },
+  "gsx$articles": {
+    "$t": "https://epivax.com/news/providence-based-epivax-developing-2-coronavirus-vaccines-needs-more-funding-wpri-news-channel-12-interview"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/dnp34"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "Codagenix"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: Live attenuated COVID-19 vaccine, vaccinetype: Live-attenuated, phase: 1, details: Codagenix announced in February that it had used the nCoV genome to map out several vaccine candidate genomes for COVID-19., status: The company said the next step is to grow and test the vaccine viruses in vivo before initiating clinical trials, but gave no timeline for when testing would begin., articles: https://www.prnewswire.com/news-releases/codagenix-and-serum-institute-of-india-initiate-co-development-of-a-scalable-live-attenuated-vaccine-against-the-2019-novel-coronavirus-covid-19-301004654.html?tc\u003deml_cleartime"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/dnp34"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "Codagenix"
+  },
+  "gsx$vaccinename": {
+    "$t": "Live attenuated COVID-19 vaccine"
+  },
+  "gsx$vaccinetype": {
+    "$t": "Live-attenuated"
+  },
+  "gsx$phase": {
+    "$t": "1"
+  },
+  "gsx$details": {
+    "$t": "Codagenix announced in February that it had used the nCoV genome to map out several vaccine candidate genomes for COVID-19."
+  },
+  "gsx$status": {
+    "$t": "The company said the next step is to grow and test the vaccine viruses in vivo before initiating clinical trials, but gave no timeline for when testing would begin."
+  },
+  "gsx$articles": {
+    "$t": "https://www.prnewswire.com/news-releases/codagenix-and-serum-institute-of-india-initiate-co-development-of-a-scalable-live-attenuated-vaccine-against-the-2019-novel-coronavirus-covid-19-301004654.html?tc\u003deml_cleartime"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/dp3nl"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "Zydus Cadila"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: DNA and/or live attenuated recombinant COVID-19 vaccine candidate, vaccinetype: Viral vector-based, phase: 1, details: India’s Zydus Cadila announced in February they are researching two vaccine candidates for COVID-19. The first would use a DNA vaccine targeting the viral entry membrane protein of the virus, while the second uses a live attenuated recombinant measles virus targeted to COVID-19., status: No details have been released at this time."
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/dp3nl"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "Zydus Cadila"
+  },
+  "gsx$vaccinename": {
+    "$t": "DNA and/or live attenuated recombinant COVID-19 vaccine candidate"
+  },
+  "gsx$vaccinetype": {
+    "$t": "Viral vector-based"
+  },
+  "gsx$phase": {
+    "$t": "1"
+  },
+  "gsx$details": {
+    "$t": "India’s Zydus Cadila announced in February they are researching two vaccine candidates for COVID-19. The first would use a DNA vaccine targeting the viral entry membrane protein of the virus, while the second uses a live attenuated recombinant measles virus targeted to COVID-19."
+  },
+  "gsx$status": {
+    "$t": "No details have been released at this time."
+  },
+  "gsx$articles": {
+    "$t": ""
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/df9om"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "Geovax,Bravovax"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: Geovax,Bravovax vaccine candidate, vaccinetype: Viral vector-based, phase: 1, details: In January, Chinese biotech companies Geovax and Bravovax announced they would collaborate to create a modified vaccinia ankara virus like particles (MVA-VLP) vaccine candidate for COVID-19., status: Geovax said it’s currently in the process of narrowing their vaccine candidates down from three to one, and from there will move to testing in humans., articles: https://www.globenewswire.com/news-release/2020/03/18/2002611/0/en/GeoVax-Progresses-in-Coronavirus-COVID-19-Vaccine-Development-Program.html"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/df9om"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "Geovax,Bravovax"
+  },
+  "gsx$vaccinename": {
+    "$t": "Geovax,Bravovax vaccine candidate"
+  },
+  "gsx$vaccinetype": {
+    "$t": "Viral vector-based"
+  },
+  "gsx$phase": {
+    "$t": "1"
+  },
+  "gsx$details": {
+    "$t": "In January, Chinese biotech companies Geovax and Bravovax announced they would collaborate to create a modified vaccinia ankara virus like particles (MVA-VLP) vaccine candidate for COVID-19."
+  },
+  "gsx$status": {
+    "$t": "Geovax said it’s currently in the process of narrowing their vaccine candidates down from three to one, and from there will move to testing in humans."
+  },
+  "gsx$articles": {
+    "$t": "https://www.globenewswire.com/news-release/2020/03/18/2002611/0/en/GeoVax-Progresses-in-Coronavirus-COVID-19-Vaccine-Development-Program.html"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/dgo93"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "Greffex"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: Adenovirus-based vector vaccine for COVID-19, vaccinetype: Viral vector-based, phase: 1, details: Genetic engineering company Greffex is developing an adenovirus-based vector vaccine for COVID-19., status: The company recently announced its vaccine candidate has entered the animal testing stage., articles: https://www.greffex.com/news/greffex-inc-completes-covid-19-vaccine-and-prepares-for-testing/"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/dgo93"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "Greffex"
+  },
+  "gsx$vaccinename": {
+    "$t": "Adenovirus-based vector vaccine for COVID-19"
+  },
+  "gsx$vaccinetype": {
+    "$t": "Viral vector-based"
+  },
+  "gsx$phase": {
+    "$t": "1"
+  },
+  "gsx$details": {
+    "$t": "Genetic engineering company Greffex is developing an adenovirus-based vector vaccine for COVID-19."
+  },
+  "gsx$status": {
+    "$t": "The company recently announced its vaccine candidate has entered the animal testing stage."
+  },
+  "gsx$articles": {
+    "$t": "https://www.greffex.com/news/greffex-inc-completes-covid-19-vaccine-and-prepares-for-testing/"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/di2tg"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "Walter Reed Army Institute of Research, United States Army Medical Research Institute of Infectious Diseases"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: Walter Reed vaccine candidate, phase: 1, details: Walter Reed, together with the U.S. Army Medical Research Institute of Infectious Diseases, is working on a COVID-19 vaccine. Researchers at Walter Reed had previously developed a MERS vaccine, and is using that work to help them create a vaccine candidate for COVID-19., status: Walter Reed has developed several vaccine candidates, and have begun testing in animals, but have not yet indicated when they would begin clinical testing in humans., articles: https://www.defense.gov/Newsroom/Transcripts/Transcript/Article/2104736/defense-department-press-briefing-investigating-and-developing-vaccine-candidat/"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/di2tg"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "Walter Reed Army Institute of Research, United States Army Medical Research Institute of Infectious Diseases"
+  },
+  "gsx$vaccinename": {
+    "$t": "Walter Reed vaccine candidate"
+  },
+  "gsx$vaccinetype": {
+    "$t": ""
+  },
+  "gsx$phase": {
+    "$t": "1"
+  },
+  "gsx$details": {
+    "$t": "Walter Reed, together with the U.S. Army Medical Research Institute of Infectious Diseases, is working on a COVID-19 vaccine. Researchers at Walter Reed had previously developed a MERS vaccine, and is using that work to help them create a vaccine candidate for COVID-19."
+  },
+  "gsx$status": {
+    "$t": "Walter Reed has developed several vaccine candidates, and have begun testing in animals, but have not yet indicated when they would begin clinical testing in humans."
+  },
+  "gsx$articles": {
+    "$t": "https://www.defense.gov/Newsroom/Transcripts/Transcript/Article/2104736/defense-department-press-briefing-investigating-and-developing-vaccine-candidat/"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/djhdx"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "MIGAL Galilee Research Institute"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: Migvax, vaccinetype: Subunit, phase: 1, details: The institute said it plans to create a new COVID-19 vaccine candidate by adapting its research in developing a vaccine for the genetically-similar avian coronavirus Infectious Bronchitis Virus (IBV)., status: On 27 February, the institute said it planned to create the vaccine within the next 8-10 weeks, will seek safety approval within 90 days, and is in discussion with partners for human trials., articles: http://www.migal.org.il/Migal.covid"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/djhdx"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "MIGAL Galilee Research Institute"
+  },
+  "gsx$vaccinename": {
+    "$t": "Migvax"
+  },
+  "gsx$vaccinetype": {
+    "$t": "Subunit"
+  },
+  "gsx$phase": {
+    "$t": "1"
+  },
+  "gsx$details": {
+    "$t": "The institute said it plans to create a new COVID-19 vaccine candidate by adapting its research in developing a vaccine for the genetically-similar avian coronavirus Infectious Bronchitis Virus (IBV)."
+  },
+  "gsx$status": {
+    "$t": "On 27 February, the institute said it planned to create the vaccine within the next 8-10 weeks, will seek safety approval within 90 days, and is in discussion with partners for human trials."
+  },
+  "gsx$articles": {
+    "$t": "http://www.migal.org.il/Migal.covid"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/dw4je"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "AJVaccines"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: AJVaccines vaccine candidate, phase: 1, details: In March, Danish-based vaccine manufacturer AJVaccines said they would use modern antigen technology to develop a COVID-19 vaccine candidate that would have a “high protection with a low reactogenicity and favorable safety profile.”, status: The company has not given a timeline for further development or testing., articles: https://www.businesswire.com/news/home/20200306005124/en/AJ-Vaccines-Develop-Vaccine-COVID-19"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/dw4je"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "AJVaccines"
+  },
+  "gsx$vaccinename": {
+    "$t": "AJVaccines vaccine candidate"
+  },
+  "gsx$vaccinetype": {
+    "$t": ""
+  },
+  "gsx$phase": {
+    "$t": "1"
+  },
+  "gsx$details": {
+    "$t": "In March, Danish-based vaccine manufacturer AJVaccines said they would use modern antigen technology to develop a COVID-19 vaccine candidate that would have a “high protection with a low reactogenicity and favorable safety profile.”"
+  },
+  "gsx$status": {
+    "$t": "The company has not given a timeline for further development or testing."
+  },
+  "gsx$articles": {
+    "$t": "https://www.businesswire.com/news/home/20200306005124/en/AJ-Vaccines-Develop-Vaccine-COVID-19"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/dxj3v"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "Baylor College of Medicine"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: Re-purposed SARS vaccine for COVID-19; S1 or RBD protein vaccine candidate, vaccinetype: Subunit, phase: 1, details: Researchers at the Baylor College of Medicine say they have a shelved vaccine from the 2003 SARS outbreak that could be repurposed for use in the COVID-19 pandemic. They are also developing an S1 or RBD protein vaccine as a targeted vaccine candidate for COVID-19., status: The university has not released details on developing or testing at this time., articles: https://www.bcm.edu/news/infectious-diseases/covid-19-vaccine-baylor-texas-childrens"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/dxj3v"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "Baylor College of Medicine"
+  },
+  "gsx$vaccinename": {
+    "$t": "Re-purposed SARS vaccine for COVID-19; S1 or RBD protein vaccine candidate"
+  },
+  "gsx$vaccinetype": {
+    "$t": "Subunit"
+  },
+  "gsx$phase": {
+    "$t": "1"
+  },
+  "gsx$details": {
+    "$t": "Researchers at the Baylor College of Medicine say they have a shelved vaccine from the 2003 SARS outbreak that could be repurposed for use in the COVID-19 pandemic. They are also developing an S1 or RBD protein vaccine as a targeted vaccine candidate for COVID-19."
+  },
+  "gsx$status": {
+    "$t": "The university has not released details on developing or testing at this time."
+  },
+  "gsx$articles": {
+    "$t": "https://www.bcm.edu/news/infectious-diseases/covid-19-vaccine-baylor-texas-childrens"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/dyxo8"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "Institut Pasteur"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: Institut Pasteur vaccine candidate, vaccinetype: Viral vector-based, phase: 1, details: Institut Pasteur is partnering with the Coalition for Epidemic Preparedness Innovations (CEPI) to develop a COVID-19 vaccine candidate., status: No other details have been released at this time., articles: https://www.pasteur.fr/en/press-area/press-documents/cepi-collaborates-institut-pasteur-consortium-develop-covid-19-vaccine"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/dyxo8"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "Institut Pasteur"
+  },
+  "gsx$vaccinename": {
+    "$t": "Institut Pasteur vaccine candidate"
+  },
+  "gsx$vaccinetype": {
+    "$t": "Viral vector-based"
+  },
+  "gsx$phase": {
+    "$t": "1"
+  },
+  "gsx$details": {
+    "$t": "Institut Pasteur is partnering with the Coalition for Epidemic Preparedness Innovations (CEPI) to develop a COVID-19 vaccine candidate."
+  },
+  "gsx$status": {
+    "$t": "No other details have been released at this time."
+  },
+  "gsx$articles": {
+    "$t": "https://www.pasteur.fr/en/press-area/press-documents/cepi-collaborates-institut-pasteur-consortium-develop-covid-19-vaccine"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/e0c8p"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "Tonix Pharmaceuticals, Southern Research"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: Horsepox vaccine with percutaneous administration, vaccinetype: Viral vector-based, phase: 1, details: Biopharmaceuticals company Tonix is partnering with Southern Research to develop a COVID-19 vaccine candidate based on the company’s horsepox vaccine, TNX-1800, is working, status: Tonix hasn’t offered a timeline for further development or testing., articles: https://scr.zacks.com/News/Press-Releases/Press-Release-Details/2020/TNXP-Developing-Potential-Vaccine-Against-COVID-19-Based-on-Horsepox-Virus-article/default.aspx"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/e0c8p"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "Tonix Pharmaceuticals, Southern Research"
+  },
+  "gsx$vaccinename": {
+    "$t": "Horsepox vaccine with percutaneous administration"
+  },
+  "gsx$vaccinetype": {
+    "$t": "Viral vector-based"
+  },
+  "gsx$phase": {
+    "$t": "1"
+  },
+  "gsx$details": {
+    "$t": "Biopharmaceuticals company Tonix is partnering with Southern Research to develop a COVID-19 vaccine candidate based on the company’s horsepox vaccine, TNX-1800, is working"
+  },
+  "gsx$status": {
+    "$t": "Tonix hasn’t offered a timeline for further development or testing."
+  },
+  "gsx$articles": {
+    "$t": "https://scr.zacks.com/News/Press-Releases/Press-Release-Details/2020/TNXP-Developing-Potential-Vaccine-Against-COVID-19-Based-on-Horsepox-Virus-article/default.aspx"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/dqi9q"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "Fudan University, Shanghai JiaoTong University, RNACure Biopharma"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: mRNA vaccine candidate, vaccinetype: RNA, phase: 1, details: Fudan University has entered into a partnership with Shanghai JiaoTang University, and RNACure to develop a COVID-19 mRNA vaccine candidate. They are using two methods to develop an mRNA-based vaccine: using mRNA to express the receptor-binding domain of the spike protein of COVID-19 to induce neutralizing-antibodies, and developing mRNAs that can instruct the host to produce virus-like particles similar to SARS-CoV-2., status: No details on further development or testing are available at this time."
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/dqi9q"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "Fudan University, Shanghai JiaoTong University, RNACure Biopharma"
+  },
+  "gsx$vaccinename": {
+    "$t": "mRNA vaccine candidate"
+  },
+  "gsx$vaccinetype": {
+    "$t": "RNA"
+  },
+  "gsx$phase": {
+    "$t": "1"
+  },
+  "gsx$details": {
+    "$t": "Fudan University has entered into a partnership with Shanghai JiaoTang University, and RNACure to develop a COVID-19 mRNA vaccine candidate. They are using two methods to develop an mRNA-based vaccine: using mRNA to express the receptor-binding domain of the spike protein of COVID-19 to induce neutralizing-antibodies, and developing mRNAs that can instruct the host to produce virus-like particles similar to SARS-CoV-2."
+  },
+  "gsx$status": {
+    "$t": "No details on further development or testing are available at this time."
+  },
+  "gsx$articles": {
+    "$t": ""
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/drwu7"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "Arcturus Therapeutics, Duke-NUS Medical School"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: Arcturus vaccine candidate, vaccinetype: RNA, phase: 1, details: Arcturus and Duke are partnering to develop a COVID-19 vaccine candidate that uses Arcturus’ self-replicating RNA and nanoparticle non-viral delivery system., status: The companies have not released further details about development or testing."
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/drwu7"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "Arcturus Therapeutics, Duke-NUS Medical School"
+  },
+  "gsx$vaccinename": {
+    "$t": "Arcturus vaccine candidate"
+  },
+  "gsx$vaccinetype": {
+    "$t": "RNA"
+  },
+  "gsx$phase": {
+    "$t": "1"
+  },
+  "gsx$details": {
+    "$t": "Arcturus and Duke are partnering to develop a COVID-19 vaccine candidate that uses Arcturus’ self-replicating RNA and nanoparticle non-viral delivery system."
+  },
+  "gsx$status": {
+    "$t": "The companies have not released further details about development or testing."
+  },
+  "gsx$articles": {
+    "$t": ""
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/dtbek"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "Peter Doherty Institute for Infection and Immunity"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: Peter Doherty vaccine candidate, phase: 1, details: The Doherty Institute has received $3.2 million from the Jack Ma foundation to accelerate the creation of a COVID-19 vaccine with an active and passive platform., status: No other details have been released at this time."
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/dtbek"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "Peter Doherty Institute for Infection and Immunity"
+  },
+  "gsx$vaccinename": {
+    "$t": "Peter Doherty vaccine candidate"
+  },
+  "gsx$vaccinetype": {
+    "$t": ""
+  },
+  "gsx$phase": {
+    "$t": "1"
+  },
+  "gsx$details": {
+    "$t": "The Doherty Institute has received $3.2 million from the Jack Ma foundation to accelerate the creation of a COVID-19 vaccine with an active and passive platform."
+  },
+  "gsx$status": {
+    "$t": "No other details have been released at this time."
+  },
+  "gsx$articles": {
+    "$t": ""
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/dupz1"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "Tulane University"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: Tulane vaccine candidate, phase: 1, details: The Tulane National Primate Research Center has launched a COVID-19 research program to help develop a vaccine candidate., status: The organization has not established a timeline for testing, but has indicated it will use a primate model for animal testing."
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/dupz1"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "Tulane University"
+  },
+  "gsx$vaccinename": {
+    "$t": "Tulane vaccine candidate"
+  },
+  "gsx$vaccinetype": {
+    "$t": ""
+  },
+  "gsx$phase": {
+    "$t": "1"
+  },
+  "gsx$details": {
+    "$t": "The Tulane National Primate Research Center has launched a COVID-19 research program to help develop a vaccine candidate."
+  },
+  "gsx$status": {
+    "$t": "The organization has not established a timeline for testing, but has indicated it will use a primate model for animal testing."
+  },
+  "gsx$articles": {
+    "$t": ""
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/e7d2q"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "Sorrento Therapeutics, SmartPharm Therapeutics"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: Gene-encoded antibody vaccine candidate, phase: 1, details: In late March, Sorrento Therapeutics announced a collaboration with SmartPharm Therapeutics to develop a next-generation, gene-encoded antibody vaccine for COVID-19., status: In a press release, SmartPharm Therapeutics said it hopes to have a candidate within several months., articles: https://smartpharmtx.com/sorrento-therapeutics-and-smartpharm-therapeutics-announce-intention-to-collaborate-to-develop-novel-gene-encoded-antibody-vaccine-intended-for-covid-19/"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/e7d2q"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "Sorrento Therapeutics, SmartPharm Therapeutics"
+  },
+  "gsx$vaccinename": {
+    "$t": "Gene-encoded antibody vaccine candidate"
+  },
+  "gsx$vaccinetype": {
+    "$t": ""
+  },
+  "gsx$phase": {
+    "$t": "1"
+  },
+  "gsx$details": {
+    "$t": "In late March, Sorrento Therapeutics announced a collaboration with SmartPharm Therapeutics to develop a next-generation, gene-encoded antibody vaccine for COVID-19."
+  },
+  "gsx$status": {
+    "$t": "In a press release, SmartPharm Therapeutics said it hopes to have a candidate within several months."
+  },
+  "gsx$articles": {
+    "$t": "https://smartpharmtx.com/sorrento-therapeutics-and-smartpharm-therapeutics-announce-intention-to-collaborate-to-develop-novel-gene-encoded-antibody-vaccine-intended-for-covid-19/"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/e8rn7"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "University of Bristol"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: Bristol vaccine candidate, vaccinetype: VLP, phase: 1, details: On 7 April, Imophoron, a spin-out company from the University of Bristol’s BrisSynBio research center, has announced it is producing several vaccine candidates for COVID-19 using its ADDomer platform., status: Vaccine development is in a pre-clinical stage, according to a press release from the university., articles: http://www.bristol.ac.uk/news/2020/april/covid-19-vaccine-platform.html"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/e8rn7"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "University of Bristol"
+  },
+  "gsx$vaccinename": {
+    "$t": "Bristol vaccine candidate"
+  },
+  "gsx$vaccinetype": {
+    "$t": "VLP"
+  },
+  "gsx$phase": {
+    "$t": "1"
+  },
+  "gsx$details": {
+    "$t": "On 7 April, Imophoron, a spin-out company from the University of Bristol’s BrisSynBio research center, has announced it is producing several vaccine candidates for COVID-19 using its ADDomer platform."
+  },
+  "gsx$status": {
+    "$t": "Vaccine development is in a pre-clinical stage, according to a press release from the university."
+  },
+  "gsx$articles": {
+    "$t": "http://www.bristol.ac.uk/news/2020/april/covid-19-vaccine-platform.html"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/ea67k"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "IMV"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: DPX-COVID-19, vaccinetype: Subunit, phase: 1, details: IMV, a biotech company based in Canada, announced its intent to create a vaccine candidate for COVID-19 based off DPX-Survivac, a T-cell activating immunotherapy antigen vaccine currently being tested in trials for effectiveness against recurrent ovarian cancer, advanced and recurrent solid tumors, and survivin-expressing diffuse large B-cell lymphoma DLBCL., status: The company is developing a phase 1 clinical study of 48 healthy subjects and plans to begin the trial in the summer of 2020, according to a press release., articles: https://ir.imv-inc.com/press-releases/detail/638/imv-inc-provides-updates-on-the-development-of, preclinicalstart: Mar 18, 2020"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/ea67k"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "IMV"
+  },
+  "gsx$vaccinename": {
+    "$t": "DPX-COVID-19"
+  },
+  "gsx$vaccinetype": {
+    "$t": "Subunit"
+  },
+  "gsx$phase": {
+    "$t": "1"
+  },
+  "gsx$details": {
+    "$t": "IMV, a biotech company based in Canada, announced its intent to create a vaccine candidate for COVID-19 based off DPX-Survivac, a T-cell activating immunotherapy antigen vaccine currently being tested in trials for effectiveness against recurrent ovarian cancer, advanced and recurrent solid tumors, and survivin-expressing diffuse large B-cell lymphoma DLBCL."
+  },
+  "gsx$status": {
+    "$t": "The company is developing a phase 1 clinical study of 48 healthy subjects and plans to begin the trial in the summer of 2020, according to a press release."
+  },
+  "gsx$articles": {
+    "$t": "https://ir.imv-inc.com/press-releases/detail/638/imv-inc-provides-updates-on-the-development-of"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": "Mar 18, 2020"
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/ebks1"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "University of Waterloo"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: Intranasal DNA-based vaccine candidate, vaccinetype: DNA, phase: 1, details: Researchers at the University of Waterloo in Ontario, Canada, have announced they are developing a COVID-19 DNA-based vaccine that would be delivered through a nasal spray, stimulating an immune response in the nasal cavity., status: The delivery mechanism for the vaccine has been completed, but more designing and testing is needed to modify the system for COVID-19, according to a press release from the university., articles: https://uwaterloo.ca/stories/news/university-waterloo-developing-dna-based-covid-19-vaccine"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/ebks1"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "University of Waterloo"
+  },
+  "gsx$vaccinename": {
+    "$t": "Intranasal DNA-based vaccine candidate"
+  },
+  "gsx$vaccinetype": {
+    "$t": "DNA"
+  },
+  "gsx$phase": {
+    "$t": "1"
+  },
+  "gsx$details": {
+    "$t": "Researchers at the University of Waterloo in Ontario, Canada, have announced they are developing a COVID-19 DNA-based vaccine that would be delivered through a nasal spray, stimulating an immune response in the nasal cavity."
+  },
+  "gsx$status": {
+    "$t": "The delivery mechanism for the vaccine has been completed, but more designing and testing is needed to modify the system for COVID-19, according to a press release from the university."
+  },
+  "gsx$articles": {
+    "$t": "https://uwaterloo.ca/stories/news/university-waterloo-developing-dna-based-covid-19-vaccine"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/e1qt2"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "University of Georgia"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: Geogria vaccine candidate, vaccinetype: Viral vector-based, phase: 1, details: Researchers at the University of Georgia have announced they are developing a COVID-19 vaccine candidate together with the university’s College of Veterinary Medicine., status: No other details on testing or timing have been released at this time., articles: https://news.uga.edu/uga-researchers-developing-coronavirus-vaccine/"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/e1qt2"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "University of Georgia"
+  },
+  "gsx$vaccinename": {
+    "$t": "Geogria vaccine candidate"
+  },
+  "gsx$vaccinetype": {
+    "$t": "Viral vector-based"
+  },
+  "gsx$phase": {
+    "$t": "1"
+  },
+  "gsx$details": {
+    "$t": "Researchers at the University of Georgia have announced they are developing a COVID-19 vaccine candidate together with the university’s College of Veterinary Medicine."
+  },
+  "gsx$status": {
+    "$t": "No other details on testing or timing have been released at this time."
+  },
+  "gsx$articles": {
+    "$t": "https://news.uga.edu/uga-researchers-developing-coronavirus-vaccine/"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/e35dj"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "Rochester Clinical Research"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: RNA vaccine candidate, vaccinetype: RNA, phase: 1, details: The Rochester Clinical Research team is developing an RNA vaccine candidate for COVID-19., status: The team is currently evaluating qualified participants, but no other details are available at this time., articles: https://www.rcrclinical.com/clinical-trial/coronavirus-vaccine/"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/e35dj"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "Rochester Clinical Research"
+  },
+  "gsx$vaccinename": {
+    "$t": "RNA vaccine candidate"
+  },
+  "gsx$vaccinetype": {
+    "$t": "RNA"
+  },
+  "gsx$phase": {
+    "$t": "1"
+  },
+  "gsx$details": {
+    "$t": "The Rochester Clinical Research team is developing an RNA vaccine candidate for COVID-19."
+  },
+  "gsx$status": {
+    "$t": "The team is currently evaluating qualified participants, but no other details are available at this time."
+  },
+  "gsx$articles": {
+    "$t": "https://www.rcrclinical.com/clinical-trial/coronavirus-vaccine/"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/e4jxw"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "Verndari,University of California Davis"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: Single-dose patch delivery vaccine, phase: 1, details: California-based biotech company Verndari is working with the University of California, Davis to develop a vaccine candidate for COVID-19 delivered through a single-dose patch., status: Testing in mice is expected to begin on May 1, according to a Verndari company press release., articles: https://www.verndariinc.com/news/4"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/e4jxw"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "Verndari,University of California Davis"
+  },
+  "gsx$vaccinename": {
+    "$t": "Single-dose patch delivery vaccine"
+  },
+  "gsx$vaccinetype": {
+    "$t": ""
+  },
+  "gsx$phase": {
+    "$t": "1"
+  },
+  "gsx$details": {
+    "$t": "California-based biotech company Verndari is working with the University of California, Davis to develop a vaccine candidate for COVID-19 delivered through a single-dose patch."
+  },
+  "gsx$status": {
+    "$t": "Testing in mice is expected to begin on May 1, according to a Verndari company press release."
+  },
+  "gsx$articles": {
+    "$t": "https://www.verndariinc.com/news/4"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/e5yid"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "The Israel Institute for Biological Research"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinename: IIBR Vaccine, vaccinetype: Antibody-Based Vaccine, phase: 1, status: IIBR announced that it had begun testing its antibody-based vaccine prototype on rodents., articles: https://www.jpost.com/health-science/iibr-completes-development-phase-of-covid-19-vaccine-626913?fbclid\u003dIwAR3i5DEB0IZQz_OS4nXjI31FOlVNKEFjHs8yJ0ysOqPzqk5At4Oza3-QRuk"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/e5yid"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "The Israel Institute for Biological Research"
+  },
+  "gsx$vaccinename": {
+    "$t": "IIBR Vaccine"
+  },
+  "gsx$vaccinetype": {
+    "$t": "Antibody-Based Vaccine"
+  },
+  "gsx$phase": {
+    "$t": "1"
+  },
+  "gsx$details": {
+    "$t": ""
+  },
+  "gsx$status": {
+    "$t": "IIBR announced that it had begun testing its antibody-based vaccine prototype on rodents."
+  },
+  "gsx$articles": {
+    "$t": "https://www.jpost.com/health-science/iibr-completes-development-phase-of-covid-19-vaccine-626913?fbclid\u003dIwAR3i5DEB0IZQz_OS4nXjI31FOlVNKEFjHs8yJ0ysOqPzqk5At4Oza3-QRuk"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+},
+{
+  "id": {
+    "$t": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/eilm2"
+  },
+  "updated": {
+    "$t": "2020-11-24T18:22:39.567Z"
+  },
+  "category": [
+    {
+      "scheme": "http://schemas.google.com/spreadsheets/2006",
+      "term": "http://schemas.google.com/spreadsheets/2006#list"
+    }
+  ],
+  "title": {
+    "type": "text",
+    "$t": "Neovii, Tel Aviv University"
+  },
+  "content": {
+    "type": "text",
+    "$t": "vaccinetype: first-in-class COVID-19 vaccine that reconstructs the coronavirus's Receptor Binding Motif (RBM), phase: 1, details: Neovii, a Swiss-based biopharmaceutical company and a member of Israel-based Neopharm Group, announced today that they have signed a research and license agreement to develop a novel and potentially life-saving COVID-19 vaccine. Neovii will work in close collaboration with a team of scientists led by Prof. Jonathan Gershoni of TAU's School of Molecular Cell Biology and Biotechnology., status: The collaboration is focused on the development of a first-in-class COVID-19 vaccine that reconstructs the coronavirus's Receptor Binding Motif (RBM), a critical structure of its \"spike\" protein. The \"spike\" protein itself is the major surface protein that the virus uses to bind to the cellular receptor that acts as the doorway into the human cell. After the spike protein binds to the human cell receptor, the viral membrane fuses with the cell membrane, allowing the genome of the virus to enter the cell and begin infection., articles: https://www.news-medical.net/news/20200512/Neovii-and-Tel-Aviv-University-partner-to-develop-novel-COVID-19-vaccine.aspx"
+  },
+  "link": [
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values/eilm2"
+    }
+  ],
+  "gsx$companyname": {
+    "$t": "Neovii, Tel Aviv University"
+  },
+  "gsx$vaccinename": {
+    "$t": ""
+  },
+  "gsx$vaccinetype": {
+    "$t": "first-in-class COVID-19 vaccine that reconstructs the coronavirus's Receptor Binding Motif (RBM)"
+  },
+  "gsx$phase": {
+    "$t": "1"
+  },
+  "gsx$details": {
+    "$t": "Neovii, a Swiss-based biopharmaceutical company and a member of Israel-based Neopharm Group, announced today that they have signed a research and license agreement to develop a novel and potentially life-saving COVID-19 vaccine. Neovii will work in close collaboration with a team of scientists led by Prof. Jonathan Gershoni of TAU's School of Molecular Cell Biology and Biotechnology."
+  },
+  "gsx$status": {
+    "$t": "The collaboration is focused on the development of a first-in-class COVID-19 vaccine that reconstructs the coronavirus's Receptor Binding Motif (RBM), a critical structure of its \"spike\" protein. The \"spike\" protein itself is the major surface protein that the virus uses to bind to the cellular receptor that acts as the doorway into the human cell. After the spike protein binds to the human cell receptor, the viral membrane fuses with the cell membrane, allowing the genome of the virus to enter the cell and begin infection."
+  },
+  "gsx$articles": {
+    "$t": "https://www.news-medical.net/news/20200512/Neovii-and-Tel-Aviv-University-partner-to-develop-novel-COVID-19-vaccine.aspx"
+  },
+  "gsx$currentlyenrolled": {
+    "$t": ""
+  },
+  "gsx$preclinicalstart": {
+    "$t": ""
+  },
+  "gsx$preclinicalend": {
+    "$t": ""
+  },
+  "gsx$p1start": {
+    "$t": ""
+  },
+  "gsx$p1end": {
+    "$t": ""
+  },
+  "gsx$p2start": {
+    "$t": ""
+  },
+  "gsx$p2end": {
+    "$t": ""
+  },
+  "gsx$p3start": {
+    "$t": ""
+  },
+  "gsx$p3end": {
+    "$t": ""
+  },
+  "gsx$fdaapproved": {
+    "$t": ""
+  },
+  "gsx$mproduced": {
+    "$t": ""
+  },
+  "gsx$mproduced_2": {
+    "$t": ""
+  },
+  "gsx$mproduced_3": {
+    "$t": ""
+  },
+  "gsx$phase1id": {
+    "$t": ""
+  },
+  "gsx$phase1otherid": {
+    "$t": ""
+  },
+  "gsx$phase1link": {
+    "$t": ""
+  },
+  "gsx$phase2id": {
+    "$t": ""
+  },
+  "gsx$phase2other2": {
+    "$t": ""
+  },
+  "gsx$phase2link": {
+    "$t": ""
+  },
+  "gsx$phase3id": {
+    "$t": ""
+  },
+  "gsx$phase3otherid": {
+    "$t": ""
+  },
+  "gsx$phase3link": {
+    "$t": ""
+  },
+  "gsx$lastupdated": {
+    "$t": ""
+  }
+}
+]
+}
+}

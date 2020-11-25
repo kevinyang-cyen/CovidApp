@@ -56,7 +56,7 @@ export default function Dashboard() {
     const runCall = async () => {
       setIsLoading(true);
       let apiValue = await fetchData();
-
+      console.log("should return response ----->", apiValue)
       // returning sorted province data
       let return_data = sortProvinceData(apiValue)
 

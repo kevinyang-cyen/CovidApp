@@ -1,9 +1,7 @@
 import {
   BarChart,
   Label,
-  LabelList,
   CartesianGrid,
-  Legend,
   Tooltip,
   XAxis,
   ResponsiveContainer,
