@@ -48,7 +48,8 @@ export default function Login() {
         } else if (res.data.length !== 3) {
           setEmailError(true)
         } else if (res.status === 200) {
-          setCookie(['user-cookie'],[res.data[0], res.data[1]]);
+          console.log(res.data);
+          setCookie(['user-cookie'],[res.data[0], res.data[1], res.data[2]]);
           history.push('/');
         }
       })
