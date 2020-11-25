@@ -205,10 +205,65 @@ h6 {
   border: none;
 }
 
-
+// GRAPH STUFFF
 .graphs {
-  display: inline-block;
-  width: 50%;
+  display: flex;
+  max-width: 100vw;
+  flex-wrap: wrap;
+  height: 80vh;
+  margin-bottom: 15px;
+}
+
+.cases {
+  width: 55%;
+  padding-right: 15px;
+  border-radius: 5px;
+  margin-left: 10px;
+  height: 70%;
+}
+
+.cases:hover {
+  background-color: #f4f4f4;
+}
+
+.deaths {
+  width: 96%;
+  padding-right: 15px;
+  border-radius: 5px;
+  margin-left: 10px;
+  height: 30%;
+}
+
+.deaths:hover {
+  background-color: #f4f4f4;
+}
+
+.recovery {
+  height: 100%;
+  padding-right: 15px;
+  width: 100%;
+}
+
+.recovery:hover {
+  background-color: #f4f4f4;
+}
+
+.recovery-testing {
+  width: 40%;
+  padding-right: 15px;
+  border-radius: 5px;
+  margin-left: 10px;
+  height: 35%;
+}
+
+.testing {
+  height: 100%;
+  padding-right: 15px;
+  width: 100%;
+}
+
+.testing:hover {
+  background-color: #f4f4f4;
 }
 
 .spinner-load {
