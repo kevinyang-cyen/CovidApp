@@ -8,6 +8,10 @@ import ProgressBar from 'react-bootstrap/ProgressBar'
 import Popover from 'react-bootstrap/Popover'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import Button from 'react-bootstrap/Button'
+import Tab from 'react-bootstrap/Tab'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Nav from 'react-bootstrap/Nav'
 import { Spinner } from "react-bootstrap";
 
 export default function News() {
@@ -88,7 +92,7 @@ export default function News() {
           <h6><strong>Type:</strong> {vaccine.vaccineType}</h6>
           <p><strong>Details:</strong> {vaccine.vaccineDetails}</p>
           <p><strong>Status:</strong> {vaccine.vaccineStatus}</p>
-          <p>For more click <a href={vaccine.vaccineArticle}>here</a></p>
+          <p><a href={vaccine.vaccineArticle}>For more click here</a></p>
         </Popover.Content>
       </Popover>
     );
@@ -96,8 +100,8 @@ export default function News() {
     let displayCompany = (
       (
         <div>
-          <OverlayTrigger trigger="click" placement="right" overlay={popoverDetails}>
-            <Button variant="outline-info" size="sm" >{vaccine.company}</Button>
+          <OverlayTrigger trigger="click" rootClose placement="right" overlay={popoverDetails}>
+            <Button variant="outline-info" size="sm" className="vaccine-button" className="vaccine-button">{vaccine.company}</Button>
           </OverlayTrigger>
         </div>
       )
@@ -116,7 +120,7 @@ export default function News() {
           <h6><strong>Type:</strong> {vaccine.vaccineType}</h6>
           <p><strong>Details:</strong> {vaccine.vaccineDetails}</p>
           <p><strong>Status:</strong> {vaccine.vaccineStatus}</p>
-          <p>For more click <a href={vaccine.vaccineArticle}>here</a></p>
+          <p><a href={vaccine.vaccineArticle}>For more click here</a></p>
         </Popover.Content>
       </Popover>
     );
@@ -124,8 +128,8 @@ export default function News() {
     let displayCompany = (
       (
         <li>
-          <OverlayTrigger trigger="click" placement="right" overlay={popoverDetails}>
-            <Button variant="outline-info" size="sm" >{vaccine.company}</Button>
+          <OverlayTrigger trigger="click" rootClose placement="right" overlay={popoverDetails}>
+            <Button variant="outline-info" size="sm" className="vaccine-button">{vaccine.company}</Button>
           </OverlayTrigger>
         </li>
       )
@@ -143,7 +147,7 @@ export default function News() {
           <h6><strong>Type:</strong> {vaccine.vaccineType}</h6>
           <p><strong>Details:</strong> {vaccine.vaccineDetails}</p>
           <p><strong>Status:</strong> {vaccine.vaccineStatus}</p>
-          <p>For more click <a href={vaccine.vaccineArticle}>here</a></p>
+          <p><a href={vaccine.vaccineArticle}>For more click here</a></p>
         </Popover.Content>
       </Popover>
     );
@@ -151,8 +155,8 @@ export default function News() {
     let displayCompany = (
       (
         <li>
-          <OverlayTrigger trigger="click" placement="right" overlay={popoverDetails}>
-            <Button variant="outline-info" size="sm" >{vaccine.company}</Button>
+          <OverlayTrigger trigger="click" rootClose placement="right" overlay={popoverDetails}>
+            <Button variant="outline-info" size="sm" className="vaccine-button">{vaccine.company}</Button>
           </OverlayTrigger>
         </li>
       )
@@ -171,7 +175,7 @@ export default function News() {
           <h6><strong>Type:</strong> {vaccine.vaccineType}</h6>
           <p><strong>Details:</strong> {vaccine.vaccineDetails}</p>
           <p><strong>Status:</strong> {vaccine.vaccineStatus}</p>
-          <p>For more click <a href={vaccine.vaccineArticle}>here</a></p>
+          <p><a href={vaccine.vaccineArticle}>For more click here</a></p>
         </Popover.Content>
       </Popover>
     );
@@ -179,8 +183,8 @@ export default function News() {
     let displayCompany = (
       (
         <li>
-          <OverlayTrigger trigger="click" placement="right" overlay={popoverDetails}>
-            <Button variant="outline-info" size="sm" >{vaccine.company}</Button>
+          <OverlayTrigger trigger="click" rootClose placement="right" overlay={popoverDetails}>
+            <Button variant="outline-info" size="sm" className="vaccine-button">{vaccine.company}</Button>
           </OverlayTrigger>
         </li>
       )
@@ -198,7 +202,7 @@ export default function News() {
           <h6><strong>Type:</strong> {vaccine.vaccineType}</h6>
           <p><strong>Details:</strong> {vaccine.vaccineDetails}</p>
           <p><strong>Status:</strong> {vaccine.vaccineStatus}</p>
-          <p>For more click <a href={vaccine.vaccineArticle}>here</a></p>
+          <p><a href={vaccine.vaccineArticle}>For more click here</a></p>
         </Popover.Content>
       </Popover>
     );
@@ -206,8 +210,8 @@ export default function News() {
     let displayCompany = (
       (
         <li>
-          <OverlayTrigger trigger="click" placement="right" overlay={popoverDetails}>
-            <Button variant="outline-info" size="sm" >{vaccine.company}</Button>
+          <OverlayTrigger trigger="click" rootClose placement="right" overlay={popoverDetails}>
+            <Button variant="outline-info" size="sm" className="vaccine-button">{vaccine.company}</Button>
           </OverlayTrigger>
         </li>
       )
@@ -238,102 +242,124 @@ export default function News() {
   );
 
   return (
-    <section>
-      {isLoadingNews ?
-        <Spinner animation="grow" variant="dark" /> :
-        <main className="news">
-          <CardColumns>
-            {loadNews}
-          </CardColumns>
-        </main>
-      }
-      {isLoadingVaccine ?
-        <Spinner animation="grow" variant="dark" /> :
-        <>
-          <div>
-            <h2>Pre-clinical research</h2>
-            <ProgressBar animated now={10} />
-            <ul>
-              {preResearch}
-            </ul>
-          </div>
-        </>
-      }
-      {isLoadingVaccine ?
-        <Spinner animation="grow" variant="dark" /> :
-        <>
-          <div>
-            <h2>Pre-clinical trials</h2>
-            <ProgressBar animated now={20} />
-            <ul>
-              {preTrial}
-            </ul>
-          </div>
-        </>
-      }
-      {isLoadingVaccine ?
-        <Spinner animation="grow" variant="dark" /> :
-        <>
-          <div>
-            <h2>Phase 1 trial</h2>
-            <ProgressBar animated now={30} />
-            <ul>
-              {phaseOne}
-            </ul>
-          </div>
-        </>
-      }
-      {isLoadingVaccine ?
-        <Spinner animation="grow" variant="dark" /> :
-        <>
-          <div>
-            <h2>Phase 2 trial</h2>
-            <ProgressBar animated now={50} />
-            <ul>
-              {phaseTwo}
-            </ul>
-          </div>
-        </>
-      }
-      {isLoadingVaccine ?
-        <Spinner animation="grow" variant="dark" /> :
-        <>
-          <div>
-            <h2>Phase 3 trial</h2>
-            <ProgressBar animated now={70} />
-            <ul>
-              {phaseThree}
-            </ul>
-          </div>
-        </>
-      }
-      {isLoadingVaccine ?
-        <Spinner animation="grow" variant="dark" /> :
-        <>
-          <div>
-            <h2>FDA Approved</h2>
-            <ProgressBar animated now={90} />
-            {(vaccData.vaccineFDA[0]) ?
-              <ul>
-                <li>{vaccData.vaccineFDA[0].company}</li>
-              </ul> : "No Viable Candidates"}
-          </div>
-        </>
-      }
-      {isLoadingVaccine ?
-        <Spinner animation="grow" variant="dark" /> :
-        <>
-          <div>
-            <h2>Generally Available</h2>
-            <ProgressBar animated now={100} />
-            {(vaccData.vaccineAvailable[0]) ?
-              <ul>
-                <li>{vaccData.vaccineAvailable[0].company}</li>
-              </ul> : "No Viable Candidates"}
-          </div>
-        </>
-      }
-    </section>
+    <Tab.Container defaultActiveKey="first" className="news">
+      <Row>
+        <Col sm={2}>
+          <Nav variant="pills" className="news-tabs">
+            <Nav.Item>
+              <Nav.Link eventKey="first">CoronaVirus News</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link eventKey="second">Vaccine Progress</Nav.Link>
+            </Nav.Item>
+          </Nav>
+        </Col>
+        <Col sm={9}>
+          <Tab.Content>
+            <Tab.Pane eventKey="first">
+              {isLoadingNews ?
+                  <Spinner className="spinner-load-news" animation="grow" variant="dark" /> :
+                <main className="news">
+                  <CardColumns>
+                    {loadNews}
+                  </CardColumns>
+                </main>
+              }
+            </Tab.Pane>
+            <Tab.Pane eventKey="second">
+              <div className="vaccines">
+                {isLoadingVaccine ?
+                  <Spinner className="spinner-load-news" animation="grow" variant="dark" /> :
+                  <>
+                    <div>
+                      <h2>Pre-clinical research</h2>
+                      <ProgressBar className="loadbar" animated now={10} />
+                      <ul>
+                        {preResearch}
+                      </ul>
+                    </div>
+                  </>
+                }
+                {isLoadingVaccine ?
+                  <Spinner className="spinner-load-news" animation="grow" variant="dark" /> :
+                  <>
+                    <div>
+                      <h2>Pre-clinical trials</h2>
+                      <ProgressBar className="loadbar" animated now={20} />
+                      <ul>
+                        {preTrial}
+                      </ul>
+                    </div>
+                  </>
+                }
+                {isLoadingVaccine ?
+                  <Spinner className="spinner-load-news" animation="grow" variant="dark" /> :
+                  <>
+                    <div>
+                      <h2>Phase 1 trial</h2>
+                      <ProgressBar className="loadbar" animated now={30} />
+                      <ul>
+                        {phaseOne}
+                      </ul>
+                    </div>
+                  </>
+                }
+                {isLoadingVaccine ?
+                  <Spinner className="spinner-load-news" animation="grow" variant="dark" /> :
+                  <>
+                    <div>
+                      <h2>Phase 2 trial</h2>
+                      <ProgressBar className="loadbar" animated now={50} />
+                      <ul>
+                        {phaseTwo}
+                      </ul>
+                    </div>
+                  </>
+                }
+                {isLoadingVaccine ?
+                  <Spinner className="spinner-load-news" animation="grow" variant="dark" /> :
+                  <>
+                    <div>
+                      <h2>Phase 3 trial</h2>
+                      <ProgressBar className="loadbar" animated now={70} />
+                      <ul>
+                        {phaseThree}
+                      </ul>
+                    </div>
+                  </>
+                }
+                {isLoadingVaccine ?
+                  <Spinner className="spinner-load-news" animation="grow" variant="dark" /> :
+                  <>
+                    <div>
+                      <h2>FDA Approved</h2>
+                      <ProgressBar className="loadbar" animated now={90} />
+                      {(vaccData.vaccineFDA[0]) ?
+                        <ul>
+                          <li>{vaccData.vaccineFDA[0].company}</li>
+                        </ul> : "No Viable Candidates"}
+                    </div>
+                  </>
+                }
+                {isLoadingVaccine ?
+                  <Spinner animation="grow" className="spinner-load-news" variant="dark" /> :
+                  <>
+                    <div>
+                      <h2>Generally Available</h2>
+                      <ProgressBar className="loadbar" animated now={100} />
+                      {(vaccData.vaccineAvailable[0]) ?
+                        <ul>
+                          <li>{vaccData.vaccineAvailable[0].company}</li>
+                        </ul> : "No Viable Candidates"}
+                    </div>
+                  </>
+                }
+              </div>
+            </Tab.Pane>
+          </Tab.Content>
+        </Col>
+      </Row>
+    </Tab.Container>
   );
 }
 

@@ -12,7 +12,7 @@ import {
 export default function AreaGraph(props) {
 
   return (
-    <ResponsiveContainer width="80%" height={300}>
+    <ResponsiveContainer width="99%" height={300}>
       <AreaChart
         data={props.coviddata}
         fontSize={12}

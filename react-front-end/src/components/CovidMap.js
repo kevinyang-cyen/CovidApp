@@ -7,7 +7,7 @@ export default function CovidMap() {
 
   return (
     <MapContainer
-      style={{ height: "80vh", width: "100vw" }}
+      style={{ height: "100vh", width: "100vw" }}
       zoom={5}
       center={[56.130367, -106.346771]}
     >

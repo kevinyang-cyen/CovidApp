@@ -95,6 +95,14 @@ export default function Dashboard() {
   const yesterdayDate = (d => new Date(d.setDate(d.getDate() - 1)))(new Date);
   const dateToday = timeConverter(yesterdayDate);
 
+  const negativeOrPositiveArrow = (num) => {
+    if (num >= 0) {
+      return <span>&#8593;</span>
+    } else {
+      return <span>&#8595;</span>
+    }
+  }
+
   return (
     <section className="dashboard">
         {isLoading ?
@@ -107,18 +115,18 @@ export default function Dashboard() {
               <div className="totals-count">
                 {(provData.timeSpecific_data.map(date => {
                   if (date.name === dateToday) return <p className="count-cases"><h6>Total Cases</h6>{date.totalCases}
-                    {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <p className="count-change"><span>&#8593;</span>{date.todayCase}</p> }))}
+                    {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <p className="count-change">{negativeOrPositiveArrow(date.todayCase)}{date.todayCase}</p> }))}
                   </p>
                 }))}
 
                 {(provData.timeSpecific_data.map(date => {
                   if (date.name === dateToday) return <p className="count-cases"><h6>Number of Active Cases</h6> {date.activeCase}
-                    {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <p className="count-change"><span>&#8593;</span>{date.caseChange}</p> }))}
+                    {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <p className="count-change">{negativeOrPositiveArrow(date.caseChange)}{date.caseChange}</p> }))}
                   </p>
                 }))}
 
                 {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <p className="count-test"><h6>Number of Tests Today</h6> {date.testToday}</p> }))}
-                {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <p className="count-number"><h6>Number of Deaths Today</h6> {date.todayDeaths}</p> }))}
+                {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <p className="count-number"><h6>Number of Deaths Today</h6> {negativeOrPositiveArrow(date.todayDeaths)}{date.todayDeaths}</p> }))}
               </div>
             </div>
             <div className="graphs">
