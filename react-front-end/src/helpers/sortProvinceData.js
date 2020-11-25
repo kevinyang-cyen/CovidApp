@@ -50,7 +50,7 @@ export default function sortProvinceData(provDataArr) {
       }
     })
   }
-
+  console.log("provDataArr[2]: ", provDataArr[2]);
   const ageDemographic_count = [
     { name: "80-89", "Case Count": age_demographic_data.aboveEighty.length },
     { name: "70-79", "Case Count": age_demographic_data.aboveSeventy.length },
@@ -65,8 +65,9 @@ export default function sortProvinceData(provDataArr) {
 
   let covidDataSortMale = [];
   let covidDataSortFemale = [];
+  
 
-  if (provDataArr[2].cases) {
+  if (provDataArr[2].data.cases) {
     covidDataSortMale = provDataArr[2].data.cases.filter(result => {
       return result.sex === "Male"
     })
@@ -76,10 +77,12 @@ export default function sortProvinceData(provDataArr) {
     })
   }
 
+
   const gender_demographic_infections = [
     { "Gender": "Male", "Infection": covidDataSortMale.length },
     { "Gender": "Female", "Infection": covidDataSortFemale.length }
   ];
 
+  console.log("ageDemographic_count: ", ageDemographic_count);
   return { confirmed_data, deaths_data, timeSpecific_data, recoveries_data, testing_data, ageDemographic_count, gender_demographic_infections };
 }

@@ -8,6 +8,7 @@ import Loading from "./Loading.js";
 import Select from "./Select";
 import sortProvinceData from "../helpers/sortProvinceData.js";
 import timeConverter from "../helpers/convertTime.js";
+import checkForZeroData from "../helpers/checkForZeroData.js";
 
 export default function Dashboard() {
   let provData_state = {
@@ -43,6 +44,7 @@ export default function Dashboard() {
 
   const [provData, setProvData] = useState(provData_state);
   const [isLoading, setIsLoading] = useState(true);
+  const [ageCountIsZero, setAgeCountIsZero] = useState(true);
 
   const [urlOne, setUrlOne] = useState("?loc=canada&after=01-01-2020")
   const [urlTwo, setUrlTwo] = useState("?stat=mortality")
@@ -59,6 +61,7 @@ export default function Dashboard() {
 
       setProvData(return_data);
       setIsLoading(false);
+      setAgeCountIsZero(checkForZeroData(return_data));
     }
     // change inputs to incorporate province
     const fetchData = async () => {
@@ -70,7 +73,6 @@ export default function Dashboard() {
           axios.post('/dashboard/mortality', urlTwo),
           axios.post('/dashboard/cases', urlThree)
         ])
-        console.log("response: ", response);
         return response
       } catch (err) {
         console.log(err)
@@ -105,10 +107,10 @@ export default function Dashboard() {
               <AreaGraph coviddata={provData.deaths_data} keydata="deaths" xaxis=" Time Frame" yaxis="[Placeholder Province] Confirmed Deaths" color="black" />
               <AreaGraph coviddata={provData.recoveries_data} keydata="recoveries" xaxis="Time Frame" yaxis="[Placeholder Province] Recoveries" color="red" />
               {
-                (!provData.ageDemographic_count) ? "No Age Demographic Data Available" : <BarGraph coviddata={provData.ageDemographic_count} yaxis="Reported Cumulative Cases" />
+                (ageCountIsZero) ? "No Age Demographic Data Available" : <BarGraph coviddata={provData.ageDemographic_count} yaxis="Reported Cumulative Cases" />
               }
               {
-                <PieAngleGraph coviddata={provData.gender_demographic_infections} datakey="Infection" nameKey="Gender" />
+                (ageCountIsZero) ? "No Gender Demographic Data Available" : <PieAngleGraph coviddata={provData.gender_demographic_infections} datakey="Infection" nameKey="Gender" />
               }
             </div>
             <div>
