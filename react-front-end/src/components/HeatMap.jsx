@@ -46,5 +46,5 @@ export default function Map() {
     runCall();
   }, []);
 
-  return <div id="map" style={{ height: "100vh" }}></div>;
+  return <div id="map" style={{ height: "100vh", width: "100vw"}}></div>;
 }

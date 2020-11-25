@@ -38,12 +38,42 @@
 // }
 
 // NEWS
+
+.spinner-load-news {
+  display: flex;
+  margin-top: 40%;
+  margin-left: 40%;
+}
+
 .news {
   display: flex;
   padding: 2rem;
   font-size: 0.75em;
   font-weight: 300;
-  max-width: 70%;
+  max-width: 100%;
+}
+
+.news-tabs {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.vaccines {
+  margin-top: 20px;
+  max-width: 90%;
+  margin-left: 5%;
+}
+
+.vaccine-button {
+  margin-bottom: 5px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.loadbar {
+  margin-bottom: 15px;
 }
 
 a:link {
@@ -98,7 +128,7 @@ font-size: 1.5em
 
 .totals-count {
   font-size: 1.2em;
-  background-color: #f3f5f5;
+  background-color: #f0f0f0;
   display: flex;
   justify-content: space-around;
   padding-top: 10px;
@@ -110,6 +140,7 @@ font-size: 1.5em
   border-radius: 5px;
   line-height: 20px;
 }
+
 
 .count-cases {
   color: red;
@@ -133,6 +164,12 @@ font-size: 1.5em
 .count-number {
   color: black;
   font-weight: 500;
+  padding: none;
+}
+
+.count-tests {
+  color: rgb(109, 163, 211);
+  font-weight: 600;
   padding: none;
 }
 
@@ -168,10 +205,65 @@ h6 {
   border: none;
 }
 
-
+// GRAPH STUFFF
 .graphs {
-  display: inline-block;
-  width: 50%;
+  display: flex;
+  max-width: 100vw;
+  flex-wrap: wrap;
+  height: 80vh;
+  margin-bottom: 15px;
+}
+
+.cases {
+  width: 55%;
+  padding-right: 15px;
+  border-radius: 5px;
+  margin-left: 10px;
+  height: 70%;
+}
+
+.cases:hover {
+  background-color: #f4f4f4;
+}
+
+.deaths {
+  width: 96%;
+  padding-right: 15px;
+  border-radius: 5px;
+  margin-left: 10px;
+  height: 30%;
+}
+
+.deaths:hover {
+  background-color: #f4f4f4;
+}
+
+.recovery {
+  height: 100%;
+  padding-right: 15px;
+  width: 100%;
+}
+
+.recovery:hover {
+  background-color: #f4f4f4;
+}
+
+.recovery-testing {
+  width: 40%;
+  padding-right: 15px;
+  border-radius: 5px;
+  margin-left: 10px;
+  height: 35%;
+}
+
+.testing {
+  height: 100%;
+  padding-right: 15px;
+  width: 100%;
+}
+
+.testing:hover {
+  background-color: #f4f4f4;
 }
 
 .spinner-load {
