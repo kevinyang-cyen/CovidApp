@@ -105,50 +105,63 @@ export default function Dashboard() {
 
   return (
     <section className="dashboard">
-        {isLoading ?
-          <Loading /> :
-          <>
-            <div className="dashboard-topbar">
-              <div className="filter-bar">
-                <Select onClick={search} />
-              </div>
-              <div className="totals-count">
-                {(provData.timeSpecific_data.map(date => {
-                  if (date.name === dateToday) return <p className="count-cases"><h6>Total Cases</h6>{date.totalCases}
-                    {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <p className="count-change">{negativeOrPositiveArrow(date.todayCase)}{date.todayCase}</p> }))}
-                  </p>
-                }))}
-
-                {(provData.timeSpecific_data.map(date => {
-                  if (date.name === dateToday) return <p className="count-cases"><h6>Number of Active Cases</h6> {date.activeCase}
-                    {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <p className="count-change">{negativeOrPositiveArrow(date.caseChange)}{date.caseChange}</p> }))}
-                  </p>
-                }))}
-
-                {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <p className="count-test"><h6>Number of Tests Today</h6> {date.testToday}</p> }))}
-                {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <p className="count-number"><h6>Number of Deaths Today</h6> {negativeOrPositiveArrow(date.todayDeaths)}{date.todayDeaths}</p> }))}
-              </div>
+      {isLoading ?
+        <Loading /> :
+        <>
+          <div className="dashboard-topbar">
+            <div className="filter-bar">
+              <Select onClick={search} />
             </div>
-            <div className="graphs">
-              <div className="cases">
-                <AreaGraph coviddata={provData.confirmed_data} keydata="cases" xaxis=" Time Frame" yaxis={locationCode + " Confirmed Cases"} color="red" />
-              </div>
-              <div className="deaths">
-                <AreaGraph coviddata={provData.deaths_data} keydata="deaths" xaxis=" Time Frame" yaxis={locationCode + " Confirmed Deaths"} color="black" />
-              </div>
-              <div className="recovery-testing">
-                <AreaGraph coviddata={provData.testing_data} keydata="testing" xaxis=" Time Frame" yaxis={locationCode + " Testing"} color="blue" />
-                <AreaGraph coviddata={provData.recoveries_data} keydata="recoveries" xaxis="Time Frame" yaxis={locationCode + " Recoveries"} color="green" />
-              </div>
-              {
-                (ageCountIsZero) ? "No Age Demographic Data Available" : <BarGraph coviddata={provData.ageDemographic_count} yaxis={locationCode + "Reported Cases Age Distribution"} />
-              }
-              {
-                (ageCountIsZero) ? "No Gender Demographic Data Available" : <PieAngleGraph coviddata={provData.gender_demographic_infections} datakey="Infection" nameKey="Gender" yaxis={locationCode + "Reported Cases Gender Distribution"} />
-              }
+            <div className="totals-count">
+              {(provData.timeSpecific_data.map(date => {
+                if (date.name === dateToday) return <p className="count-cases"><h6>Total Cases</h6>{date.totalCases}
+                  {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <p className="count-change">{negativeOrPositiveArrow(date.todayCase)}{date.todayCase}</p> }))}
+                </p>
+              }))}
+
+              {(provData.timeSpecific_data.map(date => {
+                if (date.name === dateToday) return <p className="count-cases"><h6>Number of Active Cases</h6> {date.activeCase}
+                  {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <p className="count-change">{negativeOrPositiveArrow(date.caseChange)}{date.caseChange}</p> }))}
+                </p>
+              }))}
+
+              {(provData.recoveries_data.map(date => { if (date.name === dateToday) return <p className="count-test"><h6>Total Recoveries</h6> {date.recoveries}</p> }))}
+
+              {(provData.testing_data.map(date => {
+                if (date.name === dateToday) return <p className="count-tests"><h6>Total Tests</h6> {date.testing}
+
+                  {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <p className="count-change"> {negativeOrPositiveArrow(date.testToday)}{date.testToday}</p> }))}
+                </p>
+              }))}
+
+              {(provData.deaths_data.map(date => {
+                if (date.name === dateToday) return <p className="count-number"><h6>Total Deaths</h6> {date.deaths}
+
+                  {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <p className="count-change"> {negativeOrPositiveArrow(date.todayDeaths)}{date.todayDeaths}</p> }))}
+                </p>
+              }))}
             </div>
-          </>
-        }
+          </div>
+          <div className="graphs">
+            <div className="cases">
+              <AreaGraph coviddata={provData.confirmed_data} keydata="cases" xaxis=" Time Frame" yaxis={locationCode + " Confirmed Cases"} color="red" />
+            </div>
+            <div className="deaths">
+              <AreaGraph coviddata={provData.deaths_data} keydata="deaths" xaxis=" Time Frame" yaxis={locationCode + " Confirmed Deaths"} color="black" />
+            </div>
+            <div className="recovery-testing">
+              <AreaGraph coviddata={provData.testing_data} keydata="testing" xaxis=" Time Frame" yaxis={locationCode + " Testing"} color="blue" />
+              <AreaGraph coviddata={provData.recoveries_data} keydata="recoveries" xaxis="Time Frame" yaxis={locationCode + " Recoveries"} color="green" />
+            </div>
+            {
+              (ageCountIsZero) ? "No Age Demographic Data Available" : <BarGraph coviddata={provData.ageDemographic_count} yaxis={locationCode + "Reported Cases Age Distribution"} />
+            }
+            {
+              (ageCountIsZero) ? "No Gender Demographic Data Available" : <PieAngleGraph coviddata={provData.gender_demographic_infections} datakey="Infection" nameKey="Gender" yaxis={locationCode + "Reported Cases Gender Distribution"} />
+            }
+          </div>
+        </>
+      }
     </section>
   );
 }
