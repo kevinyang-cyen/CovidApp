@@ -1,18 +1,47 @@
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import Alert from 'react-bootstrap/Alert';
 import { useForm } from "react-hook-form";
 import axios from "axios";
+import { useState } from "react";
+import { useHistory } from "react-router-dom";
+import { useCookies } from 'react-cookie';
 
 export default function Register() {
   const { register, handleSubmit } = useForm();
+  const history = useHistory();
+  const [emailExists, setEmailExists] = useState(false)
+  const [cookies, setCookie, removeCookie] = useCookies([0]);
+
+  const handleEmailExists = (error) => {
+    if (error) {
+      return (
+        <Alert variant="danger">
+          <Alert.Heading>Error</Alert.Heading>
+          <p>
+            Email already exists
+          </p>
+        </Alert>
+      )
+    }
+  }
 
   const onSubmit = data => {
+    setEmailExists(false)
     axios.post("http://localhost:8080/register", data)
-      .then((res) => console.log(res));
+      .then((res) => {
+        if (res.data === "Email already in system") {
+          setEmailExists(true)
+        } else {
+          setCookie(['user-cookie'],[res.data[0], res.data[1]]);
+          history.push('/');
+        }
+      });
   }
 
   return (
     <>
+      {handleEmailExists(emailExists)}
       <h1 className='loginTitle'>Register</h1>
       <section className="login-register">
         <Form className="login-form" onSubmit={handleSubmit(onSubmit)}>
