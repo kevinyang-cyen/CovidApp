@@ -13,7 +13,7 @@ const style = {
 export default function PieAngleGraph(props) {
 
   return (
-    <PieChart width={800} height={400}>
+    <PieChart width={430} height={200}>
       <Pie
         data={props.coviddata}
         cx={120}
@@ -30,7 +30,7 @@ export default function PieAngleGraph(props) {
         }
       </Pie>
       <Tooltip />
-      <Legend iconSize={10} width={120} height={140} layout="vertical" verticalAlign="middle" wrapperStyle={style} />
+      <Legend iconSize={10} width={80} height={120} layout="vertical" verticalAlign="middle" wrapperStyle={style} />
     </PieChart>
   );
 }
