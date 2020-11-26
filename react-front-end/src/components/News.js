@@ -17,10 +17,8 @@ import "../styles/News.scss";
 
 export default function News() {
 
-  let latestReports = {
-    newsReports: [{ source: { id: "", name: "" }, author: "", title: "", description: "", url: "", urlToImage: "" }]
-  };
-
+  let latestReports = {newsReports: [{ source: { id: "", name: "" }, author: "", title: "", description: "", url: "", urlToImage: "" }]};
+  let latestDisplayedReports = [{ source: { id: "", name: "" }, author: "", title: "", description: "", url: "", urlToImage: "" }];
   let vaccineNews = {
     vaccinePreClinRes: [{ company: "", vaccineName: "", vaccineType: "", vaccineDetails: "", vaccineStatus: "", vaccineArticle: "", vaccinePhase: "" }],
     vaccinePreClinTri: [{ company: "", vaccineName: "", vaccineType: "", vaccineDetails: "", vaccineStatus: "", vaccineArticle: "", vaccinePhase: "" }],
@@ -35,7 +33,8 @@ export default function News() {
   const [vaccData, setvaccData] = useState(vaccineNews || []);
   const [isLoadingNews, setIsLoadingNews] = useState(true);
   const [isLoadingVaccine, setIsLoadingVaccine] = useState(true);
-  const [loadMore, setloadMore] = useState(0);
+  const [loadMore, setLoadMore] = useState(1);
+  const [displayedData, setDisplayedData] = useState(latestDisplayedReports);
 
   useEffect(() => {
     const runCall = async () => {
@@ -45,6 +44,7 @@ export default function News() {
       let returnData_two = sortVacData(apiValue);
 
       setData(returnData);
+      setDisplayedData(returnData.newsReports.slice(0,15*loadMore));
       setvaccData(returnData_two);
       setIsLoadingNews(false);
       setIsLoadingVaccine(false);
@@ -79,7 +79,8 @@ export default function News() {
 
   // loads more news
   const loadMoreNews = () => {
-    console.log("Loading More News");
+    setDisplayedData(data.newsReports.slice(0,15*(loadMore + 1)));
+    setLoadMore(loadMore + 1);
     return null;
   }
 
@@ -286,7 +287,7 @@ export default function News() {
 
 
   //returns each news card individually - allows for row organization on news page
-  let loadNews = data.newsReports.map((item, index) =>
+  let loadNews = displayedData.map((item, index) =>
     (
       <>
         <Card key={index}>
@@ -327,9 +328,11 @@ export default function News() {
                   <CardColumns>
                     {loadNews}
                   </CardColumns>
-                <Button variant="btn btn-info" onClick={() => loadMoreNews()}>
-                  Load More
-                </Button>
+                  {displayedData.length < 70 ? 
+                    <Button variant="btn btn-info" onClick={() => loadMoreNews()}>
+                    Load More
+                    </Button> : null 
+                  }
                 </main>
               }
             </Tab.Pane>
