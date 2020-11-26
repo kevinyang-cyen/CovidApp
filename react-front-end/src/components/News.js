@@ -34,6 +34,7 @@ export default function News() {
   const [vaccData, setvaccData] = useState(vaccineNews || []);
   const [isLoadingNews, setIsLoadingNews] = useState(true);
   const [isLoadingVaccine, setIsLoadingVaccine] = useState(true);
+  const [loadMore, setloadMore] = useState(0);
 
   useEffect(() => {
     const runCall = async () => {
@@ -72,6 +73,12 @@ export default function News() {
     if (author) {
       return `By ${author} at`
     }
+  }
+
+  // loads more news
+  const loadMoreNews = () => {
+    console.log("Loading More News");
+    return null;
   }
 
   // checks whether to show photo or not 
@@ -318,6 +325,9 @@ export default function News() {
                   <CardColumns>
                     {loadNews}
                   </CardColumns>
+                <Button variant="btn btn-info" onClick={() => loadMoreNews()}>
+                  Load More
+                </Button>
                 </main>
               }
             </Tab.Pane>
