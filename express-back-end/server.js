@@ -30,7 +30,7 @@ db.connect();
 
 
 // Mounting Resource Routes
-App.use('/map', mapRoute());
+App.use('/map', mapRoute(db));
 App.use('/heatmap', heatmapRoute());
 App.use('/login', loginRoute(db));
 App.use('/register', registerRoute(db));

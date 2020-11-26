@@ -6,7 +6,13 @@ import axios from "axios";
 
 export default function CovidMap() {
     const [position, setPosition] = useState(null);
-    const [markerCases, setMarkerCases] = useState({});
+    const [markerCases, setMarkerCases] = useState([{
+      created_date: "1606263172332",
+      id: 1,
+      latitude: 56.130367,
+      longitude: -106.346771,
+      user_id: 1
+  }]);
     function MyComponent() {
       const map = useMapEvents({
         click: () => {
@@ -28,7 +34,10 @@ export default function CovidMap() {
   useEffect(() => {
     const runCall = async () => {
       const markerCasesValue = await fetchReportCases();
-      console.log("markerCasesValue: ", markerCasesValue)
+      console.log("markerCasesValue: ", markerCasesValue.data[0]);
+      setMarkerCases(markerCasesValue.data);
+      console.log("markerCases: ", markerCases);
+      
     };
 
     const fetchReportCases = async () => {
@@ -44,6 +53,13 @@ export default function CovidMap() {
 
     runCall();
   }, []);
+
+  console.log("markerCases outside: ", markerCases);
+  let popups = markerCases.map((report, index) => 
+    <Marker position={[report.latitude, report.longitude]}>
+      <Popup>Reported at {Date(report.created_date)}</Popup>
+    </Marker>
+  )
 
   return (
     <MapContainer
@@ -78,6 +94,7 @@ export default function CovidMap() {
           </Popup>
         </GeoJSON>
       )}
+      {popups}
     </MapContainer>
   );
 }
