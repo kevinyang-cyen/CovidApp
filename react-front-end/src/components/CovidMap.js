@@ -32,7 +32,6 @@ export default function CovidMap() {
     })
     return null;
   }
-  console.log(healthRegion);
 
   useEffect(() => {
     const runCall = async () => {
