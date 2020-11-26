@@ -26,12 +26,12 @@ export default function News() {
     vaccineP1T: [{ company: "", vaccineName: "", vaccineType: "", vaccineDetails: "", vaccineStatus: "", vaccineArticle: "", vaccinePhase: "" }],
     vaccineP2T: [{ company: "", vaccineName: "", vaccineType: "", vaccineDetails: "", vaccineStatus: "", vaccineArticle: "", vaccinePhase: "" }],
     vaccineP3T: [{ company: "", vaccineName: "", vaccineType: "", vaccineDetails: "", vaccineStatus: "", vaccineArticle: "", vaccinePhase: "" }],
-    vaccineFDA: [],
-    vaccineAvailable: []
+    vaccineFDA: [{ company: "", vaccineName: "", vaccineType: "", vaccineDetails: "", vaccineStatus: "", vaccineArticle: "", vaccinePhase: "" }],
+    vaccineAvailable: [{ company: "", vaccineName: "", vaccineType: "", vaccineDetails: "", vaccineStatus: "", vaccineArticle: "", vaccinePhase: "" }]
   }
 
   const [data, setData] = useState(latestReports);
-  const [vaccData, setvaccData] = useState(vaccineNews);
+  const [vaccData, setvaccData] = useState(vaccineNews || []);
   const [isLoadingNews, setIsLoadingNews] = useState(true);
   const [isLoadingVaccine, setIsLoadingVaccine] = useState(true);
 
@@ -221,6 +221,61 @@ export default function News() {
   });
 
 
+  const FDA = vaccData.vaccineFDA.map((vaccine, index) => {
+    let popoverDetails = (
+      <Popover id="popover-basic" key={index}>
+        <Popover.Title as="h3">Vaccine Information</Popover.Title>
+        <Popover.Content>
+          <h6><strong>Name:</strong>{vaccine.vaccineName}</h6>
+          <h6><strong>Type:</strong> {vaccine.vaccineType}</h6>
+          <p><strong>Details:</strong> {vaccine.vaccineDetails}</p>
+          <p><strong>Status:</strong> {vaccine.vaccineStatus}</p>
+          <p><a href={vaccine.vaccineArticle}>For more click here</a></p>
+        </Popover.Content>
+      </Popover>
+    );
+
+    let displayCompany = (
+      (
+        <li>
+          <OverlayTrigger trigger="click" rootClose placement="right" overlay={popoverDetails}>
+            <Button variant="outline-info" size="sm" className="vaccine-button">{vaccine.company}</Button>
+          </OverlayTrigger>
+        </li>
+      )
+    );
+
+    return displayCompany;
+  });
+
+  const availablePublic = vaccData.vaccineAvailable.map((vaccine, index) => {
+    let popoverDetails = (
+      <Popover id="popover-basic" key={index}>
+        <Popover.Title as="h3">Vaccine Information</Popover.Title>
+        <Popover.Content>
+          <h6><strong>Name:</strong>{vaccine.vaccineName}</h6>
+          <h6><strong>Type:</strong> {vaccine.vaccineType}</h6>
+          <p><strong>Details:</strong> {vaccine.vaccineDetails}</p>
+          <p><strong>Status:</strong> {vaccine.vaccineStatus}</p>
+          <p><a href={vaccine.vaccineArticle}>For more click here</a></p>
+        </Popover.Content>
+      </Popover>
+    );
+
+    let displayCompany = (
+      (
+        <li>
+          <OverlayTrigger trigger="click" rootClose placement="right" overlay={popoverDetails}>
+            <Button variant="outline-info" size="sm" className="vaccine-button">{vaccine.company}</Button>
+          </OverlayTrigger>
+        </li>
+      )
+    );
+
+    return displayCompany;
+  });
+
+
   //returns each news card individually - allows for row organization on news page
   let loadNews = data.newsReports.map((item, index) =>
     (
@@ -258,7 +313,7 @@ export default function News() {
           <Tab.Content>
             <Tab.Pane eventKey="first">
               {isLoadingNews ?
-                  <Spinner className="spinner-load-news" animation="grow" variant="dark" /> :
+                <Spinner className="spinner-load-news" animation="grow" variant="dark" /> :
                 <main className="news">
                   <CardColumns>
                     {loadNews}
@@ -334,10 +389,9 @@ export default function News() {
                     <div>
                       <h2>FDA Approved</h2>
                       <ProgressBar className="loadbar" animated now={90} />
-                      {(vaccData.vaccineFDA[0]) ?
-                        <ul>
-                          <li>{vaccData.vaccineFDA[0].company}</li>
-                        </ul> : "No Viable Candidates"}
+                      {
+                        (vaccData.vaccineFDA.length !== 0) ? <ul>{FDA}</ul> : "No Viable Candidates"
+                      }
                     </div>
                   </>
                 }
@@ -347,10 +401,9 @@ export default function News() {
                     <div>
                       <h2>Generally Available</h2>
                       <ProgressBar className="loadbar" animated now={100} />
-                      {(vaccData.vaccineAvailable[0]) ?
-                        <ul>
-                          <li>{vaccData.vaccineAvailable[0].company}</li>
-                        </ul> : "No Viable Candidates"}
+                      {
+                        (vaccData.vaccineAvailable[0]) ? <ul>{availablePublic}</ul> : "No Viable Candidates"
+                      }
                     </div>
                   </>
                 }
@@ -367,3 +420,6 @@ export default function News() {
 
 
 
+// <ul>
+// <li>{vaccData.vaccineFDA[0].company}</li>
+// </ul> 
