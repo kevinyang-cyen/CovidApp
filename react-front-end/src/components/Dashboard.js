@@ -11,6 +11,7 @@ import timeConverter from "../helpers/convertTime.js";
 import checkForZeroData from "../helpers/checkForZeroData.js";
 import Tabs from 'react-bootstrap/Tabs'
 import Tab from 'react-bootstrap/Tab'
+import provPop from "../helpers/provincePop.js"
 
 export default function Dashboard() {
   let provData_state = {
@@ -152,6 +153,7 @@ export default function Dashboard() {
                 <div className="recovery-testing">
                   <div className="testing">
                     <AreaGraph coviddata={provData.testing_data} keydata="testing" xaxis=" Time Frame" yaxis={locationCode + " Testing"} color="blue" />
+                    console.log({provData.testing_data})
                   </div>
                   <div className="recovery">
                     <AreaGraph coviddata={provData.recoveries_data} keydata="recoveries" xaxis="Time Frame" yaxis={locationCode + " Recoveries"} color="green" />
