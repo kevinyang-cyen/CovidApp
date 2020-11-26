@@ -17,7 +17,6 @@
   background-color: #f0f0f0;
   display: flex;
   justify-content: space-around;
-  padding-top: 10px;
   padding-right: 10px;
   padding-left: 10px;
   width: 78%;
@@ -25,6 +24,7 @@
   text-align: center;
   border-radius: 5px;
   line-height: 20px;
+  height: 90px;
 }
 
 
@@ -97,7 +97,7 @@ h6 {
   display: flex;
   max-width: 100vw;
   flex-wrap: wrap;
-  height: 80vh;
+  height: 70vh;
   margin-bottom: 15px;
 }
 
@@ -157,4 +157,60 @@ h6 {
   display: flex;
   justify-content: center;
   margin-top: 30%;
+}
+
+
+.img-container {
+  position: relative;
+  text-align: center;
+  display: flex;
+  margin-left: 20px;
+  max-height: 80vh;
+}
+.center-text {
+  position: absolute;
+  bottom: 50%;
+  background-color: darkgray;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  opacity: 100%;
+}
+.graph-pic {
+  max-width: 40vw;
+  max-height: 30vh;
+  opacity: 80%;
+  display: flex;
+}
+
+.additional-graphs {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 5px;
+  width: 90vw;
+  margin: 15px;
+}
+
+.age-gender-cases {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.age-gender-cases:hover {
+  background-color: #f4f4f4;
+}
+
+.age-gender-mortality {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.age-gender-mortality:hover {
+  background-color: #f4f4f4;
+}
+
+h5 {
+  margin-left: 5px;
+  margin-top: 5px;
+  text-align: center;
 }

@@ -12,6 +12,8 @@ import checkForZeroData from "../helpers/checkForZeroData.js";
 import Tabs from 'react-bootstrap/Tabs'
 import Tab from 'react-bootstrap/Tab'
 import "../styles/Dashboard.scss"
+import emptyBarGraph from "../docs/no-bar-graph-info.png"
+import noGenderInfo from "../docs/no-gender-info.png"
 
 export default function Dashboard() {
   let provData_state = {
@@ -188,39 +190,45 @@ export default function Dashboard() {
             <Loading /> :
             <>
               {dashboardInfoBar()}
-              <div className="age-gender">
-                { (ageCountIsZero) ? 
-                  <div className="img-container">
-                    <img className="graph-pic" src={emptyBarGraph} alt="Information unavailable at this time"></img>
-                    <div className="center-text">Information for age demographic unavailable at this time</div>
-                  
-                  </div> : <BarGraph className="age-distribution" coviddata={provData.ageDemographic_count} yaxis={locationCode + " Reported Cases Age Distribution"} />
-                }       
-                { (ageCountIsZero) ? 
-                  <div className="img-container">
-                    <img className="graph-pic" src={noGenderInfo} alt="Information unavailable at this time"></img>
-                    <div className="center-text">Information for gender demographic unavailable at this time</div>
-                  </div> : <PieAngleGraph className="gender-distribution" coviddata={provData.gender_demographic_infections} datakey="Infection" nameKey="Gender" yaxis={locationCode + "Reported Cases Gender Distribution"} />
-                }
+              <div className="additional-graphs">
+                <div className="age-gender-cases">
+                  <h5>Reported Case Distribution</h5>
+                  {(ageCountIsZero) ?
+                    <div className="img-container">
+                      <img className="graph-pic" src={emptyBarGraph} alt="Information unavailable at this time"></img>
+                      <div className="center-text">Information for age demographic unavailable at this time</div>
+
+                    </div> : <BarGraph className="age-distribution" coviddata={provData.ageDemographic_count_cases} yaxis={locationCode + "Reported Cases Age Distribution"} />
+                  }
+                  {(ageCountIsZero) ?
+                    <div className="img-container">
+                      <img className="graph-pic" src={noGenderInfo} alt="Information unavailable at this time"></img>
+                      <div className="center-text">Information for gender demographic unavailable at this time</div>
+                    </div> : <PieAngleGraph className="gender-distribution" coviddata={provData.gender_demographic_infections} datakey="Infection" nameKey="Gender" yaxis={locationCode + "Reported Cases Gender Distribution"} />
+                  }
+                </div>
+
+                <div className="age-gender-mortality">
+                  <h5>Reported Mortality Distribution</h5>
+                  {(ageCountIsZero) ?
+                    <div className="img-container">
+                      <img className="graph-pic" src={emptyBarGraph} alt="Information unavailable at this time"></img>
+                      <div className="center-text">Information for age demographic unavailable at this time</div>
+
+                    </div> : <BarGraph coviddata={provData.ageDemographic_count_deaths} yaxis={locationCode + "Reported Deaths Age Distribution"} />
+                  }
+                  {(ageCountIsZero) ?
+                    <div className="img-container">
+                      <img className="graph-pic" src={noGenderInfo} alt="Information unavailable at this time"></img>
+                      <div className="center-text">Information for gender demographic unavailable at this time</div>
+                    </div> : <PieAngleGraph coviddata={provData.gender_demographic_deaths} datakey="Deaths" nameKey="Gender" yaxis={locationCode + "Reported Deaths Gender Distribution"} />
+                  }
+                </div>
               </div>
             </>
           }
         </Tab>
-        <Tab eventKey="age-gender" title="Age and Gender">
-          <div className="age-gender">
-            {
-              (ageCountIsZero) ? 'No data available for age demographic' : <BarGraph coviddata={provData.ageDemographic_count_cases} yaxis={locationCode + "Reported Cases Age Distribution"} />
-            }
-            {
-              (ageCountIsZero) ? 'No data available for age demographic' : <BarGraph coviddata={provData.ageDemographic_count_deaths} yaxis={locationCode + "Reported Deaths Age Distribution"} />
-            }
-            {
-              (ageCountIsZero) ? 'No data available for gender demographic' : <PieAngleGraph coviddata={provData.gender_demographic_infections} datakey="Infection" nameKey="Gender" yaxis={locationCode + "Reported Cases Gender Distribution"} />
-            }
-            {
-              (ageCountIsZero) ? 'No data available for gender demographic' : <PieAngleGraph coviddata={provData.gender_demographic_deaths} datakey="Deaths" nameKey="Gender" yaxis={locationCode + "Reported Deaths Gender Distribution"} />
-            }
-          </div>
+        <Tab eventKey="other-stuff" title="Other stuff">
         </Tab>
       </Tabs>
 
