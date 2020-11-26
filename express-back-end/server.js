@@ -18,6 +18,7 @@ const loginRoute = require('./routes/login.js');
 const registerRoute = require('./routes/register.js');
 const dashboardRoute = require('./routes/dashboard.js');
 const quarantineRoute = require('./routes/quarantine.js');
+const selfreportRoute = require('./routes/selfreport.js');
 
 // PG database client/connection setup
 const { Pool } = require('pg');
@@ -28,12 +29,14 @@ db.connect();
 
 
 // Mounting Resource Routes
-App.use('/map', mapRoute());
+App.use('/map', mapRoute(db));
 App.use('/heatmap', heatmapRoute());
 App.use('/login', loginRoute(db));
 App.use('/register', registerRoute(db));
 App.use('/dashboard', dashboardRoute());
 App.use('/quarantine', quarantineRoute(db));
+App.use('/selfreport', selfreportRoute(db));
+
 
 // Sample GET route
 App.get('/api/data', (req, res) => res.json({
