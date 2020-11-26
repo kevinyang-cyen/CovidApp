@@ -45,7 +45,7 @@ export default function Register() {
         <Form className="login-form" onSubmit={handleSubmit(onSubmit)}>
           {cookies['user-cookie'] ? 
             (cookies['user-cookie'][2]? 
-                <h2>Please Quarantine for {14 - Math.round(((new Date().getTime() - cookies['user-cookie'][2]) / 86400000)*24)} More Days and Check The Map</h2> 
+                <h2>Please Quarantine for {14 - Math.round(((new Date().getTime() - cookies['user-cookie'][2]) / 86400000))} More Days and Check The Map</h2> 
               : 
               <Button variant="dark" type="submit">
                 Self-Report and Start My Countdown
