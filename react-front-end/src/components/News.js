@@ -83,9 +83,9 @@ export default function News() {
     }
   }
 
-  const preResearch = vaccData.vaccinePreClinRes.map((vaccine) => {
+  const preResearch = vaccData.vaccinePreClinRes.map((vaccine, index) => {
     let popoverDetails = (
-      <Popover id="popover-basic">
+      <Popover id="popover-basic" key={index}>
         <Popover.Title as="h3">Vaccine Information</Popover.Title>
         <Popover.Content>
           <h6><strong>Name:</strong>{vaccine.vaccineName}</h6>
@@ -111,9 +111,9 @@ export default function News() {
 
   });
 
-  const preTrial = vaccData.vaccinePreClinTri.map((vaccine) => {
+  const preTrial = vaccData.vaccinePreClinTri.map((vaccine, index) => {
     let popoverDetails = (
-      <Popover id="popover-basic">
+      <Popover id="popover-basic" key={index}>
         <Popover.Title as="h3">Vaccine Information</Popover.Title>
         <Popover.Content>
           <h6><strong>Name:</strong>{vaccine.vaccineName}</h6>
@@ -138,9 +138,9 @@ export default function News() {
     return displayCompany;
   });
 
-  const phaseOne = vaccData.vaccineP1T.map((vaccine) => {
+  const phaseOne = vaccData.vaccineP1T.map((vaccine, index) => {
     let popoverDetails = (
-      <Popover id="popover-basic">
+      <Popover id="popover-basic" key={index}>
         <Popover.Title as="h3">Vaccine Information</Popover.Title>
         <Popover.Content>
           <h6><strong>Name:</strong>{vaccine.vaccineName}</h6>
@@ -166,9 +166,9 @@ export default function News() {
   });
 
 
-  const phaseTwo = vaccData.vaccineP2T.map((vaccine) => {
+  const phaseTwo = vaccData.vaccineP2T.map((vaccine, index) => {
     let popoverDetails = (
-      <Popover id="popover-basic">
+      <Popover id="popover-basic" key={index}>
         <Popover.Title as="h3">Vaccine Information</Popover.Title>
         <Popover.Content>
           <h6><strong>Name:</strong>{vaccine.vaccineName}</h6>
@@ -193,9 +193,9 @@ export default function News() {
     return displayCompany;
   });
 
-  const phaseThree = vaccData.vaccineP3T.map((vaccine) => {
+  const phaseThree = vaccData.vaccineP3T.map((vaccine, index) => {
     let popoverDetails = (
-      <Popover id="popover-basic">
+      <Popover id="popover-basic" key={index}>
         <Popover.Title as="h3">Vaccine Information</Popover.Title>
         <Popover.Content>
           <h6><strong>Name:</strong>{vaccine.vaccineName}</h6>
@@ -225,7 +225,7 @@ export default function News() {
   let loadNews = data.newsReports.map((item, index) =>
     (
       <>
-        <Card>
+        <Card key={index}>
           {photoExists(item.urlToImage)}
           <Card.Body>
             <Card.Title><a href={item.url}>{item.title}</a></Card.Title>
