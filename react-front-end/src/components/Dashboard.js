@@ -185,16 +185,16 @@ export default function Dashboard() {
               <div className="age-gender">
                 { (ageCountIsZero) ? 
                   <div className="img-container">
-                    <img src={emptyBarGraph} alt="Information unavailable at this time"></img>
+                    <img className="graph-pic" src={emptyBarGraph} alt="Information unavailable at this time"></img>
                     <div className="center-text">Information for age demographic unavailable at this time</div>
-                  </div> : <BarGraph coviddata={provData.ageDemographic_count} yaxis={locationCode + " Reported Cases Age Distribution"} />
                   
+                  </div> : <BarGraph className="age-distribution" coviddata={provData.ageDemographic_count} yaxis={locationCode + " Reported Cases Age Distribution"} />
                 }       
                 { (ageCountIsZero) ? 
-                  <div clAssName="img-container">
-                    <img src={noGenderInfo} alt="Information unavailable at this time"></img>
+                  <div className="img-container">
+                    <img className="graph-pic" src={noGenderInfo} alt="Information unavailable at this time"></img>
                     <div className="center-text">Information for gender demographic unavailable at this time</div>
-                  </div> : <PieAngleGraph coviddata={provData.gender_demographic_infections} datakey="Infection" nameKey="Gender" yaxis={locationCode + "Reported Cases Gender Distribution"} />
+                  </div> : <PieAngleGraph className="gender-distribution" coviddata={provData.gender_demographic_infections} datakey="Infection" nameKey="Gender" yaxis={locationCode + "Reported Cases Gender Distribution"} />
                 }
               </div>
             </>
@@ -209,8 +209,6 @@ export default function Dashboard() {
   );
 }
 
-// 'No data available for age demographic'
-// 'No data available for gender demographic'
 
 //provData.ageDemographic_count[6]["Case Count"] < 2 || 
 //provData.gender_demographic_infections[0].Infection < 5 || provData.gender_demographic_infections[1].Infection < 5 ||

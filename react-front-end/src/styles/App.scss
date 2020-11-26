@@ -275,3 +275,35 @@ h6 {
   justify-content: center;
   margin-top: 30%;
 }
+
+.img-container {
+  position: relative;
+  text-align: center;
+  display: flex;
+  margin-left: 20px;
+  max-height: 80vh;
+}
+
+.center-text {
+  position: absolute;
+  bottom: 50%;
+  background-color: darkgray;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  opacity: 100%;
+}
+.graph-pic {
+  max-width: 25vw;
+  opacity: 80%;
+  display: flex;
+}
+
+.gender-distribution {
+  display: flex;
+  width: 800px;
+  height: 400px;
+}
+
+.age-distribution {
+}
