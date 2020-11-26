@@ -9,10 +9,9 @@ import Select from "./Select";
 import sortProvinceData from "../helpers/sortProvinceData.js";
 import timeConverter from "../helpers/convertTime.js";
 import checkForZeroData from "../helpers/checkForZeroData.js";
-import Tabs from 'react-bootstrap/Tabs';
-import Tab from 'react-bootstrap/Tab';
-import emptyBarGraph from '../docs/no-bar-graph-info.png';
-import noGenderInfo from '../docs/no-gender-info.png';
+import Tabs from 'react-bootstrap/Tabs'
+import Tab from 'react-bootstrap/Tab'
+import "../styles/Dashboard.scss"
 
 export default function Dashboard() {
   let provData_state = {
@@ -28,7 +27,10 @@ export default function Dashboard() {
     testing_data: [{
       name: '', recoveries: 0
     }],
-    ageDemographic_count: [
+    ageDemographic_count_cases: [
+      { name: '', "Case Count": 0 }
+    ],
+    ageDemographic_count_deaths: [
       { name: '', "Case Count": 0 }
     ],
     timeSpecific_data: [{
@@ -40,9 +42,13 @@ export default function Dashboard() {
       activeCase: 0,
       todayDeaths: 0
     }],
-    genderDemographic_infections: [
+    gender_demographic_infections: [
       { "Gender": "Male", "Infection": 0 },
       { "Gender": "Female", "Infection": 0 }
+    ],
+    gender_demographic_deaths: [
+      { "Gender": "Male", "Deaths": 0 },
+      { "Gender": "Female", "Deaths": 0 }
     ]
   }
 
@@ -200,8 +206,21 @@ export default function Dashboard() {
             </>
           }
         </Tab>
-        <Tab eventKey="per-million" title="Per Million">
-
+        <Tab eventKey="age-gender" title="Age and Gender">
+          <div className="age-gender">
+            {
+              (ageCountIsZero) ? 'No data available for age demographic' : <BarGraph coviddata={provData.ageDemographic_count_cases} yaxis={locationCode + "Reported Cases Age Distribution"} />
+            }
+            {
+              (ageCountIsZero) ? 'No data available for age demographic' : <BarGraph coviddata={provData.ageDemographic_count_deaths} yaxis={locationCode + "Reported Deaths Age Distribution"} />
+            }
+            {
+              (ageCountIsZero) ? 'No data available for gender demographic' : <PieAngleGraph coviddata={provData.gender_demographic_infections} datakey="Infection" nameKey="Gender" yaxis={locationCode + "Reported Cases Gender Distribution"} />
+            }
+            {
+              (ageCountIsZero) ? 'No data available for gender demographic' : <PieAngleGraph coviddata={provData.gender_demographic_deaths} datakey="Deaths" nameKey="Gender" yaxis={locationCode + "Reported Deaths Gender Distribution"} />
+            }
+          </div>
         </Tab>
       </Tabs>
 
@@ -217,3 +236,4 @@ export default function Dashboard() {
 // <AreaGraph coviddata={provData.confirmed_data} keydata="cases" xaxis=" Time Frame" yaxis={locationCode + " Confirmed Cases"} color="purple" />
 // <AreaGraph coviddata={provData.deaths_data} keydata="deaths" xaxis=" Time Frame" yaxis={locationCode + " Confirmed Deaths"} color="black" />
 // <AreaGraph coviddata={provData.recoveries_data} keydata="recoveries" xaxis="Time Frame" yaxis={locationCode + " Recoveries"} color="red" />
+// {/*(ageCountIsZero) ? 'No data available for age demographic' :*/} 

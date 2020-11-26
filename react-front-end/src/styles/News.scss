@@ -1,0 +1,46 @@
+// NEWS
+
+.spinner-load-news {
+  display: flex;
+  margin-top: 40%;
+  margin-left: 40%;
+}
+
+.news {
+  display: flex;
+  padding: 2rem;
+  font-size: 0.75em;
+  font-weight: 300;
+  max-width: 100%;
+}
+
+.news-tabs {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.vaccines {
+  margin-top: 20px;
+  max-width: 90%;
+  margin-left: 5%;
+}
+
+.vaccine-button {
+  margin-bottom: 5px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.loadbar {
+  margin-bottom: 15px;
+}
+
+a:link {
+  color: #636363;
+}
+
+.card-title {
+font-size: 1.5em
+}
