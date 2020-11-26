@@ -12,7 +12,7 @@ import {
 export default function BarGraph(props) {
   return (
     <div>
-      <ResponsiveContainer width="99%" height={400}>
+      <ResponsiveContainer width="30%" height={400}>
         <BarChart
           data={props.coviddata}
           fontSize={12}
