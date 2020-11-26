@@ -30,11 +30,7 @@ export default function CovidMap() {
         map.flyTo(location.latlng, map.getZoom())
       },
     })
-    return position === null ? null : (
-      <Marker position={position}>
-        <Popup>Your are here</Popup>
-      </Marker>
-    )
+    return null;
   }
   console.log(healthRegion);
 
