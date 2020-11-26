@@ -37,10 +37,7 @@ export default function CovidMap() {
   useEffect(() => {
     const runCall = async () => {
       const markerCasesValue = await fetchReportCases();
-      console.log("markerCasesValue: ", markerCasesValue.data[0]);
       setMarkerCases(markerCasesValue.data);
-      console.log("markerCases: ", markerCases);
-
     };
 
     const fetchReportCases = async () => {
