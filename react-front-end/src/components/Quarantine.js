@@ -6,20 +6,20 @@ import { useCookies } from 'react-cookie';
 import { useState } from "react";
 
 export default function Register() {
-  const { register, handleSubmit } = useForm();
-  const [cookies, setCookie, removeCookie] = useCookies();
+  const { handleSubmit } = useForm();
+  const [cookies, setCookie] = useCookies();
   const [location, setLocation] = useState([]);
-  console.log(cookies);
-  const onSubmit = data => {
+  const onSubmit = (data) => {
+
     axios.post("/quarantine", cookies['user-cookie'])
       .then((res) => {
         setCookie(['user-cookie'], [res.data[0], res.data[1], res.data[2]]);
       });
 
-      axios.post("/selfreport", [cookies['user-cookie'], location])
-      .then((res) => {
-        console.log(res);
-      });
+    axios.post("/selfreport", [cookies['user-cookie'], location])
+    .then((res) => {
+      console.log(res);
+    });
   }
 
   var options = {
@@ -30,7 +30,6 @@ export default function Register() {
 
   function success(pos) {
     var crd = pos.coords;
-    console.log(crd);
     setLocation([crd.latitude, crd.longitude]);
   }
   function error(err) {
@@ -46,7 +45,7 @@ export default function Register() {
         <Form className="login-form" onSubmit={handleSubmit(onSubmit)}>
           {cookies['user-cookie'] ? 
             (cookies['user-cookie'][2]? 
-              <h2>{14 - Math.round(((new Date().getTime() - cookies['user-cookie'][2]) / 86400000)*24)} Days Left... Your Marker Has Been Added To The Map</h2> 
+                <h2>Please Quarantine for {14 - Math.round(((new Date().getTime() - cookies['user-cookie'][2]) / 86400000)*24)} More Days and Check The Map</h2> 
               : 
               <Button variant="dark" type="submit">
                 Self-Report and Start My Countdown
