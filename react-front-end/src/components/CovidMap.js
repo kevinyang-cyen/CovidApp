@@ -31,7 +31,7 @@ export default function CovidMap() {
       },
     })
     return position === null ? null : (
-      <Marker position={position}>
+      <Marker position={position} >
         <Popup>Your are here</Popup>
       </Marker>
     )

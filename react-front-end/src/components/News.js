@@ -258,7 +258,7 @@ export default function News() {
           <Tab.Content>
             <Tab.Pane eventKey="first">
               {isLoadingNews ?
-                  <Spinner className="spinner-load-news" animation="grow" variant="dark" /> :
+                <Spinner className="spinner-load-news" animation="grow" variant="dark" /> :
                 <main className="news">
                   <CardColumns>
                     {loadNews}
