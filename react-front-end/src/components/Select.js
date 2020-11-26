@@ -25,7 +25,7 @@ function Select(props) {
         let baseURL2 = "?stat=mortality&loc=NB"
         let baseURL3 = "?stat=cases&loc=NB"
         props.onClick(baseURL1, baseURL2, baseURL3, locationCode);
-      } else if (locationCode === "MB") {
+      } else if (locationCode === "Manitoba") {
         let baseURL1 = "?loc=MB&after=01-01-2020"
         let baseURL2 = "?stat=mortality&loc=MB"
         let baseURL3 = "?stat=cases&loc=MB"
@@ -40,17 +40,17 @@ function Select(props) {
         let baseURL2 = "?stat=mortality&loc=NT"
         let baseURL3 = "?stat=cases&loc=NT"
         props.onClick(baseURL1, baseURL2, baseURL3, locationCode);
-      } else if (locationCode === "NS") {
+      } else if (locationCode === "Nova Scotia") {
         let baseURL1 = "?loc=NS&after=01-01-2020"
         let baseURL2 = "?stat=mortality&loc=NS"
         let baseURL3 = "?stat=cases&loc=NS"
         props.onClick(baseURL1, baseURL2, baseURL3, locationCode);
-      } else if (locationCode === "NU") {
+      } else if (locationCode === "Nunavut") {
         let baseURL1 = "?loc=NU&after=01-01-2020"
         let baseURL2 = "?stat=mortality&loc=NU"
         let baseURL3 = "?stat=cases&loc=NU"
         props.onClick(baseURL1, baseURL2, baseURL3, locationCode);
-      } else if (locationCode === "ON") {
+      } else if (locationCode === "Ontario") {
         let baseURL1 = "?loc=ON&after=01-01-2020"
         let baseURL2 = "?stat=mortality&loc=ON"
         let baseURL3 = "?stat=cases&loc=ON"
@@ -92,14 +92,14 @@ function Select(props) {
           <option value="Canada">Canada</option>
           <option value="Alberta" >Alberta</option>
           <option value="British Columbia">British Columbia</option>
-          <option value="MB">Manitoba</option>
+          <option value="Manitoba">Manitoba</option>
           <option value="New Brunswick">New Brunswick</option>
           <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
           <option value="Northwest Territories">Northwest Territories</option>
           <option value="Prince Edward Island">Prince Edward Island</option>
-          <option value="NS">Nova Scotia</option>
-          <option value="NU">Nunavut</option>
-          <option value="ON">Ontario</option>
+          <option value="Nova Scotia">Nova Scotia</option>
+          <option value="Nunavut">Nunavut</option>
+          <option value="Ontario">Ontario</option>
           <option value="Quebec">Quebec</option>
           <option value="Saskatoon">Saskatchewan</option>
           <option value="Yukon">Yukon</option>

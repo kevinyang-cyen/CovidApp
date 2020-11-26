@@ -9,11 +9,11 @@ import Select from "./Select";
 import sortProvinceData from "../helpers/sortProvinceData.js";
 import timeConverter from "../helpers/convertTime.js";
 import checkForZeroData from "../helpers/checkForZeroData.js";
-import Tabs from 'react-bootstrap/Tabs'
-import Tab from 'react-bootstrap/Tab'
-import "../styles/Dashboard.scss"
-import emptyBarGraph from "../docs/no-bar-graph-info.png"
-import noGenderInfo from "../docs/no-gender-info.png"
+import Tabs from 'react-bootstrap/Tabs';
+import Tab from 'react-bootstrap/Tab';
+import "../styles/Dashboard.scss";
+import emptyBarGraph from "../docs/no-bar-graph-info.png";
+import noGenderInfo from "../docs/no-gender-info.png";
 
 export default function Dashboard() {
   let provData_state = {
