@@ -10,17 +10,17 @@ function Select(props) {
 
   const search = function () {
     if (props.onClick) {
-      if (locationCode === "AB") {
+      if (locationCode === "Alberta") {
         let baseURL1 = "?loc=AB&after=01-01-2020"
         let baseURL2 = "?stat=mortality&loc=AB"
         let baseURL3 = "?stat=cases&loc=AB"
         props.onClick(baseURL1, baseURL2, baseURL3, locationCode);
-      } else if (locationCode === "BC") {
+      } else if (locationCode === "British Columbia") {
         let baseURL1 = "?loc=BC&after=01-01-2020"
         let baseURL2 = "?stat=mortality&loc=BC"
         let baseURL3 = "?stat=cases&loc=BC"
         props.onClick(baseURL1, baseURL2, baseURL3, locationCode);
-      } else if (locationCode === "NB") {
+      } else if (locationCode === "New Brunswick") {
         let baseURL1 = "?loc=NB&after=01-01-2020"
         let baseURL2 = "?stat=mortality&loc=NB"
         let baseURL3 = "?stat=cases&loc=NB"
@@ -30,12 +30,12 @@ function Select(props) {
         let baseURL2 = "?stat=mortality&loc=MB"
         let baseURL3 = "?stat=cases&loc=MB"
         props.onClick(baseURL1, baseURL2, baseURL3, locationCode);
-      } else if (locationCode === "NL") {
+      } else if (locationCode === "Newfoundland and Labrador") {
         let baseURL1 = "?loc=NL&after=01-01-2020"
         let baseURL2 = "?stat=mortality&loc=NL"
         let baseURL3 = "?stat=cases&loc=NL"
         props.onClick(baseURL1, baseURL2, baseURL3, locationCode);
-      } else if (locationCode === "NT") {
+      } else if (locationCode === "Northwest Territories") {
         let baseURL1 = "?loc=NT&after=01-01-2020"
         let baseURL2 = "?stat=mortality&loc=NT"
         let baseURL3 = "?stat=cases&loc=NT"
@@ -55,22 +55,22 @@ function Select(props) {
         let baseURL2 = "?stat=mortality&loc=ON"
         let baseURL3 = "?stat=cases&loc=ON"
         props.onClick(baseURL1, baseURL2, baseURL3, locationCode);
-      } else if (locationCode === "PE") {
+      } else if (locationCode === "Prince Edward Island") {
         let baseURL1 = "?loc=PE&after=01-01-2020"
         let baseURL2 = "?stat=mortality&loc=PE"
         let baseURL3 = "?stat=cases&loc=PE"
         props.onClick(baseURL1, baseURL2, baseURL3, locationCode);
-      } else if (locationCode === "QC") {
+      } else if (locationCode === "Quebec") {
         let baseURL1 = "?loc=QC&after=01-01-2020"
         let baseURL2 = "?stat=mortality&loc=QC"
         let baseURL3 = "?stat=cases&loc=QC"
         props.onClick(baseURL1, baseURL2, baseURL3, locationCode);
-      } else if (locationCode === "SK") {
+      } else if (locationCode === "Saskatoon") {
         let baseURL1 = "?loc=SK&after=01-01-2020"
         let baseURL2 = "?stat=mortality&loc=SK"
         let baseURL3 = "?stat=cases&loc=SK"
         props.onClick(baseURL1, baseURL2, baseURL3, locationCode);
-      } else if (locationCode === "YT") {
+      } else if (locationCode === "Yukon") {
         let baseURL1 = "?loc=YT&after=01-01-2020"
         let baseURL2 = "?stat=mortality&loc=YT"
         let baseURL3 = "?stat=cases&loc=YT"
@@ -90,19 +90,19 @@ function Select(props) {
         <select className="custom-select" value={locationCode} onChange={onChange} name="province" id="inputGroupSelect03">
           <option value={null} hidden selected>Select your province</option>
           <option value="Canada">Canada</option>
-          <option value="AB" >Alberta</option>
-          <option value="BC">British Columbia</option>
+          <option value="Alberta" >Alberta</option>
+          <option value="British Columbia">British Columbia</option>
           <option value="MB">Manitoba</option>
-          <option value="NB">New Brunswick</option>
-          <option value="NL">Newfoundland and Labrador</option>
-          <option value="NT">Northwest Territories</option>
-          <option value="PE">Prince Edward Island</option>
+          <option value="New Brunswick">New Brunswick</option>
+          <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+          <option value="Northwest Territories">Northwest Territories</option>
+          <option value="Prince Edward Island">Prince Edward Island</option>
           <option value="NS">Nova Scotia</option>
           <option value="NU">Nunavut</option>
           <option value="ON">Ontario</option>
-          <option value="QC">Quebec</option>
-          <option value="SK">Saskatchewan</option>
-          <option value="YT">Yukon</option>
+          <option value="Quebec">Quebec</option>
+          <option value="Saskatoon">Saskatchewan</option>
+          <option value="Yukon">Yukon</option>
         </select>
         <div className="input-group-prepend">
           <button className="filter-button" type="button" onClick={search}>Submit</button>

@@ -10,6 +10,7 @@ import Register from "./components/Register";
 import Quarantine from "./components/Quarantine";
 import "./styles/App.scss";
 import { useCookies } from 'react-cookie';
+import logo from '../src/docs/COVIDLITE.png'
 
 // Add current-user state, and display on nav bar "logged in as"
 
@@ -40,6 +41,8 @@ function App() {
     <main>
       <Router>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <Link className="nav-link" to="/">
+          <img className="logo" src={logo} alt="Logo" /></Link>
           <ul className="navbar-nav">
             <li className="nav-item active"><Link className="nav-link" to="/">Dashboard</Link></li>
             <li className="nav-item active"><Link className="nav-link" to="/map">Map</Link></li>
