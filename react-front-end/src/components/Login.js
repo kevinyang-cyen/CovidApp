@@ -6,6 +6,7 @@ import axios from "axios";
 import { Route, BrowserRouter as Router, Link, Redirect, useHistory } from "react-router-dom";
 import { useState } from "react";
 import { useCookies } from 'react-cookie';
+import "../styles/Login.scss";
 
 export default function Login() {
   const { register, handleSubmit } = useForm();
@@ -14,7 +15,7 @@ export default function Login() {
   const [emailError, setEmailError] = useState(false);
   const [passwordError, setPasswordError] = useState(false);
 
-// checks for which error to show 
+  // checks for which error to show 
   const incorrectEmailOrPassword = (emailError, passwordError) => {
     if (emailError) {
       return 'Email not found. Please double check.'
@@ -23,7 +24,7 @@ export default function Login() {
     }
   }
 
-// checks for either error - shows alert on login
+  // checks for either error - shows alert on login
   const error = (emailError, passwordError) => {
     if (emailError || passwordError) {
       return (
@@ -49,12 +50,12 @@ export default function Login() {
           setEmailError(true)
         } else if (res.status === 200) {
           console.log(res.data);
-          setCookie(['user-cookie'],[res.data[0], res.data[1], res.data[2]]);
+          setCookie(['user-cookie'], [res.data[0], res.data[1], res.data[2]]);
           history.push('/');
         }
       })
   }
-  
+
 
   return (
     <>
@@ -64,12 +65,12 @@ export default function Login() {
         <Form className="login-form" onSubmit={handleSubmit(onSubmit)}>
           <Form.Group controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
-            <Form.Control name="email" type="email" placeholder="Enter email" ref={register}/>
+            <Form.Control name="email" type="email" placeholder="Enter email" ref={register} />
           </Form.Group>
 
           <Form.Group controlId="formBasicPassword">
             <Form.Label>Password</Form.Label>
-            <Form.Control name="password" type="password" placeholder="Password" ref={register}/>
+            <Form.Control name="password" type="password" placeholder="Password" ref={register} />
           </Form.Group>
           <Button variant="dark" type="submit">
             Sign In
