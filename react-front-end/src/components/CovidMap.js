@@ -56,7 +56,7 @@ export default function CovidMap() {
 
   console.log("markerCases outside: ", markerCases);
   let popups = markerCases.map((report, index) => 
-    <Marker position={[report.latitude, report.longitude]}>
+    <Marker position={[report.latitude, report.longitude]} key={index}>
       <Popup>Reported at {Date(report.created_date)}</Popup>
     </Marker>
   )

@@ -4,7 +4,6 @@ const BodyParser = require('body-parser');
 const PORT = 8080;
 require('dotenv').config('/.env');
 const cors = require('cors');
-const request = require('request-promise-native');
 
 // Express Configuration
 App.use(BodyParser.urlencoded({ extended: false }));

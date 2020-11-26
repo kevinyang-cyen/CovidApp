@@ -20,8 +20,6 @@
     "leaflet": "^1.7.1",
     "nodemon": "^1.19.4",
     "pg": "^8.5.1",
-    "pg-native": "^3.0.0",
-    "request": "^2.88.2",
-    "request-promise-native": "^1.0.9"
+    "pg-native": "^3.0.0"
   }
 }
