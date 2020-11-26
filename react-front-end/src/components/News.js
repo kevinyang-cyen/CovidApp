@@ -40,7 +40,6 @@ export default function News() {
     const runCall = async () => {
       let apiValue = await fetchData();
       let returnData = sortNewsData(apiValue);
-      console.log("returnData: ", returnData);
       let returnData_two = sortVacData(apiValue);
 
       setData(returnData);
