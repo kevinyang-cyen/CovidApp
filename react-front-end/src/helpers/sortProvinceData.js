@@ -149,11 +149,6 @@ export default function sortProvinceData(provDataArr) {
     { "Gender": "Female", "Deaths": covidDataSortFemaleDeaths.length }
   ];
 
-  console.log("cases", gender_demographic_infections)
-  console.log("cases", ageDemographic_count_cases)
-  console.log("deaths", gender_demographic_deaths)
-  console.log("deaths", ageDemographic_count_deaths)
-
   return {
     confirmed_data, deaths_data, timeSpecific_data, recoveries_data, testing_data, ageDemographic_count_cases, gender_demographic_infections, ageDemographic_count_deaths,
     gender_demographic_deaths

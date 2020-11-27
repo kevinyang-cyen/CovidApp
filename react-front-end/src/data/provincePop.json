@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Ontario",
+    "pop": 14446515
+  },
+  {
+    "name": "Quebec",
+    "pop": 8433301
+  },
+  {
+    "name": "British Columbia",
+    "pop": 5020302
+  },
+  {
+    "name": "Alberta",
+    "pop": 4345737
+  },
+  {
+    "name": "Manitoba",
+    "pop": 1360396
+  },
+  {
+    "name": "Saskatchewan",
+    "pop": 1168423
+  },
+  {
+    "name": "Nova Scotia",
+    "pop": 965382
+  },
+  {
+    "name": "New Brunswick",
+    "pop": 772094
+  },
+  {
+    "name": "Newfoundland",
+    "pop": 523790
+  },
+  {
+    "name": "Prince Edward Island",
+    "pop": 154748
+  },
+  {
+    "name": "Northwest Territory",
+    "pop": 44598
+  },
+  {
+    "name": "Yukon",
+    "pop": 40369
+  },
+  {
+    "name": "Nunavut",
+    "pop": 38787
+  }
+]
