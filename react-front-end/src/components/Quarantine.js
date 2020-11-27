@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import { useCookies } from 'react-cookie';
 import { useState } from "react";
+import "../styles/Quarantine.scss";
 
 export default function Register() {
   const { handleSubmit } = useForm();
@@ -40,12 +42,15 @@ export default function Register() {
 
   return (
     <>
-      <h1 className='loginTitle'>Self-Report</h1>
       <section className="login-register">
         <Form className="login-form" onSubmit={handleSubmit(onSubmit)}>
           {cookies['user-cookie'] ? 
-            (cookies['user-cookie'][2]? 
-                <h2>Please Quarantine for {14 - Math.round(((new Date().getTime() - cookies['user-cookie'][2]) / 86400000))} More Days and Check The Map</h2> 
+            (cookies['user-cookie'][2]?
+              <div className="quarantine-div">
+                <h1 className="quarantine-timer">Quarantine Countdown</h1>
+                <h2 className="quarantine-timer">{14 - Math.round(((new Date().getTime() - cookies['user-cookie'][2]) / 86400000))} Days Remaining...</h2>
+                <h3 className="quarantine-timer"><Link to="/map">Check your marker the map</Link></h3>
+              </div>
               : 
               <Button variant="dark" type="submit">
                 Self-Report and Start My Countdown

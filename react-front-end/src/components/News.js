@@ -328,7 +328,7 @@ export default function News() {
                     {loadNews}
                   </CardColumns>
                   {displayedData.length < 70 ? 
-                    <Button variant="btn btn-info" onClick={() => loadMoreNews()}>
+                    <Button variant="btn btn-info" className="load-more" onClick={() => loadMoreNews()}>
                     Load More
                     </Button> : null 
                   }
