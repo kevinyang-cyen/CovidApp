@@ -42,8 +42,8 @@ export default function Register() {
 
   return (
     <>
-      <section className="login-register">
-        <Form className="login-form" onSubmit={handleSubmit(onSubmit)}>
+      <section className="quarantine">
+        <Form className="quarantine-timer" onSubmit={handleSubmit(onSubmit)}>
           {cookies['user-cookie'] ? 
             (cookies['user-cookie'][2]?
               <div className="quarantine-div">
@@ -52,10 +52,10 @@ export default function Register() {
                 <h3 className="quarantine-timer"><Link to="/map">Check your marker the map</Link></h3>
               </div>
               : 
-              <Button variant="dark" type="submit">
-                Self-Report and Start My Countdown
-              </Button> ) :
-            <h2>Please log in to start your quarantine!</h2>
+                <Button variant="warning" type="submit">
+                  <h3 className="quarantine-timer">Self-Report and Start My Countdown</h3>
+                </Button> ) :
+              <h2 className="quarantine-timer">Please Log In to Self Report!</h2>
           }
         </Form>
 
