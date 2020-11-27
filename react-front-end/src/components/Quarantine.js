@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import axios from "axios";
 import { useCookies } from 'react-cookie';
 import { useState } from "react";
+import Countdown from 'react-countdown';
 import "../styles/Quarantine.scss";
 
 export default function Register() {
@@ -48,7 +49,11 @@ export default function Register() {
             (cookies['user-cookie'][2]?
               <div className="quarantine-div">
                 <h1 className="quarantine-timer">Quarantine Countdown</h1>
-                <h2 className="quarantine-timer">{14 - Math.round(((new Date().getTime() - cookies['user-cookie'][2]) / 86400000))} Days Remaining...</h2>
+                <h2 className="quarantine-timer">                <Countdown date={(Math.round(((cookies['user-cookie'][2])))) + 1209600000} /></h2>
+
+              {/* {14 - Math.round(((new Date().getTime() - cookies['user-cookie'][2]) / 86400000))} Days Remaining... */}
+
+
                 <h3 className="quarantine-timer"><Link to="/map">Check your marker the map</Link></h3>
               </div>
               : 

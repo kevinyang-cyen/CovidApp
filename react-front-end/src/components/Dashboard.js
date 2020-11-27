@@ -1,5 +1,4 @@
 import AreaGraph from "./Graph/AreaGraph";
-import PieGraph from "./Graph/PieGraph";
 import BarGraph from "./Graph/BarGraph";
 import PieAngleGraph from "./Graph/PieAngleGraph";
 import axios from "axios";
@@ -107,6 +106,7 @@ export default function Dashboard() {
   const yesterdayDate = (d => new Date(d.setDate(d.getDate() - 1)))(new Date);
   const dateToday = timeConverter(yesterdayDate);
 
+  // changes arrows based on increase or decrease
   const negativeOrPositiveArrow = (num) => {
     if (num >= 0) {
       return <span>&#8593;</span>
@@ -227,8 +227,6 @@ export default function Dashboard() {
               </div>
             </>
           }
-        </Tab>
-        <Tab eventKey="other-stuff" title="Other stuff">
         </Tab>
       </Tabs>
 
