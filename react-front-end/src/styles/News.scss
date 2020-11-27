@@ -11,6 +11,22 @@
   font-size: 0.75em;
   font-weight: 300;
   max-width: 100%;
+
+  .headline-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      font-family:'Roboto', sans-serif;
+      background: black;
+      text-align: center;
+      padding: 100px 5px 100px 5px;
+      width: 600px;
+      font-size: 25px;
+      opacity: 0.8;
+    }
+  }
 }
 
 .news-tabs {
@@ -67,3 +83,4 @@ font-size: 1.5em
   }
   margin-bottom: 15px;
 }
+
