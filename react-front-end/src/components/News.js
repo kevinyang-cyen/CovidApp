@@ -337,7 +337,6 @@ export default function News() {
                       />
                       <Carousel.Caption>
                         <h3 style={{ background: "black", opacity: 0.8 }}>{displayedData[0].title}</h3>
-                        <p>{displayedData[0].description}</p>
                       </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item style={{ marginBottom: 50 }}>
@@ -348,7 +347,6 @@ export default function News() {
                       />
                       <Carousel.Caption>
                         <h3 style={{ background: "black", opacity: 0.8 }}>{displayedData[1].title}</h3>
-                        <small>{displayedData[1].description}</small>
                       </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item style={{ marginBottom: 50 }}>
@@ -359,7 +357,6 @@ export default function News() {
                       />
                       <Carousel.Caption>
                         <h3 style={{ background: "black", opacity: 0.8 }}>{displayedData[2].title}</h3>
-                        <small>{displayedData[2].description}</small>
                       </Carousel.Caption>
                     </Carousel.Item>
                   </Carousel>
