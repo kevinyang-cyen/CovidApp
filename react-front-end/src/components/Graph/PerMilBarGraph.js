@@ -1,3 +1,4 @@
+import { ProgressBar } from "react-bootstrap";
 import {
   BarChart,
   Label,
@@ -12,7 +13,7 @@ import {
 export default function BarGraph(props) {
   return (
     <div>
-      <ResponsiveContainer width="100%" height={300}>
+      <ResponsiveContainer width="100%" height={270}>
         <BarChart
           data={props.coviddata}
           fontSize={12}
@@ -30,19 +31,18 @@ export default function BarGraph(props) {
             tickLine={true}
           >
             <Label offset={10} position="bottom" >
-              Age Group
+              Provinces
             </Label>
           </XAxis>
           <YAxis
-            width={35}
+            interval={0}
             axisLine={false}
           >
             <Label angle={270} position='left' style={{ textAnchor: 'middle' }} dx={-25}>
-              {props.yaxis}
             </Label>
           </YAxis>
           <Tooltip />
-          <Bar dataKey="Case Count" fill={props.fill} fillOpacity={0.7} barSize={80} />
+          <Bar dataKey={props.yaxis} fill={props.fill} fillOpacity={0.7} barSize={80} />
         </BarChart>
       </ResponsiveContainer>
     </div>

@@ -1,5 +1,6 @@
 import AreaGraph from "./Graph/AreaGraph";
 import BarGraph from "./Graph/BarGraph";
+import PerMilBarGraph from "./Graph/PerMilBarGraph";
 import PieAngleGraph from "./Graph/PieAngleGraph";
 import axios from "axios";
 import { useState, useEffect } from "react";
@@ -13,6 +14,8 @@ import Tab from 'react-bootstrap/Tab';
 import "../styles/Dashboard.scss";
 import emptyBarGraph from "../docs/no-bar-graph-info.png";
 import noGenderInfo from "../docs/no-gender-info.png";
+import sortProvSummaryData from "../helpers/sortProvSummaryData.js";
+import popData from "../data/provincePop.json"
 
 export default function Dashboard() {
   let provData_state = {
@@ -53,6 +56,15 @@ export default function Dashboard() {
     ]
   }
 
+  let provincesDataSummary_state = {
+    casesPerMil: [{
+      name: '', cases: 0
+    }],
+    testsPerMil: [{
+      name: '', tests: 0
+    }],
+  }
+
   const [provData, setProvData] = useState(provData_state);
   const [isLoading, setIsLoading] = useState(true);
   const [ageCountIsZero, setAgeCountIsZero] = useState(true);
@@ -61,13 +73,41 @@ export default function Dashboard() {
   const [urlOne, setUrlOne] = useState("?loc=canada&after=01-01-2020")
   const [urlTwo, setUrlTwo] = useState("?stat=mortality")
   const [urlThree, setUrlThree] = useState("?stat=cases")
+  const [provDataSummary, setProvDataSummary] = useState(provincesDataSummary_state)
+
+  useEffect(() => {
+    let date = new Date() - 126000000
+
+    date = (new Date(date).toISOString().replace(/T.*/, '').split('-').reverse().join('-'));
+    const runCall = async () => {
+      let apiValue = await fetchData();
+      console.log('this is api value', apiValue)
+      let resultData = sortProvSummaryData(apiValue, popData)
+
+      setProvDataSummary(resultData)
+    }
+
+    const fetchData = async () => {
+      try {
+        const response = await Promise.all([
+          axios.post('/dashboard/allProvincesSummary', { 'date': date })]
+        )
+        console.log('LOOK AT ME', response);
+        return response
+      } catch (err) {
+        console.log(err)
+        return null
+      }
+    }
+    runCall();
+  }, [])
+
 
   useEffect(() => {
     // change inputs to incorporate province
     const runCall = async () => {
       setIsLoading(true);
       let apiValue = await fetchData();
-      console.log("should return response ----->", apiValue)
       // returning sorted province data
       let return_data = sortProvinceData(apiValue)
 
@@ -85,7 +125,6 @@ export default function Dashboard() {
           axios.post('/dashboard/mortality', urlTwo),
           axios.post('/dashboard/cases', urlThree)
         ])
-        console.log(response);
         return response
       } catch (err) {
         console.log(err)
@@ -198,7 +237,10 @@ export default function Dashboard() {
                       <img className="graph-pic" src={emptyBarGraph} alt="Information unavailable at this time"></img>
                       <div className="center-text">Information for age demographic unavailable at this time</div>
 
-                    </div> : <BarGraph className="age-distribution" coviddata={provData.ageDemographic_count_cases} yaxis={locationCode + " Reported Cases Age Distribution"} />
+                    </div> : <BarGraph className="age-distribution" 
+                    coviddata={provData.ageDemographic_count_cases} 
+                    yaxis={locationCode + " Reported Cases Age Distribution"} 
+                    fill="#b82840"/>
                   }
                   {(ageCountIsZero) ?
                     <div className="img-container">
@@ -215,7 +257,10 @@ export default function Dashboard() {
                       <img className="graph-pic" src={emptyBarGraph} alt="Information unavailable at this time"></img>
                       <div className="center-text">Information for age demographic unavailable at this time</div>
 
-                    </div> : <BarGraph coviddata={provData.ageDemographic_count_deaths} yaxis={locationCode + " Reported Deaths Age Distribution"} />
+                    </div> : <BarGraph 
+                    coviddata={provData.ageDemographic_count_deaths} 
+                    yaxis={locationCode + " Reported Deaths Age Distribution"} 
+                    fill="#545454"/>
                   }
                   {(ageCountIsZero) ?
                     <div className="img-container">
@@ -227,6 +272,24 @@ export default function Dashboard() {
               </div>
             </>
           }
+        </Tab>
+        <Tab eventKey="per-mill" title="Per Million">
+          <h5>Cases Per Million</h5>
+          <p>** Based on 2019 population</p>
+          {console.log(provDataSummary.casesPerMil)}
+          <PerMilBarGraph
+            className="cases-per-mill"
+            coviddata={provDataSummary.casesPerMil}
+            yaxis={"cases"} 
+            fill="#b82840"/>
+          <h5>Cases Per Million</h5>
+          <p>** Based on 2019 population</p>
+          {console.log(provDataSummary.testsPerMil)}
+          <PerMilBarGraph
+            className="tests-per-mill"
+            coviddata={provDataSummary.testsPerMil}
+            yaxis={"tests"}
+            fill="#6da3d3" />
         </Tab>
       </Tabs>
 
