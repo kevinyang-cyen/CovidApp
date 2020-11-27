@@ -334,9 +334,12 @@ export default function News() {
                         className="d-block w-100"
                         src={displayedData[0].urlToImage || 'https://eyewire.news/wp-content/uploads/sites/2/2020/03/banner.png'}
                         alt="News Highlight"
+                        style={{ height: 358 }}
                       />
                       <Carousel.Caption>
-                        <h3 style={{ background: "black", opacity: 0.8 }}>{displayedData[0].title}</h3>
+                        <div className="headline-container">
+                          <h3>{displayedData[0].title}</h3>
+                        </div>
                       </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item style={{ marginBottom: 50 }}>
@@ -344,9 +347,12 @@ export default function News() {
                         className="d-block w-100"
                         src={displayedData[1].urlToImage || 'https://eyewire.news/wp-content/uploads/sites/2/2020/03/banner.png'}
                         alt="News Highlight 2"
+                        style={{ height: 358 }}
                       />
                       <Carousel.Caption>
-                        <h3 style={{ background: "black", opacity: 0.8 }}>{displayedData[1].title}</h3>
+                        <div className="headline-container">
+                          <h3>{displayedData[1].title}</h3>
+                        </div>
                       </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item style={{ marginBottom: 50 }}>
@@ -354,9 +360,12 @@ export default function News() {
                         className="d-block w-100"
                         src={displayedData[2].urlToImage || 'https://eyewire.news/wp-content/uploads/sites/2/2020/03/banner.png'}
                         alt="News Highlight 3"
+                        style={{ height: 358, objectFit: "cover", objectPosition: "center" }}
                       />
                       <Carousel.Caption>
-                        <h3 style={{ background: "black", opacity: 0.8 }}>{displayedData[2].title}</h3>
+                        <div className="headline-container">
+                          <h3>{displayedData[2].title}</h3>
+                        </div>
                       </Carousel.Caption>
                     </Carousel.Item>
                   </Carousel>
