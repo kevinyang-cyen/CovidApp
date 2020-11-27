@@ -54,7 +54,7 @@ export default function Register() {
               {/* {14 - Math.round(((new Date().getTime() - cookies['user-cookie'][2]) / 86400000))} Days Remaining... */}
 
 
-                <h3 className="quarantine-timer"><Link to="/map">Check your marker the map</Link></h3>
+                <h3 className="quarantine-timer map-link"><Link to="/map">Check your marker the map</Link></h3>
               </div>
               : 
                 <Button variant="warning" type="submit">

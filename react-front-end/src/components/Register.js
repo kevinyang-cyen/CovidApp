@@ -42,8 +42,8 @@ export default function Register() {
   return (
     <>
       {handleEmailExists(emailExists)}
-      <h1 className='loginTitle'>Register</h1>
       <section className="login-register">
+      <h1 className='loginTitle'>Register</h1>
         <Form className="login-form" onSubmit={handleSubmit(onSubmit)}>
         <Form.Group controlId="formBasicUsername">
             <Form.Label>Username</Form.Label>

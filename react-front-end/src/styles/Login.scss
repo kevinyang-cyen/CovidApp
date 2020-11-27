@@ -1,15 +1,25 @@
 // LOGIN/REGISTER
 .login-register {
-  display: flex;
-  justify-content: center;
+  width: 400px;
+  margin: auto;
+  margin-top: 10vh;
 }
 
 .loginTitle {
   display: flex;
   justify-content: center;
   padding: 15px;
+  font-size: 3em;
 }
 
 #login-nav {
   margin-left: auto;
+}
+
+.login-form{
+  font-size: 1.8em;
+}
+
+.quarantine-timer {
+  font-size: 1.8em;
 }

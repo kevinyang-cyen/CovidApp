@@ -1,10 +1,10 @@
 .quarantine {
-  margin-top: 30vh;
+  margin-top: 25vh;
 }
 
 .quarantine-div {
   border: 0.5em solid;
-  border-color: red;
+  border-color: orange;
   border-radius: 1em;
   width: 35em;
 }
@@ -13,5 +13,11 @@
   display:flex;
   justify-content:center;
   margin: 0.5em;
+}
+
+.map-link {
+  :hover{
+    color: red;
+  }
 }
 

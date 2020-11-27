@@ -87,7 +87,7 @@ function Select(props) {
   return (
     <>
       <div className="input-group mb-3">
-        <select className="custom-select" value="Select your province" onChange={onChange} name="province" id="inputGroupSelect03">
+        <select className="custom-select" onChange={onChange} name="province" id="inputGroupSelect03">
           <option value={null} hidden>Select your province</option>
           <option value="Canada">Canada</option>
           <option value="Alberta" >Alberta</option>

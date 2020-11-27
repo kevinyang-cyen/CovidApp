@@ -60,8 +60,8 @@ export default function Login() {
   return (
     <>
       {error(emailError, passwordError)}
-      <h1 className='loginTitle'>Login</h1>
       <section className="login-register">
+        <h1 className='loginTitle'>Login</h1>
         <Form className="login-form" onSubmit={handleSubmit(onSubmit)}>
           <Form.Group controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>

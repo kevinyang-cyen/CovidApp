@@ -13,6 +13,16 @@
   justify-content: center;
 
   :hover {
-    color:red;
+    color: black;
+  }
+}
+
+.list-group, list-group-flush{
+  
+  :hover{
+    transition-duration: 0.1s;
+    cursor: pointer;
+    background-color: aliceblue;
+    transform: scale(1.1);
   }
 }
