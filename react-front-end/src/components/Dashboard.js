@@ -1,6 +1,6 @@
 import AreaGraph from "./Graph/AreaGraph";
-import PieGraph from "./Graph/PieGraph";
 import BarGraph from "./Graph/BarGraph";
+import PerMilBarGraph from "./Graph/PerMilBarGraph";
 import PieAngleGraph from "./Graph/PieAngleGraph";
 import axios from "axios";
 import { useState, useEffect } from "react";
@@ -107,6 +107,7 @@ export default function Dashboard() {
   const yesterdayDate = (d => new Date(d.setDate(d.getDate() - 1)))(new Date);
   const dateToday = timeConverter(yesterdayDate);
 
+  // changes arrows based on increase or decrease
   const negativeOrPositiveArrow = (num) => {
     if (num >= 0) {
       return <span>&#8593;</span>
@@ -228,7 +229,16 @@ export default function Dashboard() {
             </>
           }
         </Tab>
-        <Tab eventKey="other-stuff" title="Other stuff">
+        <Tab eventKey="other-stuff" title="Per Million">
+          <h5>Cases per Million</h5>
+          <PerMilBarGraph
+            coviddata={provData.ageDemographic_count_cases}
+            yaxis="Reported Cases Age Distribution" />
+          <h5>Tests per Million</h5>
+          <PerMilBarGraph
+            coviddata={provData.ageDemographic_count_cases}
+            yaxis="Reported Cases Age Distribution" />
+            {console.log(provData)}
         </Tab>
       </Tabs>
 

@@ -21,7 +21,6 @@
   width: 78%;
   margin-right: 10px;
   text-align: center;
-  border-radius: 5px;
   line-height: 20px;
   height: 85px;
 }
@@ -80,7 +79,6 @@ h6 {
 
 .filter-button {
   height: 38px;
-  border-radius: 5px;
   background-color: white;
   border-color: #97c8cc;
   border-style: none;
@@ -107,7 +105,6 @@ h6 {
 .cases {
   width: 55%;
   padding-right: 15px;
-  border-radius: 5px;
   margin-left: 10px;
   height: 70%;
 }
@@ -119,9 +116,8 @@ h6 {
 .deaths {
   width: 96%;
   padding-right: 15px;
-  border-radius: 5px;
   margin-left: 10px;
-  height: 30%;
+  height: 40%;
 }
 
 .deaths:hover {
@@ -141,7 +137,6 @@ h6 {
 .recovery-testing {
   width: 40%;
   padding-right: 15px;
-  border-radius: 5px;
   margin-left: 10px;
   height: 35%;
 }
@@ -190,14 +185,12 @@ h6 {
 .additional-graphs {
   display: flex;
   justify-content: space-around;
-  border-radius: 5px;
   width: 90vw;
   margin: 15px;
 }
 
 .age-gender-cases {
   padding: 10px;
-  border-radius: 5px;
 }
 
 .age-gender-cases:hover {
@@ -206,7 +199,6 @@ h6 {
 
 .age-gender-mortality {
   padding: 10px;
-  border-radius: 5px;
 }
 
 .age-gender-mortality:hover {
