@@ -46,5 +46,5 @@ export default function Map() {
     runCall();
   }, []);
 
-  return <div id="map" style={{ height: "100vh", width: "100vw"}}></div>;
+  return <div id="map" style={{ height: "88vh", width: "97vw", margin: "auto", border: "0.5em solid", "border-radius": "1em" }}></div>;
 }

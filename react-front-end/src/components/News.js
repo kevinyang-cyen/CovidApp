@@ -12,6 +12,7 @@ import Tab from 'react-bootstrap/Tab'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Nav from 'react-bootstrap/Nav'
+import Alert from 'react-bootstrap/Alert'
 import { Spinner } from "react-bootstrap";
 import "../styles/News.scss";
 
@@ -97,7 +98,7 @@ export default function News() {
       <Popover id="popover-basic" key={index}>
         <Popover.Title as="h3">Vaccine Information</Popover.Title>
         <Popover.Content>
-          <h6><strong>Name:</strong>{vaccine.vaccineName}</h6>
+          <h6><strong>Name:</strong> {vaccine.vaccineName}</h6>
           <h6><strong>Type:</strong> {vaccine.vaccineType}</h6>
           <p><strong>Details:</strong> {vaccine.vaccineDetails}</p>
           <p><strong>Status:</strong> {vaccine.vaccineStatus}</p>
@@ -108,8 +109,8 @@ export default function News() {
 
     let displayCompany = (
       (
-        <div>
-          <OverlayTrigger trigger="click" rootClose placement="right" overlay={popoverDetails}>
+        <div className="vaccine-trial">
+          <OverlayTrigger trigger="click" rootClose placement="bottom" overlay={popoverDetails}>
             <Button variant="outline-info" size="sm" className="vaccine-button" className="vaccine-button">{vaccine.company}</Button>
           </OverlayTrigger>
         </div>
@@ -125,7 +126,7 @@ export default function News() {
       <Popover id="popover-basic" key={index}>
         <Popover.Title as="h3">Vaccine Information</Popover.Title>
         <Popover.Content>
-          <h6><strong>Name:</strong>{vaccine.vaccineName}</h6>
+          <h6><strong>Name:</strong> {vaccine.vaccineName}</h6>
           <h6><strong>Type:</strong> {vaccine.vaccineType}</h6>
           <p><strong>Details:</strong> {vaccine.vaccineDetails}</p>
           <p><strong>Status:</strong> {vaccine.vaccineStatus}</p>
@@ -136,11 +137,11 @@ export default function News() {
 
     let displayCompany = (
       (
-        <li>
-          <OverlayTrigger trigger="click" rootClose placement="right" overlay={popoverDetails}>
+        <div className="vaccine-trial">
+          <OverlayTrigger trigger="click" rootClose placement="bottom" overlay={popoverDetails}>
             <Button variant="outline-info" size="sm" className="vaccine-button">{vaccine.company}</Button>
           </OverlayTrigger>
-        </li>
+        </div>
       )
     );
 
@@ -152,7 +153,7 @@ export default function News() {
       <Popover id="popover-basic" key={index}>
         <Popover.Title as="h3">Vaccine Information</Popover.Title>
         <Popover.Content>
-          <h6><strong>Name:</strong>{vaccine.vaccineName}</h6>
+          <h6><strong>Name:</strong> {vaccine.vaccineName}</h6>
           <h6><strong>Type:</strong> {vaccine.vaccineType}</h6>
           <p><strong>Details:</strong> {vaccine.vaccineDetails}</p>
           <p><strong>Status:</strong> {vaccine.vaccineStatus}</p>
@@ -163,11 +164,11 @@ export default function News() {
 
     let displayCompany = (
       (
-        <li>
-          <OverlayTrigger trigger="click" rootClose placement="right" overlay={popoverDetails}>
+        <div className="vaccine-trial">
+          <OverlayTrigger trigger="click" rootClose placement="bottom" overlay={popoverDetails}>
             <Button variant="outline-info" size="sm" className="vaccine-button">{vaccine.company}</Button>
           </OverlayTrigger>
-        </li>
+        </div>
       )
     );
 
@@ -180,7 +181,7 @@ export default function News() {
       <Popover id="popover-basic" key={index}>
         <Popover.Title as="h3">Vaccine Information</Popover.Title>
         <Popover.Content>
-          <h6><strong>Name:</strong>{vaccine.vaccineName}</h6>
+          <h6><strong>Name:</strong> {vaccine.vaccineName}</h6>
           <h6><strong>Type:</strong> {vaccine.vaccineType}</h6>
           <p><strong>Details:</strong> {vaccine.vaccineDetails}</p>
           <p><strong>Status:</strong> {vaccine.vaccineStatus}</p>
@@ -191,11 +192,11 @@ export default function News() {
 
     let displayCompany = (
       (
-        <li>
-          <OverlayTrigger trigger="click" rootClose placement="right" overlay={popoverDetails}>
+        <div className="vaccine-trial">
+          <OverlayTrigger trigger="click" rootClose placement="bottom" overlay={popoverDetails}>
             <Button variant="outline-info" size="sm" className="vaccine-button">{vaccine.company}</Button>
           </OverlayTrigger>
-        </li>
+        </div>
       )
     );
 
@@ -207,7 +208,7 @@ export default function News() {
       <Popover id="popover-basic" key={index}>
         <Popover.Title as="h3">Vaccine Information</Popover.Title>
         <Popover.Content>
-          <h6><strong>Name:</strong>{vaccine.vaccineName}</h6>
+          <h6><strong>Name:</strong> {vaccine.vaccineName}</h6>
           <h6><strong>Type:</strong> {vaccine.vaccineType}</h6>
           <p><strong>Details:</strong> {vaccine.vaccineDetails}</p>
           <p><strong>Status:</strong> {vaccine.vaccineStatus}</p>
@@ -218,11 +219,11 @@ export default function News() {
 
     let displayCompany = (
       (
-        <li>
-          <OverlayTrigger trigger="click" rootClose placement="right" overlay={popoverDetails}>
+        <div className="vaccine-trial">
+          <OverlayTrigger trigger="click" rootClose placement="bottom" overlay={popoverDetails}>
             <Button variant="outline-info" size="sm" className="vaccine-button">{vaccine.company}</Button>
           </OverlayTrigger>
-        </li>
+        </div>
       )
     );
 
@@ -235,7 +236,7 @@ export default function News() {
       <Popover id="popover-basic" key={index}>
         <Popover.Title as="h3">Vaccine Information</Popover.Title>
         <Popover.Content>
-          <h6><strong>Name:</strong>{vaccine.vaccineName}</h6>
+          <h6><strong>Name:</strong> {vaccine.vaccineName}</h6>
           <h6><strong>Type:</strong> {vaccine.vaccineType}</h6>
           <p><strong>Details:</strong> {vaccine.vaccineDetails}</p>
           <p><strong>Status:</strong> {vaccine.vaccineStatus}</p>
@@ -246,11 +247,11 @@ export default function News() {
 
     let displayCompany = (
       (
-        <li>
-          <OverlayTrigger trigger="click" rootClose placement="right" overlay={popoverDetails}>
+        <div className="vaccine-trial">
+          <OverlayTrigger trigger="click" rootClose placement="bottom" overlay={popoverDetails}>
             <Button variant="outline-info" size="sm" className="vaccine-button">{vaccine.company}</Button>
           </OverlayTrigger>
-        </li>
+        </div>
       )
     );
 
@@ -262,7 +263,7 @@ export default function News() {
       <Popover id="popover-basic" key={index}>
         <Popover.Title as="h3">Vaccine Information</Popover.Title>
         <Popover.Content>
-          <h6><strong>Name:</strong>{vaccine.vaccineName}</h6>
+          <h6><strong>Name:</strong> {vaccine.vaccineName}</h6>
           <h6><strong>Type:</strong> {vaccine.vaccineType}</h6>
           <p><strong>Details:</strong> {vaccine.vaccineDetails}</p>
           <p><strong>Status:</strong> {vaccine.vaccineStatus}</p>
@@ -273,11 +274,11 @@ export default function News() {
 
     let displayCompany = (
       (
-        <li>
-          <OverlayTrigger trigger="click" rootClose placement="right" overlay={popoverDetails}>
+        <div className="vaccine-trial">
+          <OverlayTrigger trigger="click" rootClose placement="bottom" overlay={popoverDetails}>
             <Button variant="outline-info" size="sm" className="vaccine-button">{vaccine.company}</Button>
           </OverlayTrigger>
-        </li>
+        </div>
       )
     );
 
@@ -328,7 +329,7 @@ export default function News() {
                     {loadNews}
                   </CardColumns>
                   {displayedData.length < 70 ? 
-                    <Button variant="btn btn-info" onClick={() => loadMoreNews()}>
+                    <Button variant="btn btn-info" className="load-more" onClick={() => loadMoreNews()}>
                     Load More
                     </Button> : null 
                   }
@@ -340,71 +341,71 @@ export default function News() {
                 {isLoadingVaccine ?
                   <Spinner className="spinner-load-news" animation="grow" variant="dark" /> :
                   <>
-                    <div>
-                      <h2>Pre-clinical research</h2>
+                    <div className="vaccine-container">
+                      <h2>Pre-Clinical Research</h2>
                       <ProgressBar className="loadbar" animated now={10} />
-                      <ul>
+                      <div className="vaccine-list">
                         {preResearch}
-                      </ul>
+                      </div>
                     </div>
                   </>
                 }
                 {isLoadingVaccine ?
                   <Spinner className="spinner-load-news" animation="grow" variant="dark" /> :
                   <>
-                    <div>
-                      <h2>Pre-clinical trials</h2>
+                    <div className="vaccine-container">
+                      <h2>Pre-Clinical Trials</h2>
                       <ProgressBar className="loadbar" animated now={20} />
-                      <ul>
+                      <div className="vaccine-list">
                         {preTrial}
-                      </ul>
+                      </div>
                     </div>
                   </>
                 }
                 {isLoadingVaccine ?
                   <Spinner className="spinner-load-news" animation="grow" variant="dark" /> :
                   <>
-                    <div>
-                      <h2>Phase 1 trial</h2>
+                    <div className="vaccine-container">
+                      <h2>Phase 1 Trial</h2>
                       <ProgressBar className="loadbar" animated now={30} />
-                      <ul>
+                      <div className="vaccine-list">
                         {phaseOne}
-                      </ul>
+                      </div>
                     </div>
                   </>
                 }
                 {isLoadingVaccine ?
                   <Spinner className="spinner-load-news" animation="grow" variant="dark" /> :
                   <>
-                    <div>
-                      <h2>Phase 2 trial</h2>
+                    <div className="vaccine-container">
+                      <h2>Phase 2 Trial</h2>
                       <ProgressBar className="loadbar" animated now={50} />
-                      <ul>
+                      <div className="vaccine-list">
                         {phaseTwo}
-                      </ul>
+                      </div>
                     </div>
                   </>
                 }
                 {isLoadingVaccine ?
                   <Spinner className="spinner-load-news" animation="grow" variant="dark" /> :
                   <>
-                    <div>
-                      <h2>Phase 3 trial</h2>
+                    <div className="vaccine-container">
+                      <h2>Phase 3 Trial</h2>
                       <ProgressBar className="loadbar" animated now={70} />
-                      <ul>
+                      <div className="vaccine-list">
                         {phaseThree}
-                      </ul>
+                      </div>
                     </div>
                   </>
                 }
                 {isLoadingVaccine ?
                   <Spinner className="spinner-load-news" animation="grow" variant="dark" /> :
                   <>
-                    <div>
+                    <div className="vaccine-container">
                       <h2>FDA Approved</h2>
                       <ProgressBar className="loadbar" animated now={90} />
                       {
-                        (vaccData.vaccineFDA.length !== 0) ? <ul>{FDA}</ul> : "No Viable Candidates"
+                        (vaccData.vaccineFDA.length !== 0) ? <div className="vaccine-list">{FDA}</div> : <Alert variant='info' >No Viable Candidates at this time</Alert>
                       }
                     </div>
                   </>
@@ -412,11 +413,11 @@ export default function News() {
                 {isLoadingVaccine ?
                   <Spinner animation="grow" className="spinner-load-news" variant="dark" /> :
                   <>
-                    <div>
+                    <div className="vaccine-container">
                       <h2>Generally Available</h2>
                       <ProgressBar className="loadbar" animated now={100} />
                       {
-                        (vaccData.vaccineAvailable[0]) ? <ul>{availablePublic}</ul> : "No Viable Candidates"
+                        (vaccData.vaccineAvailable[0]) ? <div className="vaccine-list">{availablePublic}</div> : <Alert variant='info' > No Viable Candidates at this time </Alert>
                       }
                     </div>
                   </>

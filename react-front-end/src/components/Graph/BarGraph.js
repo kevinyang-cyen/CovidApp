@@ -42,7 +42,7 @@ export default function BarGraph(props) {
             </Label>
           </YAxis>
           <Tooltip />
-          <Bar dataKey="Case Count" fill="#82ca9d" barSize={80} />
+          <Bar dataKey="Case Count" fill="#82ca9d" fillOpacity={0.5} barSize={80} />
         </BarChart>
       </ResponsiveContainer>
     </div>

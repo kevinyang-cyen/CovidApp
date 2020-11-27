@@ -199,13 +199,13 @@ export default function Dashboard() {
                       <img className="graph-pic" src={emptyBarGraph} alt="Information unavailable at this time"></img>
                       <div className="center-text">Information for age demographic unavailable at this time</div>
 
-                    </div> : <BarGraph className="age-distribution" coviddata={provData.ageDemographic_count_cases} yaxis={locationCode + "Reported Cases Age Distribution"} />
+                    </div> : <BarGraph className="age-distribution" coviddata={provData.ageDemographic_count_cases} yaxis={locationCode + " Reported Cases Age Distribution"} />
                   }
                   {(ageCountIsZero) ?
                     <div className="img-container">
                       <img className="graph-pic" src={noGenderInfo} alt="Information unavailable at this time"></img>
                       <div className="center-text">Information for gender demographic unavailable at this time</div>
-                    </div> : <PieAngleGraph className="gender-distribution" coviddata={provData.gender_demographic_infections} datakey="Infection" nameKey="Gender" yaxis={locationCode + "Reported Cases Gender Distribution"} />
+                    </div> : <PieAngleGraph className="gender-distribution" coviddata={provData.gender_demographic_infections} datakey="Infection" nameKey="Gender" yaxis={locationCode + " Reported Cases Gender Distribution"} />
                   }
                 </div>
 
@@ -216,13 +216,13 @@ export default function Dashboard() {
                       <img className="graph-pic" src={emptyBarGraph} alt="Information unavailable at this time"></img>
                       <div className="center-text">Information for age demographic unavailable at this time</div>
 
-                    </div> : <BarGraph coviddata={provData.ageDemographic_count_deaths} yaxis={locationCode + "Reported Deaths Age Distribution"} />
+                    </div> : <BarGraph coviddata={provData.ageDemographic_count_deaths} yaxis={locationCode + " Reported Deaths Age Distribution"} />
                   }
                   {(ageCountIsZero) ?
                     <div className="img-container">
                       <img className="graph-pic" src={noGenderInfo} alt="Information unavailable at this time"></img>
                       <div className="center-text">Information for gender demographic unavailable at this time</div>
-                    </div> : <PieAngleGraph coviddata={provData.gender_demographic_deaths} datakey="Deaths" nameKey="Gender" yaxis={locationCode + "Reported Deaths Gender Distribution"} />
+                    </div> : <PieAngleGraph coviddata={provData.gender_demographic_deaths} datakey="Deaths" nameKey="Gender" yaxis={locationCode + " Reported Deaths Gender Distribution"} />
                   }
                 </div>
               </div>
