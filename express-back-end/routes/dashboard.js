@@ -38,6 +38,11 @@ module.exports = () => {
     }
   });
 
+  router.post("/allProvincesSummary", (req, res) => {
+    https.get(`https://api.opencovid.ca/summary?&after=${req.body.date}`, (response) => {
+      response.pipe(res);
+    });
+  })
 
   return router;
 };
