@@ -4,21 +4,22 @@ import Card from 'react-bootstrap/Card';
 import CardColumns from 'react-bootstrap/CardColumns';
 import sortNewsData from "../helpers/sortNewsData.js";
 import sortVacData from "../helpers/sortVaccineData.js";
-import ProgressBar from 'react-bootstrap/ProgressBar'
-import Popover from 'react-bootstrap/Popover'
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
-import Button from 'react-bootstrap/Button'
-import Tab from 'react-bootstrap/Tab'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import Nav from 'react-bootstrap/Nav'
-import Alert from 'react-bootstrap/Alert'
+import ProgressBar from 'react-bootstrap/ProgressBar';
+import Popover from 'react-bootstrap/Popover';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Button from 'react-bootstrap/Button';
+import Tab from 'react-bootstrap/Tab';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Nav from 'react-bootstrap/Nav';
+import Alert from 'react-bootstrap/Alert';
+import Carousel from 'react-bootstrap/Carousel'
 import { Spinner } from "react-bootstrap";
 import "../styles/News.scss";
 
 export default function News() {
 
-  let latestReports = {newsReports: [{ source: { id: "", name: "" }, author: "", title: "", description: "", url: "", urlToImage: "" }]};
+  let latestReports = { newsReports: [{ source: { id: "", name: "" }, author: "", title: "", description: "", url: "", urlToImage: "" }] };
   let latestDisplayedReports = [{ source: { id: "", name: "" }, author: "", title: "", description: "", url: "", urlToImage: "" }];
   let vaccineNews = {
     vaccinePreClinRes: [{ company: "", vaccineName: "", vaccineType: "", vaccineDetails: "", vaccineStatus: "", vaccineArticle: "", vaccinePhase: "" }],
@@ -44,7 +45,7 @@ export default function News() {
       let returnData_two = sortVacData(apiValue);
 
       setData(returnData);
-      setDisplayedData(returnData.newsReports.slice(0,15*loadMore));
+      setDisplayedData(returnData.newsReports.slice(0, 15 * loadMore));
       setvaccData(returnData_two);
       setIsLoadingNews(false);
       setIsLoadingVaccine(false);
@@ -79,7 +80,7 @@ export default function News() {
 
   // loads more news
   const loadMoreNews = () => {
-    setDisplayedData(data.newsReports.slice(0,15*(loadMore + 1)));
+    setDisplayedData(data.newsReports.slice(0, 15 * (loadMore + 1)));
     setLoadMore(loadMore + 1);
     return null;
   }
@@ -285,7 +286,9 @@ export default function News() {
     return displayCompany;
   });
 
-
+  console.log(displayedData[0])
+  console.log(displayedData[1])
+  console.log(displayedData[2])
   //returns each news card individually - allows for row organization on news page
   let loadNews = displayedData.map((item, index) =>
     (
@@ -325,13 +328,48 @@ export default function News() {
               {isLoadingNews ?
                 <Spinner className="spinner-load-news" animation="grow" variant="dark" /> :
                 <main className="news">
+                  <Carousel >
+                    <Carousel.Item style={{ marginBottom: 50 }}>
+                      <img
+                        className="d-block w-100"
+                        src={displayedData[0].urlToImage || 'https://eyewire.news/wp-content/uploads/sites/2/2020/03/banner.png'}
+                        alt="News Highlight"
+                      />
+                      <Carousel.Caption>
+                        <h3 style={{ background: "black", opacity: 0.8 }}>{displayedData[0].title}</h3>
+                        <p>{displayedData[0].description}</p>
+                      </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item style={{ marginBottom: 50 }}>
+                      <img
+                        className="d-block w-100"
+                        src={displayedData[1].urlToImage || 'https://eyewire.news/wp-content/uploads/sites/2/2020/03/banner.png'}
+                        alt="News Highlight 2"
+                      />
+                      <Carousel.Caption>
+                        <h3 style={{ background: "black", opacity: 0.8 }}>{displayedData[1].title}</h3>
+                        <small>{displayedData[1].description}</small>
+                      </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item style={{ marginBottom: 50 }}>
+                      <img
+                        className="d-block w-100"
+                        src={displayedData[2].urlToImage || 'https://eyewire.news/wp-content/uploads/sites/2/2020/03/banner.png'}
+                        alt="News Highlight 3"
+                      />
+                      <Carousel.Caption>
+                        <h3 style={{ background: "black", opacity: 0.8 }}>{displayedData[2].title}</h3>
+                        <small>{displayedData[2].description}</small>
+                      </Carousel.Caption>
+                    </Carousel.Item>
+                  </Carousel>
                   <CardColumns>
                     {loadNews}
                   </CardColumns>
-                  {displayedData.length < 70 ? 
+                  {displayedData.length < 70 ?
                     <Button variant="btn btn-info" className="load-more" onClick={() => loadMoreNews()}>
-                    Load More
-                    </Button> : null 
+                      Load More
+                    </Button> : null
                   }
                 </main>
               }
