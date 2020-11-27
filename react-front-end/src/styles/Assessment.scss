@@ -1,9 +1,19 @@
 // ASSESSMENT
 .assessment {
   padding: 15px;
-  text-align: center;
+  font-size: 23px;
 }
 
 .canada{
   font-weight: bold;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  cursor:pointer;
+
+  :hover {
+    color:red;
+  }
 }
