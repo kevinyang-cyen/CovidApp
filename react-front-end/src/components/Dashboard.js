@@ -235,16 +235,16 @@ export default function Dashboard() {
         <Tab eventKey="age-gender" title="Age and Gender">
           <div className="age-gender">
             {
-              (ageCountIsZero) ? 'No data available for age demographic' : <BarGraph coviddata={provData.ageDemographic_count_cases} yaxis={locationCode + "Reported Cases Age Distribution"} />
+              (ageCountIsZero) ? 'No data available for age demographic' : <BarGraph coviddata={provData.ageDemographic_count_cases} yaxis={locationCode + " Reported Cases Age Distribution"} />
             }
             {
-              (ageCountIsZero) ? 'No data available for age demographic' : <BarGraph coviddata={provData.ageDemographic_count_deaths} yaxis={locationCode + "Reported Deaths Age Distribution"} />
+              (ageCountIsZero) ? 'No data available for age demographic' : <BarGraph coviddata={provData.ageDemographic_count_deaths} yaxis={locationCode + " Reported Deaths Age Distribution"} />
             }
             {
-              (ageCountIsZero) ? 'No data available for gender demographic' : <PieAngleGraph coviddata={provData.gender_demographic_infections} datakey="Infection" nameKey="Gender" yaxis={locationCode + "Reported Cases Gender Distribution"} />
+              (ageCountIsZero) ? 'No data available for gender demographic' : <PieAngleGraph coviddata={provData.gender_demographic_infections} datakey="Infection" nameKey="Gender" yaxis={locationCode + " Reported Cases Gender Distribution"} />
             }
             {
-              (ageCountIsZero) ? 'No data available for gender demographic' : <PieAngleGraph coviddata={provData.gender_demographic_deaths} datakey="Deaths" nameKey="Gender" yaxis={locationCode + "Reported Deaths Gender Distribution"} />
+              (ageCountIsZero) ? 'No data available for gender demographic' : <PieAngleGraph coviddata={provData.gender_demographic_deaths} datakey="Deaths" nameKey="Gender" yaxis={locationCode + " Reported Deaths Gender Distribution"} />
             }
           </div>
         </Tab>

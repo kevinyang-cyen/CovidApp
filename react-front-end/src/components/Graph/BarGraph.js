@@ -12,7 +12,7 @@ import {
 export default function BarGraph(props) {
   return (
     <div>
-      <ResponsiveContainer width="30%" height={400}>
+      <ResponsiveContainer width="60%" height={400}>
         <BarChart
           data={props.coviddata}
           fontSize={12}
@@ -42,7 +42,7 @@ export default function BarGraph(props) {
             </Label>
           </YAxis>
           <Tooltip />
-          <Bar dataKey="Case Count" fill="#82ca9d" barSize={80} />
+          <Bar dataKey="Case Count" fill="#82ca9d" fillOpacity={0.5} barSize={80} />
         </BarChart>
       </ResponsiveContainer>
     </div>
