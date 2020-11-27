@@ -1,8 +1,19 @@
 // LOGIN/REGISTER
-.login-register {
-  width: 400px;
+.login, .register {
+  background-color: lightgrey;
+  width: 45vw;
+  height: 45vh;
   margin: auto;
   margin-top: 10vh;
+  border: 0.5em solid lightgrey;
+  border-radius: 1em;
+
+
+}
+
+
+.register {
+  height: 58vh;
 }
 
 .loginTitle {
@@ -18,6 +29,8 @@
 
 .login-form{
   font-size: 1.8em;
+  width: 35vw;
+  margin: auto;
 }
 
 .quarantine-timer {
