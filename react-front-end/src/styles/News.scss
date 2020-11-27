@@ -34,6 +34,7 @@ li {
 
 .loadbar {
   margin-bottom: 15px;
+  height: 40px;
 }
 
 a:link {
@@ -49,4 +50,20 @@ font-size: 1.5em
   height: 40px;
   justify-content: center;
   font-weight: bold;
+}
+
+.vaccine-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.vaccine-trial {
+  margin-right: 5px;
+}
+
+.vaccine-container {
+  h2 {
+    font-family: 'Patua One', cursive;
+  }
+  margin-bottom: 15px;
 }
