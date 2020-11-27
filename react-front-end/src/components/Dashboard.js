@@ -237,10 +237,10 @@ export default function Dashboard() {
                       <img className="graph-pic" src={emptyBarGraph} alt="Information unavailable at this time"></img>
                       <div className="center-text">Information for age demographic unavailable at this time</div>
 
-                    </div> : <BarGraph className="age-distribution" 
-                    coviddata={provData.ageDemographic_count_cases} 
-                    yaxis={locationCode + " Reported Cases Age Distribution"} 
-                    fill="#b82840"/>
+                    </div> : <BarGraph className="age-distribution"
+                      coviddata={provData.ageDemographic_count_cases}
+                      yaxis={locationCode + " Reported Cases Age Distribution"}
+                      fill="#b82840" />
                   }
                   {(ageCountIsZero) ?
                     <div className="img-container">
@@ -257,10 +257,10 @@ export default function Dashboard() {
                       <img className="graph-pic" src={emptyBarGraph} alt="Information unavailable at this time"></img>
                       <div className="center-text">Information for age demographic unavailable at this time</div>
 
-                    </div> : <BarGraph 
-                    coviddata={provData.ageDemographic_count_deaths} 
-                    yaxis={locationCode + " Reported Deaths Age Distribution"} 
-                    fill="#545454"/>
+                    </div> : <BarGraph
+                      coviddata={provData.ageDemographic_count_deaths}
+                      yaxis={locationCode + " Reported Deaths Age Distribution"}
+                      fill="#545454" />
                   }
                   {(ageCountIsZero) ?
                     <div className="img-container">
@@ -274,22 +274,26 @@ export default function Dashboard() {
           }
         </Tab>
         <Tab eventKey="per-mill" title="Per Million">
-          <h5>Cases Per Million</h5>
-          <p>** Based on 2019 population</p>
-          {console.log(provDataSummary.casesPerMil)}
-          <PerMilBarGraph
-            className="cases-per-mill"
-            coviddata={provDataSummary.casesPerMil}
-            yaxis={"cases"} 
-            fill="#b82840"/>
-          <h5>Cases Per Million</h5>
-          <p>** Based on 2019 population</p>
-          {console.log(provDataSummary.testsPerMil)}
-          <PerMilBarGraph
-            className="tests-per-mill"
-            coviddata={provDataSummary.testsPerMil}
-            yaxis={"tests"}
-            fill="#6da3d3" />
+          <div className="per-mill">
+            <div>
+            <h5>Cases Per Million</h5>
+            <p>** Based on 2019 population</p>
+              <PerMilBarGraph
+                className="cases-per-mill"
+                coviddata={provDataSummary.casesPerMil}
+                yaxis={"cases"}
+                fill="#b82840" />
+            </div>
+            <div>
+              <h5>Tests Per Million</h5>
+              <p>** Based on 2019 population</p>
+              <PerMilBarGraph
+                className="tests-per-mill"
+                coviddata={provDataSummary.testsPerMil}
+                yaxis={"tests"}
+                fill="#6da3d3" />
+            </div>
+          </div>
         </Tab>
       </Tabs>
 

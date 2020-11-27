@@ -13,12 +13,12 @@ import {
 export default function BarGraph(props) {
   return (
     <div>
-      <ResponsiveContainer width="100%" height={270}>
+      <ResponsiveContainer width="100%" height={245}>
         <BarChart
           data={props.coviddata}
           fontSize={12}
           margin={{
-            top: 20, right: 20, left: 10, bottom: 20
+            top: 10, right: 20, left: 0, bottom: 20
           }}
         >
           <CartesianGrid
