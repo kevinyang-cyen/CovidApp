@@ -7,7 +7,7 @@ import sortHeatmapData from "../helpers/sortHeatmapData.js";
 
 export default function Map() {
   useEffect(() => {
-    
+
 
     const runCall = async () => {
       let apiValue = await fetchData();
@@ -15,21 +15,20 @@ export default function Map() {
 
       var map = L.map("map").setView([56.130367, -106.346771], 5);
 
-      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      L.tileLayer("https://api.mapbox.com/styles/v1/thejellyroxx123/ckhzl5i3t0gmp19mzaxq83ikx/tiles/512/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoidGhlamVsbHlyb3h4MTIzIiwiYSI6ImNraHpsOXB4eDBvcHYycXIwYzlwOXJvbGwifQ.uRfe-Gg7jqOeVJoQF333pg", {
         attribution:
-          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          "© <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>"
       }).addTo(map);
-  
+
       const points = heatmapCoords
         ? heatmapCoords.map((p) => {
-            return [p[0], p[1]];
-          })
+          return [p[0], p[1]];
+        })
         : [];
-  
-      L.heatLayer(points,{radius: 35}).addTo(map);
+
+      L.heatLayer(points, { radius: 35 }).addTo(map);
     }
 
-   
     const fetchData = async () => {
       try {
         const response = await axios.get("/heatmap");
@@ -38,13 +37,16 @@ export default function Map() {
         console.log(err)
         return null;
       }
-    } 
-    
-
- 
+    }
 
     runCall();
   }, []);
 
   return <div id="map" style={{ height: "88vh", width: "97vw", margin: "auto", border: "0.5em solid", "border-radius": "1em" }}></div>;
 }
+
+// Previous Map
+// L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+//   attribution:
+//     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+// }).addTo(map);
