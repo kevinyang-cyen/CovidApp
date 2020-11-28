@@ -42,7 +42,6 @@ export default function CovidMap() {
     const fetchReportCases = async () => {
       try {
         const res = await axios.get('/map');
-        console.log(res);
         return res;
       } catch (err) {
         console.log(err)
@@ -53,7 +52,6 @@ export default function CovidMap() {
     runCall();
   }, []);
 
-  console.log("markerCases outside: ", markerCases);
   let popups = markerCases.map((report, index) =>
     <Marker position={[report.latitude, report.longitude]} key={index} icon={covidIcon}>
       <Popup>Reported at {Date(report.created_date)}</Popup>
@@ -62,7 +60,7 @@ export default function CovidMap() {
 
   return (
     <MapContainer
-      style={{ height: "88vh", width: "97vw", margin: "auto", border: "0.5em solid", "border-radius": "1em" }}
+      style={{ height: "88vh", width: "97vw", margin: "auto", border: "0.5em solid", borderRadius: "1em" }}
       zoom={5}
       center={[56.130367, -106.346771]}
     >

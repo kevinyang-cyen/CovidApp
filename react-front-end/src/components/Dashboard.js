@@ -81,7 +81,6 @@ export default function Dashboard() {
     date = (new Date(date).toISOString().replace(/T.*/, '').split('-').reverse().join('-'));
     const runCall = async () => {
       let apiValue = await fetchData();
-      console.log('this is api value', apiValue)
       let resultData = sortProvSummaryData(apiValue, popData)
 
       setProvDataSummary(resultData)
@@ -92,7 +91,6 @@ export default function Dashboard() {
         const response = await Promise.all([
           axios.post('/dashboard/allProvincesSummary', { 'date': date })]
         )
-        console.log('LOOK AT ME', response);
         return response
       } catch (err) {
         console.log(err)
@@ -159,28 +157,28 @@ export default function Dashboard() {
       <>
         <div className="dashboard-topbar">
           <div className="filter-bar">
-            <Select onClick={search} />
+            <Select key={1} onClick={search} />
           </div>
           <div className="totals-count">
             {(provData.timeSpecific_data.map(date => {
-              if (date.name === dateToday) return <p className="count-cases"><h6>Total Cases</h6>{date.totalCases}
+              if (date.name === dateToday) return <div className="count-cases"> <h6>Total Cases</h6><p className="count-cases">{date.totalCases}
                 {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <p className="count-change">{negativeOrPositiveArrow(date.todayCase)}{date.todayCase}</p> }))}
-              </p>
+              </p> </div>
             }))}
 
             {(provData.timeSpecific_data.map(date => {
-              if (date.name === dateToday) return <p className="count-cases"><h6>Number of Active Cases</h6> {date.activeCase}
+              if (date.name === dateToday) return <div className="count-cases"> <h6>Number of Active Cases</h6> <p className="count-cases"> {date.activeCase}
                 {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <p className="count-change">{negativeOrPositiveArrow(date.caseChange)}{date.caseChange}</p> }))}
-              </p>
+              </p> </div>
             }))}
 
-            {(provData.recoveries_data.map(date => { if (date.name === dateToday) return <p className="count-test"><h6>Total Recoveries</h6> {date.recoveries}</p> }))}
+            {(provData.recoveries_data.map(date => { if (date.name === dateToday) return <div className="count-test"><h6>Total Recoveries</h6> <p className="count-test"> {date.recoveries}</p></div> }))}
 
             {(provData.testing_data.map(date => {
-              if (date.name === dateToday) return <p className="count-tests"><h6>Total Tests</h6> {date.testing}
+              if (date.name === dateToday) return <div className="count-tests"><h6>Total Tests</h6><p className="count-tests"> {date.testing}
 
                 {(provData.timeSpecific_data.map(date => { if (date.name === dateToday) return <p className="count-change"> {negativeOrPositiveArrow(date.testToday)}{date.testToday}</p> }))}
-              </p>
+              </p></div>
             }))}
 
             {(provData.deaths_data.map(date => {
@@ -197,36 +195,36 @@ export default function Dashboard() {
 
   return (
     <section className="dashboard">
-      <Tabs defaultActiveKey="general" id="uncontrolled-tab-example">
-        <Tab eventKey="current-province" title={locationCode} disabled>
+      <Tabs key={1} defaultActiveKey="general" id="uncontrolled-tab-example">
+        <Tab key={1} eventKey="current-province" title={locationCode} disabled>
         </Tab>
-        <Tab eventKey="general" title="General">
+        <Tab key={2} eventKey="general" title="General">
           {isLoading ?
-            <Loading /> :
+            <Loading key={1} /> :
             <>
               {dashboardInfoBar()}
               <div className="graphs">
                 <div className="recovery-testing">
                   <div className="testing">
-                    <AreaGraph coviddata={provData.testing_data} keydata="testing" xaxis=" Time Frame" yaxis={locationCode + " Testing"} color="blue" />
+                    <AreaGraph key={1} coviddata={provData.testing_data} keydata="testing" xaxis=" Time Frame" yaxis={locationCode + " Testing"} color="blue" />
                   </div>
                   <div className="recovery">
-                    <AreaGraph coviddata={provData.recoveries_data} keydata="recoveries" xaxis="Time Frame" yaxis={locationCode + " Recoveries"} color="green" />
+                    <AreaGraph key={2} coviddata={provData.recoveries_data} keydata="recoveries" xaxis="Time Frame" yaxis={locationCode + " Recoveries"} color="green" />
                   </div>
                 </div>
                 <div className="cases">
-                  <AreaGraph coviddata={provData.confirmed_data} keydata="cases" xaxis=" Time Frame" yaxis={locationCode + " Confirmed Cases"} color="red" />
+                  <AreaGraph key={3} coviddata={provData.confirmed_data} keydata="cases" xaxis=" Time Frame" yaxis={locationCode + " Confirmed Cases"} color="red" />
                 </div>
                 <div className="deaths">
-                  <AreaGraph coviddata={provData.deaths_data} keydata="deaths" xaxis=" Time Frame" yaxis={locationCode + " Confirmed Deaths"} color="black" />
+                  <AreaGraph key={4} coviddata={provData.deaths_data} keydata="deaths" xaxis=" Time Frame" yaxis={locationCode + " Confirmed Deaths"} color="black" />
                 </div>
               </div>
             </>
           }
         </Tab>
-        <Tab eventKey="age-gender" title="Age and Gender">
+        <Tab key={3} eventKey="age-gender" title="Age and Gender">
           {isLoading ?
-            <Loading /> :
+            <Loading key={2} /> :
             <>
               {dashboardInfoBar()}
               <div className="additional-graphs">
@@ -237,7 +235,7 @@ export default function Dashboard() {
                       <img className="graph-pic" src={emptyBarGraph} alt="Information unavailable at this time"></img>
                       <div className="center-text">Information for age demographic unavailable at this time</div>
 
-                    </div> : <BarGraph className="age-distribution"
+                    </div> : <BarGraph key={1} className="age-distribution"
                       coviddata={provData.ageDemographic_count_cases}
                       yaxis={locationCode + " Reported Cases Age Distribution"}
                       fill="#b82840" />
@@ -246,7 +244,7 @@ export default function Dashboard() {
                     <div className="img-container">
                       <img className="graph-pic" src={noGenderInfo} alt="Information unavailable at this time"></img>
                       <div className="center-text">Information for gender demographic unavailable at this time</div>
-                    </div> : <PieAngleGraph className="gender-distribution" coviddata={provData.gender_demographic_infections} datakey="Infection" nameKey="Gender" yaxis={locationCode + " Reported Cases Gender Distribution"} />
+                    </div> : <PieAngleGraph key={1} className="gender-distribution" coviddata={provData.gender_demographic_infections} datakey="Infection" nameKey="Gender" yaxis={locationCode + " Reported Cases Gender Distribution"} />
                   }
                 </div>
 
@@ -258,6 +256,7 @@ export default function Dashboard() {
                       <div className="center-text">Information for age demographic unavailable at this time</div>
 
                     </div> : <BarGraph
+                      key={2}
                       coviddata={provData.ageDemographic_count_deaths}
                       yaxis={locationCode + " Reported Deaths Age Distribution"}
                       fill="#545454" />
@@ -266,19 +265,20 @@ export default function Dashboard() {
                     <div className="img-container">
                       <img className="graph-pic" src={noGenderInfo} alt="Information unavailable at this time"></img>
                       <div className="center-text">Information for gender demographic unavailable at this time</div>
-                    </div> : <PieAngleGraph coviddata={provData.gender_demographic_deaths} datakey="Deaths" nameKey="Gender" yaxis={locationCode + " Reported Deaths Gender Distribution"} />
+                    </div> : <PieAngleGraph key={2} coviddata={provData.gender_demographic_deaths} datakey="Deaths" nameKey="Gender" yaxis={locationCode + " Reported Deaths Gender Distribution"} />
                   }
                 </div>
               </div>
             </>
           }
         </Tab>
-        <Tab eventKey="per-mill" title="Per Million">
+        <Tab key={4} eventKey="per-mill" title="Per Million">
           <div className="per-mill">
             <div>
             <h5>Cases Per Million</h5>
             <p>** Based on 2019 population</p>
-              <PerMilBarGraph
+              <PerMilBarGraph 
+                key={1}
                 className="cases-per-mill"
                 coviddata={provDataSummary.casesPerMil}
                 yaxis={"cases"}
@@ -288,6 +288,7 @@ export default function Dashboard() {
               <h5>Tests Per Million</h5>
               <p>** Based on 2019 population</p>
               <PerMilBarGraph
+                key={2}
                 className="tests-per-mill"
                 coviddata={provDataSummary.testsPerMil}
                 yaxis={"tests"}
@@ -300,13 +301,3 @@ export default function Dashboard() {
     </section>
   );
 }
-
-
-//provData.ageDemographic_count[6]["Case Count"] < 2 || 
-//provData.gender_demographic_infections[0].Infection < 5 || provData.gender_demographic_infections[1].Infection < 5 ||
-//(!provData.gender_demographic_infections) ? "No Gender Demographic Data Available" : 
-// <AreaGraph coviddata={provData.testing_data} keydata="testing" xaxis=" Time Frame" yaxis={locationCode + " Testing"} color="blue" />
-// <AreaGraph coviddata={provData.confirmed_data} keydata="cases" xaxis=" Time Frame" yaxis={locationCode + " Confirmed Cases"} color="purple" />
-// <AreaGraph coviddata={provData.deaths_data} keydata="deaths" xaxis=" Time Frame" yaxis={locationCode + " Confirmed Deaths"} color="black" />
-// <AreaGraph coviddata={provData.recoveries_data} keydata="recoveries" xaxis="Time Frame" yaxis={locationCode + " Recoveries"} color="red" />
-// {/*(ageCountIsZero) ? 'No data available for age demographic' :*/} 

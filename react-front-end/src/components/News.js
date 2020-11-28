@@ -88,7 +88,7 @@ export default function News() {
   // checks whether to show photo or not 
   const photoExists = (photo) => {
     if (photo) {
-      return <Card.Img variant="top" src={photo} alt="News Information" />
+      return <Card.Img key={1} variant="top" src={photo} alt="News Information" />
     } else {
       return null;
     }
@@ -97,8 +97,8 @@ export default function News() {
   const preResearch = vaccData.vaccinePreClinRes.map((vaccine, index) => {
     let popoverDetails = (
       <Popover id="popover-basic" key={index}>
-        <Popover.Title as="h3">Vaccine Information</Popover.Title>
-        <Popover.Content>
+        <Popover.Title key={index} as="h3">Vaccine Information</Popover.Title>
+        <Popover.Content key={index}>
           <h6><strong>Name:</strong> {vaccine.vaccineName}</h6>
           <h6><strong>Type:</strong> {vaccine.vaccineType}</h6>
           <p><strong>Details:</strong> {vaccine.vaccineDetails}</p>
@@ -111,8 +111,8 @@ export default function News() {
     let displayCompany = (
       (
         <div className="vaccine-trial">
-          <OverlayTrigger trigger="click" rootClose placement="bottom" overlay={popoverDetails}>
-            <Button variant="outline-info" size="sm" className="vaccine-button" className="vaccine-button">{vaccine.company}</Button>
+          <OverlayTrigger key={index} trigger="click" rootClose placement="bottom" overlay={popoverDetails}>
+            <Button key={index} variant="outline-info" size="sm" className="vaccine-button" className="vaccine-button">{vaccine.company}</Button>
           </OverlayTrigger>
         </div>
       )
@@ -125,8 +125,8 @@ export default function News() {
   const preTrial = vaccData.vaccinePreClinTri.map((vaccine, index) => {
     let popoverDetails = (
       <Popover id="popover-basic" key={index}>
-        <Popover.Title as="h3">Vaccine Information</Popover.Title>
-        <Popover.Content>
+        <Popover.Title key={index} as="h3">Vaccine Information</Popover.Title>
+        <Popover.Content key={index}>
           <h6><strong>Name:</strong> {vaccine.vaccineName}</h6>
           <h6><strong>Type:</strong> {vaccine.vaccineType}</h6>
           <p><strong>Details:</strong> {vaccine.vaccineDetails}</p>
@@ -139,8 +139,8 @@ export default function News() {
     let displayCompany = (
       (
         <div className="vaccine-trial">
-          <OverlayTrigger trigger="click" rootClose placement="bottom" overlay={popoverDetails}>
-            <Button variant="outline-info" size="sm" className="vaccine-button">{vaccine.company}</Button>
+          <OverlayTrigger key={index} trigger="click" rootClose placement="bottom" overlay={popoverDetails}>
+            <Button key={index} variant="outline-info" size="sm" className="vaccine-button">{vaccine.company}</Button>
           </OverlayTrigger>
         </div>
       )
@@ -152,8 +152,8 @@ export default function News() {
   const phaseOne = vaccData.vaccineP1T.map((vaccine, index) => {
     let popoverDetails = (
       <Popover id="popover-basic" key={index}>
-        <Popover.Title as="h3">Vaccine Information</Popover.Title>
-        <Popover.Content>
+        <Popover.Title key={index} as="h3">Vaccine Information</Popover.Title>
+        <Popover.Content key={index}>
           <h6><strong>Name:</strong> {vaccine.vaccineName}</h6>
           <h6><strong>Type:</strong> {vaccine.vaccineType}</h6>
           <p><strong>Details:</strong> {vaccine.vaccineDetails}</p>
@@ -166,8 +166,8 @@ export default function News() {
     let displayCompany = (
       (
         <div className="vaccine-trial">
-          <OverlayTrigger trigger="click" rootClose placement="bottom" overlay={popoverDetails}>
-            <Button variant="outline-info" size="sm" className="vaccine-button">{vaccine.company}</Button>
+          <OverlayTrigger key={index} trigger="click" rootClose placement="bottom" overlay={popoverDetails}>
+            <Button key={index} variant="outline-info" size="sm" className="vaccine-button">{vaccine.company}</Button>
           </OverlayTrigger>
         </div>
       )
@@ -180,8 +180,8 @@ export default function News() {
   const phaseTwo = vaccData.vaccineP2T.map((vaccine, index) => {
     let popoverDetails = (
       <Popover id="popover-basic" key={index}>
-        <Popover.Title as="h3">Vaccine Information</Popover.Title>
-        <Popover.Content>
+        <Popover.Title key={index} as="h3">Vaccine Information</Popover.Title>
+        <Popover.Content key={index}>
           <h6><strong>Name:</strong> {vaccine.vaccineName}</h6>
           <h6><strong>Type:</strong> {vaccine.vaccineType}</h6>
           <p><strong>Details:</strong> {vaccine.vaccineDetails}</p>
@@ -194,8 +194,8 @@ export default function News() {
     let displayCompany = (
       (
         <div className="vaccine-trial">
-          <OverlayTrigger trigger="click" rootClose placement="bottom" overlay={popoverDetails}>
-            <Button variant="outline-info" size="sm" className="vaccine-button">{vaccine.company}</Button>
+          <OverlayTrigger key={index} trigger="click" rootClose placement="bottom" overlay={popoverDetails}>
+            <Button key={index} variant="outline-info" size="sm" className="vaccine-button">{vaccine.company}</Button>
           </OverlayTrigger>
         </div>
       )
@@ -207,8 +207,8 @@ export default function News() {
   const phaseThree = vaccData.vaccineP3T.map((vaccine, index) => {
     let popoverDetails = (
       <Popover id="popover-basic" key={index}>
-        <Popover.Title as="h3">Vaccine Information</Popover.Title>
-        <Popover.Content>
+        <Popover.Title key={index} as="h3">Vaccine Information</Popover.Title>
+        <Popover.Content key={index}>
           <h6><strong>Name:</strong> {vaccine.vaccineName}</h6>
           <h6><strong>Type:</strong> {vaccine.vaccineType}</h6>
           <p><strong>Details:</strong> {vaccine.vaccineDetails}</p>
@@ -221,8 +221,8 @@ export default function News() {
     let displayCompany = (
       (
         <div className="vaccine-trial">
-          <OverlayTrigger trigger="click" rootClose placement="bottom" overlay={popoverDetails}>
-            <Button variant="outline-info" size="sm" className="vaccine-button">{vaccine.company}</Button>
+          <OverlayTrigger key={index} trigger="click" rootClose placement="bottom" overlay={popoverDetails}>
+            <Button key={index} variant="outline-info" size="sm" className="vaccine-button">{vaccine.company}</Button>
           </OverlayTrigger>
         </div>
       )
@@ -235,8 +235,8 @@ export default function News() {
   const FDA = vaccData.vaccineFDA.map((vaccine, index) => {
     let popoverDetails = (
       <Popover id="popover-basic" key={index}>
-        <Popover.Title as="h3">Vaccine Information</Popover.Title>
-        <Popover.Content>
+        <Popover.Title key={index} as="h3">Vaccine Information</Popover.Title>
+        <Popover.Content key={index}>
           <h6><strong>Name:</strong> {vaccine.vaccineName}</h6>
           <h6><strong>Type:</strong> {vaccine.vaccineType}</h6>
           <p><strong>Details:</strong> {vaccine.vaccineDetails}</p>
@@ -249,8 +249,8 @@ export default function News() {
     let displayCompany = (
       (
         <div className="vaccine-trial">
-          <OverlayTrigger trigger="click" rootClose placement="bottom" overlay={popoverDetails}>
-            <Button variant="outline-info" size="sm" className="vaccine-button">{vaccine.company}</Button>
+          <OverlayTrigger key={index} trigger="click" rootClose placement="bottom" overlay={popoverDetails}>
+            <Button key={index} variant="outline-info" size="sm" className="vaccine-button">{vaccine.company}</Button>
           </OverlayTrigger>
         </div>
       )
@@ -262,8 +262,8 @@ export default function News() {
   const availablePublic = vaccData.vaccineAvailable.map((vaccine, index) => {
     let popoverDetails = (
       <Popover id="popover-basic" key={index}>
-        <Popover.Title as="h3">Vaccine Information</Popover.Title>
-        <Popover.Content>
+        <Popover.Title key={index} as="h3">Vaccine Information</Popover.Title>
+        <Popover.Content key={index}>
           <h6><strong>Name:</strong> {vaccine.vaccineName}</h6>
           <h6><strong>Type:</strong> {vaccine.vaccineType}</h6>
           <p><strong>Details:</strong> {vaccine.vaccineDetails}</p>
@@ -276,8 +276,8 @@ export default function News() {
     let displayCompany = (
       (
         <div className="vaccine-trial">
-          <OverlayTrigger trigger="click" rootClose placement="bottom" overlay={popoverDetails}>
-            <Button variant="outline-info" size="sm" className="vaccine-button">{vaccine.company}</Button>
+          <OverlayTrigger key={index} trigger="click" rootClose placement="bottom" overlay={popoverDetails}>
+            <Button key={index} variant="outline-info" size="sm" className="vaccine-button">{vaccine.company}</Button>
           </OverlayTrigger>
         </div>
       )
@@ -286,22 +286,19 @@ export default function News() {
     return displayCompany;
   });
 
-  console.log(displayedData[0])
-  console.log(displayedData[1])
-  console.log(displayedData[2])
   //returns each news card individually - allows for row organization on news page
   let loadNews = displayedData.map((item, index) =>
     (
       <>
         <Card key={index}>
           {photoExists(item.urlToImage)}
-          <Card.Body>
-            <Card.Title><a href={item.url}>{item.title}</a></Card.Title>
-            <Card.Text>
+          <Card.Body key={index}>
+            <Card.Title key={index}><a href={item.url}>{item.title}</a></Card.Title>
+            <Card.Text key={index}>
               {item.description}
             </Card.Text>
           </Card.Body>
-          <Card.Footer>
+          <Card.Footer key={index}>
             <small className="text-muted">{authorExists(item.author)}{item.source.name}</small>
           </Card.Footer>
         </Card>

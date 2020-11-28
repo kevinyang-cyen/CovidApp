@@ -2,7 +2,6 @@ export default function sortHeatmapData(casesDataArr) {
   let sortObj = {}
   let returnArr = [];
 
-  console.log(casesDataArr)
   casesDataArr.data.forEach((result) => {
     if (sortObj[`${result.Lat},${result.Lon}`]) {
       sortObj[`${result.Lat},${result.Lon}`] += result.Cases;
@@ -18,7 +17,6 @@ export default function sortHeatmapData(casesDataArr) {
     }
 
   })
-
 
   return returnArr;
 }
