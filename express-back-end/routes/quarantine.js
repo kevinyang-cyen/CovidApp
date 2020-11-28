@@ -10,7 +10,7 @@ module.exports = (db) => {
     console.log(req.body);
     const quarantineQuery = "UPDATE users SET quarantine_start_time = $1 WHERE email = $2 RETURNING *;"
     db.query(quarantineQuery, [now, req.body[1]])
-      .then((data) => res.send([data.rows[0].username, data.rows[0].email, data.rows[0].quarantine_start_time]))
+      .then((data) => res.send([data.rows[0].username, data.rows[0].email, data.rows[0].quarantine_start_time, data.rows[0].has_self_reported]))
   });
 
 
