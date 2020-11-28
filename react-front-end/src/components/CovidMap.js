@@ -54,7 +54,7 @@ export default function CovidMap() {
 
   let popups = markerCases.map((report, index) =>
     <Marker position={[report.latitude, report.longitude]} key={index} icon={covidIcon}>
-      <Popup>Reported at {Date(report.created_date)}</Popup>
+      <Popup>Reported at {new Date(+report.created_date).toISOString().replace(/T.*/, '').split('-').reverse().join('-')}</Popup>
     </Marker>
   )
 
