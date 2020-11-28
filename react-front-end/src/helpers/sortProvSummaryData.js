@@ -95,6 +95,7 @@ export default function sortProvSummaryData(provDataSum, pop) {
       name: 'Yukon', tests: 0
     }],
   }
+  
 // grabs data from api + puts it into respective provinces 
   pop.forEach((provPop) => {
     provDataSum[0].data.summary.forEach((prov) => {

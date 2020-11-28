@@ -27,6 +27,7 @@ export default function BarGraph(props) {
           />
           <XAxis
             dataKey="name"
+            // set for all bar graph names to show
             interval={0}
             tickLine={true}
           >

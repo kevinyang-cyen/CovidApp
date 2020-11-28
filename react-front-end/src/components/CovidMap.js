@@ -20,6 +20,7 @@ export default function CovidMap() {
     user_id: 1
   }]);
 
+  // function to zoom in to your area when you click outside of boundary on the map
   function MyComponent() {
     const map = useMapEvents({
       click: () => {
@@ -39,6 +40,7 @@ export default function CovidMap() {
       setMarkerCases(markerCasesValue.data);
     };
 
+    // function to fetch marker coordinates from database
     const fetchReportCases = async () => {
       try {
         const res = await axios.get('/map');
@@ -52,6 +54,7 @@ export default function CovidMap() {
     runCall();
   }, []);
 
+  // generating a marker for each returned case from the database
   let popups = markerCases.map((report, index) =>
     <Marker position={[report.latitude, report.longitude]} key={index} icon={covidIcon}>
       <Popup>Reported at {new Date(+report.created_date).toISOString().replace(/T.*/, '').split('-').reverse().join('-')}</Popup>

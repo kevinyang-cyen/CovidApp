@@ -7,7 +7,7 @@ const https = require('https');
 // "https://api.opencovid.ca/individual?stat=mortality&loc=AB"
 // "https://api.opencovid.ca/individual?stat=cases&loc=AB"
 
-
+// Calls all API required for the dashboard and returns the data
 module.exports = () => {
 
   router.post("/summary", (req, res) => {

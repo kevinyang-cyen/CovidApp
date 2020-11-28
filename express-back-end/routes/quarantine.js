@@ -2,7 +2,7 @@
 const express = require('express');
 const router = express.Router();
 
-
+// updates user quarantine_start_time with current time and sends back user info
 module.exports = (db) => {
 
   router.post("/", (req, res) => {

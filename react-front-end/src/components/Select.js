@@ -8,6 +8,8 @@ function Select(props) {
     setLocationCode(event.target.value);
   };
 
+  // changes API URL query depending on which province is selected
+  // defaults to general Canada Data
   const search = function () {
     if (props.onClick) {
       if (locationCode === "Alberta") {

@@ -38,9 +38,13 @@ export default function Login() {
     }
   }
 
+  // sends form unput to backend to verify user with database and sets cookie if authentication is successful
   const onSubmit = data => {
+    // allows multiple login errors to be made
     setEmailError(false)
     setPasswordError(false)
+
+    // backend req. to check db
     axios.post("http://localhost:8080/login", data)
       .then((res) => {
         if (res.data === 'incorrect password') {
