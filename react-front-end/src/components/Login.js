@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Alert from 'react-bootstrap/Alert';
 import { useForm } from "react-hook-form";
 import axios from "axios";
-import { Route, BrowserRouter as Router, Link, Redirect, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { useState } from "react";
 import { useCookies } from 'react-cookie';
 import "../public/styles/Login.css";

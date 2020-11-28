@@ -32,7 +32,11 @@ module.exports = (db) => {
             res.send('incorrect password');
             return;
           } else {
-          res.send([user.username, user.email, user.quarantine_start_time, user.has_self_reported]);
+            if ((new Date().getTime() - (+user.quarantine_start_time) > 1209600000)) {
+              res.send([user.username, user.email, null, user.has_self_reported]);
+            } else {
+              res.send([user.username, user.email, user.quarantine_start_time, user.has_self_reported]);
+            }
           }
         })
         .catch(e => {
