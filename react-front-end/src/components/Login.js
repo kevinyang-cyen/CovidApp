@@ -6,7 +6,7 @@ import axios from "axios";
 import { Route, BrowserRouter as Router, Link, Redirect, useHistory } from "react-router-dom";
 import { useState } from "react";
 import { useCookies } from 'react-cookie';
-import "../styles/Login.scss";
+import "../public/styles/Login.css";
 
 export default function Login() {
   const { register, handleSubmit } = useForm();

@@ -1,0 +1,67 @@
+.spinner-load-news {
+  display: flex;
+  margin-top: 40%;
+  margin-left: 40%; }
+
+.news {
+  padding: 2rem;
+  font-size: 0.75em;
+  font-weight: 300;
+  max-width: 100%; }
+  .news .headline-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .news .headline-container h3 {
+      font-family: 'Roboto', sans-serif;
+      background: black;
+      text-align: center;
+      padding: 100px 5px 100px 5px;
+      width: 600px;
+      font-size: 25px;
+      opacity: 0.8; }
+
+.news-tabs {
+  margin-top: 20px;
+  margin-left: 20px; }
+
+.vaccines {
+  margin-top: 20px;
+  max-width: 90%;
+  margin-left: 5%; }
+
+.vaccine-button {
+  margin-bottom: 5px; }
+
+li {
+  list-style-type: none; }
+
+.loadbar {
+  margin-bottom: 15px;
+  height: 40px; }
+
+a {
+  color: #636363; }
+
+.card-title {
+  font-size: 1.5em; }
+
+.load-more {
+  width: 200px;
+  height: 40px;
+  justify-content: center;
+  font-weight: bold; }
+
+.vaccine-list {
+  display: flex;
+  flex-wrap: wrap; }
+
+.vaccine-trial {
+  margin-right: 5px; }
+
+.vaccine-container {
+  margin-bottom: 15px; }
+  .vaccine-container h2 {
+    font-family: 'Patua One', cursive; }
+
+/*# sourceMappingURL=News.css.map */

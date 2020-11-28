@@ -11,7 +11,7 @@ import timeConverter from "../helpers/convertTime.js";
 import checkForZeroData from "../helpers/checkForZeroData.js";
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
-import "../styles/Dashboard.scss";
+import "../public/styles/Dashboard.css";
 import emptyBarGraph from "../docs/no-bar-graph-info.png";
 import noGenderInfo from "../docs/no-gender-info.png";
 import sortProvSummaryData from "../helpers/sortProvSummaryData.js";

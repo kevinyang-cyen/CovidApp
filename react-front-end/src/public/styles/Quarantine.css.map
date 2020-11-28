@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,WAAY;EACV,UAAU,EAAE,IAAI;;AAGlB,eAAgB;EACd,MAAM,EAAE,WAAW;EACnB,YAAY,EAAE,MAAM;EACpB,aAAa,EAAE,GAAG;EAClB,KAAK,EAAE,IAAI;;AAGb,iBAAiB;EACf,OAAO,EAAC,IAAI;EACZ,eAAe,EAAC,MAAM;EACtB,MAAM,EAAE,KAAK;;AAIb,gBAAM;EACJ,KAAK,EAAE,GAAG",
+"sources": ["../../styles/Quarantine.scss"],
+"names": [],
+"file": "Quarantine.css"
+}

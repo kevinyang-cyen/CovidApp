@@ -15,7 +15,7 @@ import Nav from 'react-bootstrap/Nav';
 import Alert from 'react-bootstrap/Alert';
 import Carousel from 'react-bootstrap/Carousel'
 import { Spinner } from "react-bootstrap";
-import "../styles/News.scss";
+import "../public/styles/News.css";
 
 export default function News() {
 

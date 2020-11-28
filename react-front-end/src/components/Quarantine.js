@@ -6,7 +6,7 @@ import axios from "axios";
 import { useCookies } from 'react-cookie';
 import { useState } from "react";
 import Countdown from 'react-countdown';
-import "../styles/Quarantine.scss";
+import "../public/styles/Quarantine.css";
 
 export default function Register() {
   const { handleSubmit } = useForm();
@@ -50,10 +50,6 @@ export default function Register() {
               <div className="quarantine-div">
                 <h1 className="quarantine-timer">Quarantine Countdown</h1>
                 <h2 className="quarantine-timer">                <Countdown date={(Math.round(((cookies['user-cookie'][2])))) + 1209600000} /></h2>
-
-              {/* {14 - Math.round(((new Date().getTime() - cookies['user-cookie'][2]) / 86400000))} Days Remaining... */}
-
-
                 <h3 className="quarantine-timer map-link"><Link to="/map">Check your marker the map</Link></h3>
               </div>
               : 
