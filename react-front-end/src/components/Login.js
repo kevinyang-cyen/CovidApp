@@ -39,8 +39,11 @@ export default function Login() {
   }
 
   const onSubmit = data => {
+    // allows multiple login errors to be made
     setEmailError(false)
     setPasswordError(false)
+
+    // backend req. to check db
     axios.post("http://localhost:8080/login", data)
       .then((res) => {
         if (res.data === 'incorrect password') {

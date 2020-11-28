@@ -13,6 +13,7 @@ export default function Register() {
   const [emailExists, setEmailExists] = useState(false)
   const [cookies, setCookie, removeCookie] = useCookies([0]);
 
+  // error if email has been used
   const handleEmailExists = (error) => {
     if (error) {
       return (
@@ -26,6 +27,8 @@ export default function Register() {
     }
   }
 
+
+  // checks if email has been used before 
   const onSubmit = data => {
     setEmailExists(false)
     axios.post("http://localhost:8080/register", data)
