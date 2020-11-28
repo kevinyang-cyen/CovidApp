@@ -1,18 +1,22 @@
 .quarantine {
-  margin-top: 25vh; }
+  margin-top: 25vh;
+}
 
 .quarantine-div {
   border: 0.5em solid;
   border-color: orange;
   border-radius: 1em;
-  width: 35em; }
+  width: 35em;
+}
 
 .quarantine-timer {
   display: flex;
   justify-content: center;
-  margin: 0.5em; }
+  margin: 0.5em;
+}
 
 .map-link :hover {
-  color: red; }
+  color: red;
+}
 
 /*# sourceMappingURL=Quarantine.css.map */
