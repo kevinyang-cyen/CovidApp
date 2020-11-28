@@ -5,6 +5,7 @@ const https = require('https');
 
 module.exports = () => {
 
+  // calls for API on cases within last two weeks for heat map, then returns data
   router.get("/", (req, res) => {
 
     let dateNow = new Date();

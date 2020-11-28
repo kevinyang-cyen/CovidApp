@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Alert from 'react-bootstrap/Alert';
 import { useForm } from "react-hook-form";
 import axios from "axios";
-import { Route, BrowserRouter as Router, Link, Redirect, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { useState } from "react";
 import { useCookies } from 'react-cookie';
 import "../public/styles/Login.css";
@@ -38,6 +38,7 @@ export default function Login() {
     }
   }
 
+  // sends form unput to backend to verify user with database and sets cookie if authentication is successful
   const onSubmit = data => {
     // allows multiple login errors to be made
     setEmailError(false)

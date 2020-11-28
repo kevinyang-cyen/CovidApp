@@ -14,14 +14,16 @@ export default function Register() {
   const { handleSubmit } = useForm();
   const [cookies, setCookie] = useCookies();
   const [location, setLocation] = useState([]);
-  const onSubmit = (data) => {
 
+  // adding quarantine set time to database and updating user cookie with time left
+  const onSubmit = (data) => {
     axios.post("/quarantine", cookies['user-cookie'])
       .then((res) => {
         setCookie(['user-cookie'], [res.data[0], res.data[1], res.data[2], res.data[3]]);
       });
     }
 
+  // adding self-report case to database and updating user cookie with self-report date
   const onSubmission = (data) => {
     axios.post("/selfreport", [cookies['user-cookie'], location])
     .then((res) => {
@@ -43,6 +45,7 @@ export default function Register() {
     console.warn(`ERROR(${err.code}): ${err.message}`);
   }
 
+  // google API function to find your location coordinates to add marker
   navigator.geolocation.getCurrentPosition(success, error, options);
 
   return (

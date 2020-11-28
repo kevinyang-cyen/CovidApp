@@ -38,6 +38,8 @@ export default function News() {
   const [loadMore, setLoadMore] = useState(1);
   const [displayedData, setDisplayedData] = useState(latestDisplayedReports);
 
+  
+  // fetches data from news and vaccine info APIs and set states with return data
   useEffect(() => {
     const runCall = async () => {
       let apiValue = await fetchData();
