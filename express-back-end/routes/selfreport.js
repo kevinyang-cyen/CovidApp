@@ -7,7 +7,6 @@ module.exports = (db) => {
   var returnUser = {}
 
   const report = function(email, location) {
-    console.log(email, location);
     const queryString = `
     UPDATE users 
     SET has_self_reported=true
