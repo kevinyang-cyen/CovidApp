@@ -2,7 +2,7 @@
 const express = require('express');
 const router = express.Router();
 
-
+// retrieves all self_report_cases from within last 2 weeks and returns data to front end
 module.exports = (db) => {
 
   const retrieveCases = function() {

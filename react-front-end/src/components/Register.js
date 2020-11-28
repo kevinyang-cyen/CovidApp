@@ -13,6 +13,7 @@ export default function Register() {
   const [emailExists, setEmailExists] = useState(false)
   const [cookies, setCookie, removeCookie] = useCookies([0]);
 
+  // displays error if email authentication fails
   const handleEmailExists = (error) => {
     if (error) {
       return (
@@ -26,6 +27,8 @@ export default function Register() {
     }
   }
 
+  // sends user input to backend to check if user email already exists
+  // sets user cookie if email does not exist and if new user successfully registers
   const onSubmit = data => {
     setEmailExists(false)
     axios.post("http://localhost:8080/register", data)

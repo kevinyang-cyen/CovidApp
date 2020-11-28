@@ -38,6 +38,7 @@ export default function Login() {
     }
   }
 
+  // sends form unput to backend to verify user with database and sets cookie if authentication is successful
   const onSubmit = data => {
     setEmailError(false)
     setPasswordError(false)
