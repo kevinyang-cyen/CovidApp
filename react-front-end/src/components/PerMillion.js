@@ -18,7 +18,6 @@ export default function PerMillion() {
         const response = await Promise(
           axios.post('/dashboard/allProvincesSummary', date),
         )
-        console.log(response);
         return response
       } catch (err) {
         console.log(err)

@@ -6,7 +6,7 @@ CREATE TABLE users (
   email VARCHAR(255) NOT NULL,
   password VARCHAR(255) NOT NULL,
   quarantine_start_time BIGINT DEFAULT NULL,
-  is_admin BOOLEAN DEFAULT FALSE
+  has_self_reported BOOLEAN DEFAULT FALSE
 );
 
 CREATE TABLE self_report_cases (

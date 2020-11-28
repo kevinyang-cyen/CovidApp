@@ -43,14 +43,12 @@ export default function Login() {
     setPasswordError(false)
     axios.post("http://localhost:8080/login", data)
       .then((res) => {
-        console.log(res.data)
         if (res.data === 'incorrect password') {
           setPasswordError(true)
-        } else if (res.data.length !== 3) {
+        } else if (res.data.length !== 4) {
           setEmailError(true)
         } else if (res.status === 200) {
-          console.log(res.data);
-          setCookie(['user-cookie'], [res.data[0], res.data[1], res.data[2]]);
+          setCookie(['user-cookie'], [res.data[0], res.data[1], res.data[2], res.data[3]]);
           history.push('/');
         }
       })

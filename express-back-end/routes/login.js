@@ -32,7 +32,7 @@ module.exports = (db) => {
             res.send('incorrect password');
             return;
           } else {
-          res.send([user.username, user.email, user.quarantine_start_time]);
+          res.send([user.username, user.email, user.quarantine_start_time, user.has_self_reported]);
           }
         })
         .catch(e => {
