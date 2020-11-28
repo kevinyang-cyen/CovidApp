@@ -75,9 +75,13 @@ export default function Dashboard() {
   const [urlThree, setUrlThree] = useState("?stat=cases")
   const [provDataSummary, setProvDataSummary] = useState(provincesDataSummary_state)
 
-  useEffect(() => {
-    let date = new Date() - 126000000
 
+  // makes call to backend - gets api information for all provinces per million
+  useEffect(() => {
+    // counteracts newDate time + API update time
+    const getDateBefore = 126000000;
+    let date = new Date() - getDateBefore;
+    // returns DD-MM-YYYY
     date = (new Date(date).toISOString().replace(/T.*/, '').split('-').reverse().join('-'));
     const runCall = async () => {
       let apiValue = await fetchData();
