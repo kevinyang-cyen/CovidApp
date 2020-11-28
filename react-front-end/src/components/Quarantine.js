@@ -53,7 +53,9 @@ export default function Register() {
             (cookies['user-cookie'][2]?
               <div className="quarantine-div">
                 <h1 className="quarantine-timer">Quarantine Countdown</h1>
-                <h2 className="quarantine-timer">                <Countdown date={(Math.round(((cookies['user-cookie'][2])))) + 1209600000} /></h2>
+                <h2 className="quarantine-timer">
+                  <Countdown date={(Math.round(((cookies['user-cookie'][2])))) + 1209600000} />
+                </h2>
               </div>
               : 
                 <OverlayTrigger key={2} placement={'right'}
