@@ -23,7 +23,7 @@ export default function Register() {
             Email already exists
           </p>
         </Alert>
-      )ß
+      )
     }
   }
 
