@@ -72,7 +72,7 @@ export default function Login() {
             <Form.Label>Password</Form.Label>
             <Form.Control name="password" type="password" placeholder="Password" ref={register} />
           </Form.Group>
-          <Button variant="dark" type="submit">
+          <Button className="submit-btn" variant="dark" type="submit">
             Sign In
           </Button>
         </Form>

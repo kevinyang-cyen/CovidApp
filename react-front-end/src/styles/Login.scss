@@ -1,14 +1,28 @@
 // LOGIN/REGISTER
 .login, .register {
-  background-color: lightgrey;
+  color:white;
+  background-color: transparent;
   width: 45vw;
   height: 45vh;
   margin: auto;
   margin-top: 10vh;
-  border: 0.5em solid lightgrey;
-  border-radius: 1em;
 
 
+  ::after{
+    content: "";
+    background: url(../data/imgs/COVID-19-background.png);
+    width: 45vw;
+    height: 58vh;
+    margin: auto;
+    margin-top: 20vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    border-radius:1em;
+  }
 }
 
 
@@ -19,8 +33,8 @@
 .loginTitle {
   display: flex;
   justify-content: center;
-  padding: 15px;
   font-size: 3em;
+  padding-top: 0.8em;
 }
 
 #login-nav {
@@ -35,4 +49,12 @@
 
 .quarantine-timer {
   font-size: 1.8em;
+}
+
+.submit-btn{
+  width: 10em;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
 }
