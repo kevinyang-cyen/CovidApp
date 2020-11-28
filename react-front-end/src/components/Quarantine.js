@@ -20,9 +20,9 @@ export default function Register() {
       });
 
     axios.post("/selfreport", [cookies['user-cookie'], location])
-    .then((res) => {
-      console.log(res);
-    });
+      .then((res) => {
+        console.log(res);
+      });
   }
 
   var options = {
@@ -41,26 +41,28 @@ export default function Register() {
 
   navigator.geolocation.getCurrentPosition(success, error, options);
 
+
   return (
     <>
       <section className="quarantine">
         <Form className="quarantine-timer" onSubmit={handleSubmit(onSubmit)}>
-          {cookies['user-cookie'] ? 
-            (cookies['user-cookie'][2]?
+          {cookies['user-cookie'] ?
+            (cookies['user-cookie'][2] ?
               <div className="quarantine-div">
                 <h1 className="quarantine-timer">Quarantine Countdown</h1>
-                <h2 className="quarantine-timer">                <Countdown date={(Math.round(((cookies['user-cookie'][2])))) + 1209600000} /></h2>
+                <h2 className="quarantine-timer"><Countdown date={(Math.round(((cookies['user-cookie'][2])))) + 1209600000} /></h2>
                 <h3 className="quarantine-timer map-link"><Link to="/map">Check your marker the map</Link></h3>
               </div>
-              : 
-                <Button variant="warning" type="submit">
-                  <h3 className="quarantine-timer">Self-Report and Start My Countdown</h3>
-                </Button> ) :
-              <h2 className="quarantine-timer">Please Log In to Self Report!</h2>
+              :
+              <Button variant="warning" type="submit">
+                <h3 className="quarantine-timer">Self-Report and Start My Countdown (Travelers)</h3>
+              </Button>)
+            :
+            <h2 className="quarantine-timer">Please Log In to Self Report!</h2>
           }
         </Form>
-
       </section >
+
     </>
   )
 }
