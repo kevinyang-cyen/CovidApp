@@ -2,6 +2,7 @@ export default function sortHeatmapData(casesDataArr) {
   let sortObj = {}
   let returnArr = [];
 
+  // sorts longitude and latitude for cities in Canada along with their cumulative cases
   casesDataArr.data.forEach((result) => {
     if (sortObj[`${result.Lat},${result.Lon}`]) {
       sortObj[`${result.Lat},${result.Lon}`] += result.Cases;

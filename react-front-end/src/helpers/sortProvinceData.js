@@ -28,6 +28,7 @@ export default function sortProvinceData(provDataArr) {
     lessTens: []
   }
 
+  // sorts cumulative cases, deaths, testing, and recoveries
   provDataArr[0].data.summary.forEach((dataSet) => {
     confirmed_data.push({ name: dataSet.date, cases: dataSet.cumulative_cases })
     deaths_data.push({ name: dataSet.date, deaths: dataSet.cumulative_deaths })
@@ -36,6 +37,7 @@ export default function sortProvinceData(provDataArr) {
     timeSpecific_data.push({ name: dataSet.date, totalCases: dataSet.cumulative_cases, todayCase: dataSet.cases, caseChange: dataSet.active_cases_change, testToday: dataSet.testing, activeCase: dataSet.active_cases, todayDeaths: dataSet.deaths })
   })
 
+  // checks if mortality is present for the API call
   if (provDataArr[1].data.mortality) {
     provDataArr[1].data.mortality.forEach((result) => {
       if (result.age !== "Not Reported") {
@@ -62,6 +64,7 @@ export default function sortProvinceData(provDataArr) {
     })
   }
 
+  // checks if cases is present for the API call
   if (provDataArr[2].data.cases) {
     provDataArr[2].data.cases.forEach((result) => {
 
@@ -118,7 +121,7 @@ export default function sortProvinceData(provDataArr) {
   let covidDataSortMaleDeaths = [];
   let covidDataSortFemaleDeaths = [];
 
-
+  // sorts gender reports available for mortality
   if (provDataArr[1].data.mortality) {
     covidDataSortMaleDeaths = provDataArr[1].data.mortality.filter(result => {
       return result.sex === "Male"
@@ -129,6 +132,7 @@ export default function sortProvinceData(provDataArr) {
     })
   }
 
+  // sorts gender reports available for cases
   if (provDataArr[2].data.cases) {
     covidDataSortMaleCases = provDataArr[2].data.cases.filter(result => {
       return result.sex === "Male"

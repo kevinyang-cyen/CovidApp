@@ -9,6 +9,7 @@ import {
   ResponsiveContainer
 } from 'recharts';
 
+// Area Graph Display
 export default function AreaGraph(props) {
 
   return (

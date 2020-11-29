@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { Icon } from "leaflet";
 import axios from "axios";
 
+// sets icon for markers
 const covidIcon = new Icon({
   iconUrl: '/covid-extra.svg',
   iconSize: [25, 25]

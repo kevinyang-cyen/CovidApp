@@ -1,3 +1,4 @@
+// sorts the news articles from API call
 export default function sortNewsData(newsData) {
   const newsReports = [];
 

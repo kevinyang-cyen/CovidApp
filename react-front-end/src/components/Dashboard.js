@@ -136,6 +136,7 @@ export default function Dashboard() {
     runCall();
   }, [urlOne, urlTwo, urlThree]);
 
+  // sets url and location code based on selected values in Select.js
   const search = function (url1, url2, url3, locationCode) {
     setUrlOne(url1);
     setUrlTwo(url2);
@@ -156,6 +157,7 @@ export default function Dashboard() {
     }
   }
 
+  // displays numeric specific covid related data 
   const dashboardInfoBar = () => {
     return (
       <>
@@ -197,6 +199,7 @@ export default function Dashboard() {
     )
   }
 
+  // displays the covid related trends and graphs
   return (
     <section className="dashboard">
       <Tabs key={1} defaultActiveKey="general" id="uncontrolled-tab-example">
@@ -279,9 +282,9 @@ export default function Dashboard() {
         <Tab key={4} eventKey="per-mill" title="Per Million">
           <div className="per-mill">
             <div>
-            <h5>Cases Per Million</h5>
-            <p>** Based on 2019 population</p>
-              <PerMilBarGraph 
+              <h5>Cases Per Million</h5>
+              <p>** Based on 2019 population</p>
+              <PerMilBarGraph
                 key={1}
                 className="cases-per-mill"
                 coviddata={provDataSummary.casesPerMil}
