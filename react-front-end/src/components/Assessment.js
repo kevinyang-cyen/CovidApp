@@ -4,6 +4,7 @@ import "../public/styles/Assessment.css";
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
 
+// Displays List of Assesment for Each Province
 export default function Assessment() {
   return (
     <main className='assessment'>
@@ -46,7 +47,7 @@ export default function Assessment() {
               <ListGroup.Item className="button"><a href="https://www.saskatchewan.ca/government/health-care-administration-and-provider-resources/treatment-procedures-and-guidelines/emerging-public-health-issues/2019-novel-coronavirus/public-health-measures/">Saskatchewan</a></ListGroup.Item>
               <ListGroup.Item className="button"><a href="https://yukon.ca/en/health-and-wellness/covid-19-primaryrmation/summary-yukons-plan-lifting-covid-19-restrictions/">Yukon</a></ListGroup.Item>
             </ListGroup>
-            </Card>
+          </Card>
         </Tab>
       </Tabs>
     </main>

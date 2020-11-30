@@ -9,6 +9,7 @@ import {
   Bar,
 } from "recharts";
 
+// Bar Graph display 
 export default function BarGraph(props) {
   return (
     <div>

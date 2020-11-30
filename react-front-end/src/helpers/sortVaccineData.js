@@ -18,6 +18,7 @@ export default function sortVacData(vaccineData) {
     { statusID: 7, phaseName: "Generally Available" }
   ];
 
+  // organizes vaccine related information based on phase id identified in vaccineStatus
   vaccineData[1].data.feed.entry.forEach((vaccineItem) => {
 
     if (+vaccineItem["gsx$phase"]["$t"] === vaccineStatus[0].statusID) {

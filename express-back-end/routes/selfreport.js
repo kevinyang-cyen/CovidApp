@@ -7,7 +7,7 @@ module.exports = (db) => {
   var returnUser = {}
 
   // adds new self_report_case with given location and user_id found from user email,
-  const report = function(email, location) {
+  const report = function (email, location) {
     const queryString = `
     UPDATE users 
     SET has_self_reported=true
@@ -24,18 +24,18 @@ module.exports = (db) => {
         VALUES ($1, $2, $3, $4);
         `;
         db.query(queryString, [user.id, location[0], location[1], now]);
-        
+
       })
   };
 
   // returns user info after self_report case into database in complete
-  router.post('/', (req,res) => {
+  router.post('/', (req, res) => {
     report(req.body[0][1], req.body[1])
       .then(response => res.send([returnUser.username, returnUser.email, returnUser.quarantine_start_time, returnUser.has_self_reported]));
-    
+
 
   });
- 
+
 
 
   return router;

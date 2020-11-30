@@ -8,7 +8,6 @@ import sortHeatmapData from "../helpers/sortHeatmapData.js";
 export default function Map() {
   useEffect(() => {
 
-
     const runCall = async () => {
       let apiValue = await fetchData();
       let heatmapCoords = sortHeatmapData(apiValue);

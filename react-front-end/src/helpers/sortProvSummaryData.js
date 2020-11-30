@@ -95,8 +95,8 @@ export default function sortProvSummaryData(provDataSum, pop) {
       name: 'Yukon', tests: 0
     }],
   }
-  
-// grabs data from api + puts it into respective provinces 
+
+  // grabs data from api + puts it into respective provinces 
   pop.forEach((provPop) => {
     provDataSum[0].data.summary.forEach((prov) => {
       if (prov.province === "Alberta" && provPop.name === "Alberta") {
@@ -141,7 +141,7 @@ export default function sortProvSummaryData(provDataSum, pop) {
       }
     })
   })
-// functions below put data into readable info by rechart 
+  // functions below put data into readable info by rechart 
   provSummaryGraphData.casesPerMil.forEach((prov) => {
     if (prov.name === 'Alberta') {
       prov.cases = provSummary['Alberta']['cumulative_cases']

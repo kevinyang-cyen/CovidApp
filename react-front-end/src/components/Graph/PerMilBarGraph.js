@@ -1,4 +1,3 @@
-import { ProgressBar } from "react-bootstrap";
 import {
   BarChart,
   Label,

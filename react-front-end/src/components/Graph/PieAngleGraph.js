@@ -10,6 +10,7 @@ const style = {
   lineHeight: '24px',
 };
 
+// Pie Graph display
 export default function PieAngleGraph(props) {
 
   return (
