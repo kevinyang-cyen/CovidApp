@@ -5,6 +5,10 @@
   "main": "server.js",
   "author": "garrettgsb",
   "license": "MIT",
+  "engines": {
+    "node": "10.x",
+    "npm": "6.x"
+  },
   "scripts": {
     "go": "nodemon server.js",
     "db:reset": "node bin/resetdb.js",
