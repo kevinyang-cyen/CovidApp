@@ -4,9 +4,14 @@ The Covid-Lite Tracer is a web-app resource for all things related to Covid-19 b
 
 ## Screenshots
 
-!["Default Monday Page"](https://github.com/kevinyang-cyen/scheduler/blob/master/docs/1.PNG?raw=true)
-!["Switching Days and Adding an Interview"](https://github.com/kevinyang-cyen/scheduler/blob/master/docs/2.PNG?raw=true)
-!["Completed Booking New Interview"](https://github.com/kevinyang-cyen/scheduler/blob/master/docs/3.PNG?raw=true)
+!["Dashboard Trends"](https://github.com/kevinyang-cyen/CovidApp/blob/master/screenshots/CovidLite-1.PNG?raw=true)
+!["Map of Health Regions & Self-Report Cases"](https://github.com/kevinyang-cyen/CovidApp/blob/master/screenshots/CovidLite-2.PNG?raw=true)
+!["Heatmap of Covid Hotspots"](https://github.com/kevinyang-cyen/CovidApp/blob/master/screenshots/CovidLite-3.PNG?raw=true)
+!["Self-Assessment & Covid-19 Restriction Resources"](https://github.com/kevinyang-cyen/CovidApp/blob/master/screenshots/CovidLite-4.PNG?raw=true)
+!["Covid-19 News Page"](https://github.com/kevinyang-cyen/CovidApp/blob/master/screenshots/CovidLite-5.PNG?raw=true)
+!["Covid-19 Vaccine Development Progress"](https://github.com/kevinyang-cyen/CovidApp/blob/master/screenshots/CovidLite-6.PNG?raw=true)
+!["Quarantine & Self-Report Feature"](https://github.com/kevinyang-cyen/CovidApp/blob/master/screenshots/CovidLite-7.PNG?raw=true)
+
 
 ## Setup
 
