@@ -45,7 +45,7 @@ export default function Login() {
     setPasswordError(false)
 
     // backend req. to check db
-    axios.post("http://localhost:8080/login", data)
+    axios.post("/login", data)
       .then((res) => {
         if (res.data === 'incorrect password') {
           setPasswordError(true)
