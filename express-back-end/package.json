@@ -9,7 +9,7 @@
     "go": "nodemon server.js",
     "db:reset": "node bin/resetdb.js",
     "start": "node server.js",
-    "build": "cd react-front-end && npm install && npm run build && cd ../express-back-end"
+    "build": "cd react-front-end && npm install && npm run build"
   },
   "dependencies": {
     "bcrypt": "^5.0.0",

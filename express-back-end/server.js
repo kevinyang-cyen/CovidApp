@@ -8,7 +8,7 @@ const cors = require('cors');
 // Express Configuration
 App.use(BodyParser.urlencoded({ extended: false }));
 App.use(BodyParser.json());
-App.use(Express.static('../react-front-end/build'));
+App.use(Express.static('./react-front-end/build'));
 App.use(cors());
 
 // Routes Import
