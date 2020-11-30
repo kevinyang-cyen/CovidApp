@@ -3,10 +3,6 @@ const express = require('express');
 const router = express.Router();
 const https = require('https');
 
-// "https://api.opencovid.ca/summary?loc=AB&after=01-01-2020"
-// "https://api.opencovid.ca/individual?stat=mortality&loc=AB"
-// "https://api.opencovid.ca/individual?stat=cases&loc=AB"
-
 // Calls all API required for the dashboard and returns the data
 module.exports = () => {
 

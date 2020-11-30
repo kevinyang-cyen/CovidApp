@@ -12,8 +12,6 @@ import checkForZeroData from "../helpers/checkForZeroData.js";
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
 import "../public/styles/Dashboard.css";
-import emptyBarGraph from "../docs/no-bar-graph-info.png";
-import noGenderInfo from "../docs/no-gender-info.png";
 import sortProvSummaryData from "../helpers/sortProvSummaryData.js";
 import popData from "../data/provincePop.json"
 
@@ -239,7 +237,7 @@ export default function Dashboard() {
                   <h5>Reported Case Distribution</h5>
                   {(ageCountIsZero) ?
                     <div className="img-container">
-                      <img className="graph-pic" src={emptyBarGraph} alt="Information unavailable at this time"></img>
+                      <img style={{opacity: 0.8}} className="graph-pic" src="https://github.com/kevinyang-cyen/CovidApp/blob/master/react-front-end/src/docs/no-bar-graph-info.png?raw=true" alt="Information unavailable at this time"></img>
                       <div className="center-text">Information for age demographic unavailable at this time</div>
 
                     </div> : <BarGraph key={1} className="age-distribution"
@@ -249,7 +247,7 @@ export default function Dashboard() {
                   }
                   {(ageCountIsZero) ?
                     <div className="img-container">
-                      <img className="graph-pic" src={noGenderInfo} alt="Information unavailable at this time"></img>
+                      <img style={{opacity: 0.8}} className="graph-pic" src="https://github.com/kevinyang-cyen/CovidApp/blob/master/react-front-end/src/docs/no-gender-info.png?raw=true" alt="Information unavailable at this time"></img>
                       <div className="center-text">Information for gender demographic unavailable at this time</div>
                     </div> : <PieAngleGraph key={1} className="gender-distribution" coviddata={provData.gender_demographic_infections} datakey="Infection" nameKey="Gender" yaxis={locationCode + " Reported Cases Gender Distribution"} />
                   }

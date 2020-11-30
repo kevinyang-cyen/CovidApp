@@ -147,7 +147,7 @@ h6 {
 .graph-pic {
   max-width: 40vw;
   max-height: 30vh;
-  opacity: 80%;
+  opacity: 0.8;
   display: flex; }
 
 .additional-graphs {

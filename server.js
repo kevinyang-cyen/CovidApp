@@ -19,6 +19,7 @@ const registerRoute = require('./routes/register.js');
 const dashboardRoute = require('./routes/dashboard.js');
 const quarantineRoute = require('./routes/quarantine.js');
 const selfreportRoute = require('./routes/selfreport.js');
+const newsRoute = require('./routes/news.js');
 
 // PG database client/connection setup
 const { Pool } = require('pg');
@@ -36,6 +37,7 @@ App.use('/register', registerRoute(db));
 App.use('/dashboard', dashboardRoute());
 App.use('/quarantine', quarantineRoute(db));
 App.use('/selfreport', selfreportRoute(db));
+App.use('/news', newsRoute());
 
 
 // Sample GET route

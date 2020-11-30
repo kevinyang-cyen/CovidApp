@@ -54,13 +54,11 @@ export default function News() {
     }
 
     const fetchData = async () => {
-      const apiUrl = "https://newsapi.org/v2/top-headlines?country=ca&category=health&apiKey=af7f35ff3e5649688948cfaffbf5f607&pageSize=100&sortBy=relevancy";
-      const apiUrlTwo = "https://spreadsheets.google.com/feeds/list/1qRN1CTiEBqQkxfOUI8_wYfXiWxoVjHKiwruslmfOqSs/1/public/values?alt=json";
 
       try {
         const response = await Promise.all([
-          axios.get(apiUrl),
-          axios.get(apiUrlTwo)
+          axios.get('/news/newsreports'),
+          axios.get('/news/vaccinereports')
         ]);
 
         return response;
