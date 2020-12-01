@@ -103,7 +103,7 @@ export default function News() {
           <h6><strong>Type:</strong> {vaccine.vaccineType}</h6>
           <p><strong>Details:</strong> {vaccine.vaccineDetails}</p>
           <p><strong>Status:</strong> {vaccine.vaccineStatus}</p>
-          <p><a href={vaccine.vaccineArticle}>For more click here</a></p>
+          <p><a href={vaccine.vaccineArticle} target="_blank">For more click here</a></p>
         </Popover.Content>
       </Popover>
     );
@@ -131,7 +131,7 @@ export default function News() {
           <h6><strong>Type:</strong> {vaccine.vaccineType}</h6>
           <p><strong>Details:</strong> {vaccine.vaccineDetails}</p>
           <p><strong>Status:</strong> {vaccine.vaccineStatus}</p>
-          <p><a href={vaccine.vaccineArticle}>For more click here</a></p>
+          <p><a href={vaccine.vaccineArticle} target="_blank">For more click here</a></p>
         </Popover.Content>
       </Popover>
     );
@@ -158,7 +158,7 @@ export default function News() {
           <h6><strong>Type:</strong> {vaccine.vaccineType}</h6>
           <p><strong>Details:</strong> {vaccine.vaccineDetails}</p>
           <p><strong>Status:</strong> {vaccine.vaccineStatus}</p>
-          <p><a href={vaccine.vaccineArticle}>For more click here</a></p>
+          <p><a href={vaccine.vaccineArticle} target="_blank">For more click here</a></p>
         </Popover.Content>
       </Popover>
     );
@@ -186,7 +186,7 @@ export default function News() {
           <h6><strong>Type:</strong> {vaccine.vaccineType}</h6>
           <p><strong>Details:</strong> {vaccine.vaccineDetails}</p>
           <p><strong>Status:</strong> {vaccine.vaccineStatus}</p>
-          <p><a href={vaccine.vaccineArticle}>For more click here</a></p>
+          <p><a href={vaccine.vaccineArticle} target="_blank">For more click here</a></p>
         </Popover.Content>
       </Popover>
     );
@@ -213,7 +213,7 @@ export default function News() {
           <h6><strong>Type:</strong> {vaccine.vaccineType}</h6>
           <p><strong>Details:</strong> {vaccine.vaccineDetails}</p>
           <p><strong>Status:</strong> {vaccine.vaccineStatus}</p>
-          <p><a href={vaccine.vaccineArticle}>For more click here</a></p>
+          <p><a href={vaccine.vaccineArticle} target="_blank">For more click here</a></p>
         </Popover.Content>
       </Popover>
     );
@@ -241,7 +241,7 @@ export default function News() {
           <h6><strong>Type:</strong> {vaccine.vaccineType}</h6>
           <p><strong>Details:</strong> {vaccine.vaccineDetails}</p>
           <p><strong>Status:</strong> {vaccine.vaccineStatus}</p>
-          <p><a href={vaccine.vaccineArticle}>For more click here</a></p>
+          <p><a href={vaccine.vaccineArticle} target="_blank">For more click here</a></p>
         </Popover.Content>
       </Popover>
     );
@@ -268,7 +268,7 @@ export default function News() {
           <h6><strong>Type:</strong> {vaccine.vaccineType}</h6>
           <p><strong>Details:</strong> {vaccine.vaccineDetails}</p>
           <p><strong>Status:</strong> {vaccine.vaccineStatus}</p>
-          <p><a href={vaccine.vaccineArticle}>For more click here</a></p>
+          <p><a href={vaccine.vaccineArticle} target="_blank">For more click here</a></p>
         </Popover.Content>
       </Popover>
     );
@@ -293,7 +293,7 @@ export default function News() {
         <Card>
           {photoExists(item.urlToImage)}
           <Card.Body>
-            <Card.Title><a href={item.url}>{item.title}</a></Card.Title>
+            <Card.Title><a href={item.url} target="_blank">{item.title}</a></Card.Title>
             <Card.Text>
               {item.description}
             </Card.Text>
