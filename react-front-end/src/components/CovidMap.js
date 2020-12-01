@@ -44,7 +44,7 @@ export default function CovidMap() {
     // function to fetch marker coordinates from database
     const fetchReportCases = async () => {
       try {
-        const res = await axios.get('/map');
+        const res = await axios.get('/api/map');
         return res;
       } catch (err) {
         console.log(err)

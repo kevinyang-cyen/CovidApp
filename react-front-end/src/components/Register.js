@@ -31,7 +31,7 @@ export default function Register() {
   // sets user cookie if email does not exist and if new user successfully registers
   const onSubmit = data => {
     setEmailExists(false)
-    axios.post("/register", data)
+    axios.post("/api/register", data)
       .then((res) => {
         if (res.data === "Email already in system") {
           setEmailExists(true)

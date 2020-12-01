@@ -1,4 +1,3 @@
-// const Fallback = require('express-history-api-fallback');
 const Express = require('express');
 const App = Express();
 const BodyParser = require('body-parser');
@@ -8,12 +7,12 @@ const cors = require('cors');
 const https = require('https');
 const fs = require('fs');
 const axios = require("axios");
+const path = require("path");
 
 // Express Configuration
 App.use(BodyParser.urlencoded({ extended: false }));
 App.use(BodyParser.json());
 App.use(Express.static('./react-front-end/build'));
-// App.use(Fallback('index.html',{root: './react-front-end/build'}));
 App.use(cors());
 
 // Routes Import
@@ -35,20 +34,24 @@ db.connect();
 
 
 // Mounting Resource Routes
-App.use('/map', mapRoute(db));
-App.use('/heatmap', heatmapRoute());
-App.use('/login', loginRoute(db));
-App.use('/register', registerRoute(db));
-App.use('/dashboard', dashboardRoute());
-App.use('/quarantine', quarantineRoute(db));
-App.use('/selfreport', selfreportRoute(db));
-App.use('/news', newsRoute());
+App.use('/api/map', mapRoute(db));
+App.use('/api/heatmap', heatmapRoute());
+App.use('/api/login', loginRoute(db));
+App.use('/api/register', registerRoute(db));
+App.use('/api/dashboard', dashboardRoute());
+App.use('/api/quarantine', quarantineRoute(db));
+App.use('/api/selfreport', selfreportRoute(db));
+App.use('/api/news', newsRoute());
 
 
-// Sample GET route
-App.get('/api/data', (req, res) => res.json({
-  message: "Seems to work!",
-}));
+// Catch All
+App.get('/*', function (req, res) {
+  res.sendFile(path.join(__dirname, './react-front-end/build/index.html'), function (err) {
+    if (err) {
+      res.status(500).send(err)
+    }
+  })
+})
 
 App.listen(PORT, () => {
   // eslint-disable-next-line no-console

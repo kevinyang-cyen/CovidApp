@@ -33,7 +33,7 @@ export default function Map() {
     // fetching heatmap coordinates from the API
     const fetchData = async () => {
       try {
-        const response = await axios.get("/heatmap");
+        const response = await axios.get("/api/heatmap");
         return response;
       } catch (err) {
         console.log(err)

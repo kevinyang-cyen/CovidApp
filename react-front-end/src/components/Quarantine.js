@@ -17,7 +17,7 @@ export default function Register() {
 
   // adding quarantine set time to database and updating user cookie with time left
   const onSubmit = (data) => {
-    axios.post("/quarantine", cookies['user-cookie'])
+    axios.post("/api/quarantine", cookies['user-cookie'])
       .then((res) => {
         setCookie(['user-cookie'], [res.data[0], res.data[1], res.data[2], res.data[3]]);
       });
@@ -25,7 +25,7 @@ export default function Register() {
 
   // adding self-report case to database and updating user cookie with self-report date
   const onSubmission = (data) => {
-    axios.post("/selfreport", [cookies['user-cookie'], location])
+    axios.post("/api/selfreport", [cookies['user-cookie'], location])
       .then((res) => {
         setCookie(['user-cookie'], [res.data[0], res.data[1], res.data[2], res.data[3]]);
       });

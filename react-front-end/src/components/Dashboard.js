@@ -91,7 +91,7 @@ export default function Dashboard() {
     const fetchData = async () => {
       try {
         const response = await Promise.all([
-          axios.post('/dashboard/allProvincesSummary', { 'date': date })]
+          axios.post('/api/dashboard/allProvincesSummary', { 'date': date })]
         )
         return response
       } catch (err) {
@@ -121,9 +121,9 @@ export default function Dashboard() {
 
       try {
         const response = await Promise.all([
-          axios.post('/dashboard/summary', urlOne),
-          axios.post('/dashboard/mortality', urlTwo),
-          axios.post('/dashboard/cases', urlThree)
+          axios.post('/api/dashboard/summary', urlOne),
+          axios.post('/api/dashboard/mortality', urlTwo),
+          axios.post('/api/dashboard/cases', urlThree)
         ])
         return response
       } catch (err) {

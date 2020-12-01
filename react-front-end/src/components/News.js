@@ -57,8 +57,8 @@ export default function News() {
 
       try {
         const response = await Promise.all([
-          axios.get('/news/newsreports'),
-          axios.get('/news/vaccinereports')
+          axios.get('/api/news/newsreports'),
+          axios.get('/api/news/vaccinereports')
         ]);
 
         return response;
