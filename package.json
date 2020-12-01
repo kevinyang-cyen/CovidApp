@@ -12,6 +12,7 @@
     "build": "cd ./react-front-end && npm install && npm run build"
   },
   "dependencies": {
+    "axios": "^0.21.0",
     "bcrypt": "^5.0.0",
     "body-parser": "^1.18.3",
     "chalk": "^2.4.2",
