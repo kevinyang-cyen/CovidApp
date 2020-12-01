@@ -1,3 +1,4 @@
+// const Fallback = require('express-history-api-fallback');
 const Express = require('express');
 const App = Express();
 const BodyParser = require('body-parser');
@@ -12,6 +13,7 @@ const axios = require("axios");
 App.use(BodyParser.urlencoded({ extended: false }));
 App.use(BodyParser.json());
 App.use(Express.static('./react-front-end/build'));
+// App.use(Fallback('index.html',{root: './react-front-end/build'}));
 App.use(cors());
 
 // Routes Import
