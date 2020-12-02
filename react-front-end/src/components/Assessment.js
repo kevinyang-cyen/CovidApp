@@ -45,7 +45,7 @@ export default function Assessment() {
               <ListGroup.Item className="button"><a href="https://www.ontario.ca/page/covid-19-response-framework-keeping-ontario-safe-and-open/" target="_blank">Ontario</a></ListGroup.Item>
               <ListGroup.Item className="button"><a href="https://www.quebec.ca/en/health/health-issues/a-z/2019-coronavirus/" target="_blank">Quebec</a></ListGroup.Item>
               <ListGroup.Item className="button"><a href="https://www.saskatchewan.ca/government/health-care-administration-and-provider-resources/treatment-procedures-and-guidelines/emerging-public-health-issues/2019-novel-coronavirus/public-health-measures/" target="_blank">Saskatchewan</a></ListGroup.Item>
-              <ListGroup.Item className="button"><a href="https://yukon.ca/en/health-and-wellness/covid-19-primaryrmation/summary-yukons-plan-lifting-covid-19-restrictions/" target="_blank">Yukon</a></ListGroup.Item>
+              <ListGroup.Item className="button"><a href="https://yukon.ca/en/health-and-wellness/covid-19-information/summary-yukons-covid-19-path-forward-plan" target="_blank">Yukon</a></ListGroup.Item>
             </ListGroup>
           </Card>
         </Tab>
