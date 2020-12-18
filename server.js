@@ -68,7 +68,7 @@ axios.get("https://services9.arcgis.com/pJENMVYPQqZZe20v/arcgis/rest/services/Ne
 )
 
 setInterval(function() {
-  https.get("https://services9.arcgis.com/pJENMVYPQqZZe20v/arcgis/rest/services/NewHybridRegionalHeathBoundaries/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=json", (response) => {
+  https.get("https://services9.arcgis.com/pJENMVYPQqZZe20v/arcgis/rest/services/NewHybridRegionalHeathBoundaries/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson", (response) => {
     fs.writeFile('./react-front-end/src/data/health.json', JSON.stringify(response.data, null, 2), function (err) {
       if (err) throw err;
       console.log('Saved!');
